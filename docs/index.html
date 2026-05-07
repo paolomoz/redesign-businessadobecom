@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adobe for Business — Redesign Prototypes</title>
+  <link rel="icon" type="image/svg+xml" href="assets/adobe-logo-red.svg">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --bg-subtle: #f8f8f8;
+      --text: #131313;
+      --text-soft: #4a4a4a;
+      --primary: #3b63fb;
+      --divider: #e9e9e9;
+      --adobe-red: #eb1000;
+      --display: "Adobe Clean Display", "Adobe Clean", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      --body: "Adobe Clean", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--body);
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 64px 32px 96px;
+    }
+    .topbar {
+      display: flex; align-items: center; gap: 12px;
+      margin-bottom: 64px;
+    }
+    .topbar svg { width: 24px; height: 20px; fill: var(--adobe-red); }
+    .topbar .name { font-family: var(--display); font-weight: 900; font-size: 16px; letter-spacing: -0.01em; }
+    .topbar .crumb { color: var(--text-soft); font-size: 14px; margin-left: 8px; }
+    .hero {
+      margin-bottom: 56px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid var(--divider);
+    }
+    .eyebrow {
+      display: block;
+      font-weight: 700; font-size: 13px;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--text-soft);
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-family: var(--display); font-weight: 900;
+      font-size: clamp(40px, 6vw, 64px);
+      line-height: 1.0; letter-spacing: -0.04em;
+      max-width: 18ch;
+    }
+    .lead {
+      margin-top: 20px;
+      max-width: 56ch;
+      font-size: 18px;
+      color: var(--text-soft);
+    }
+    .meta {
+      margin-top: 24px;
+      font-size: 13px;
+      color: var(--text-soft);
+      display: flex; gap: 16px; flex-wrap: wrap;
+    }
+    .meta a { color: var(--primary); font-weight: 600; }
+    h2 {
+      font-family: var(--display); font-weight: 900;
+      font-size: 24px; letter-spacing: -0.02em;
+      margin-bottom: 24px;
+    }
+    .prototypes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      display: block;
+      padding: 28px;
+      background: var(--bg-subtle);
+      border-radius: 16px;
+      border: 1px solid var(--divider);
+      transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      border-color: var(--text);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    }
+    .card .tag {
+      display: inline-block;
+      font-size: 11px; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--text-soft);
+      margin-bottom: 12px;
+    }
+    .card h3 {
+      font-family: var(--display); font-weight: 900;
+      font-size: 22px; line-height: 1.1; letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+    .card p {
+      font-size: 14px;
+      color: var(--text-soft);
+      max-width: 36ch;
+      margin-bottom: 16px;
+    }
+    .card .open {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 14px; font-weight: 700;
+      color: var(--primary);
+    }
+    .card .open::after { content: "→"; font-weight: 400; }
+    footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--divider);
+      font-size: 12px;
+      color: var(--text-soft);
+      display: flex; gap: 16px; flex-wrap: wrap;
+    }
+    footer a { color: var(--primary); }
+  </style>
+</head>
+<body>
+<main>
+  <div class="topbar">
+    <svg viewBox="0 0 240 234" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M152 0h88v234L152 0zM88 0H0v234L88 0zm32 86 56 132h-37l-17-43H81l37-89z"/></svg>
+    <span class="name">Adobe for Business</span>
+    <span class="crumb">redesign prototypes</span>
+  </div>
+
+  <section class="hero">
+    <span class="eyebrow">Redesign exploration</span>
+    <h1>business.adobe.com — proposed home.</h1>
+    <p class="lead">
+      Editorial composition (Adobe Clean Display, scroll-pinned mosaic-converge,
+      32px rounded-bottom hero, ring-reveal load, text-animate cascade) applied
+      to the live site's content and information architecture.
+    </p>
+    <div class="meta">
+      <span>Live source: <a href="https://business.adobe.com/" target="_blank" rel="noopener">business.adobe.com</a></span>
+      <span>Repo: <a href="https://github.com/paolomoz/redesign-businessadobecom" target="_blank" rel="noopener">github.com/paolomoz/redesign-businessadobecom</a></span>
+    </div>
+  </section>
+
+  <h2>Prototypes</h2>
+  <div class="prototypes">
+    <a class="card" href="home.html">
+      <span class="tag">Page · home</span>
+      <h3>Home — proposed redesign</h3>
+      <p>v2 editorial design system with the live page's IA: Adobe + Semrush hero, CX Enterprise pitch, announcements, solutions, Brand Concierge, tabbed portfolio, Ford testimonial.</p>
+      <span class="open">Open prototype</span>
+    </a>
+  </div>
+
+  <footer>
+    <span>Built with stardust + impeccable.</span>
+    <a href="https://github.com/paolomoz/redesign-businessadobecom" target="_blank" rel="noopener">View source</a>
+  </footer>
+</main>
+</body>
+</html>
