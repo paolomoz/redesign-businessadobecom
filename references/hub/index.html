@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acrobat Studio — Hub</title>
+  <link rel="icon" type="image/svg+xml" href="assets/adobe-logo-red.svg">
+
+  <!-- Global design system -->
+  <link rel="stylesheet" href="styles/global/reset.css">
+  <link rel="stylesheet" href="styles/global/grid.css">
+  <link rel="stylesheet" href="styles/global/typography.css">
+
+  <!-- Page-level styles -->
+  <link rel="stylesheet" href="styles/page.css">
+
+  <!-- Nav styles -->
+  <link rel="stylesheet" href="styles/nav.css">
+  <link rel="stylesheet" href="styles/mega-nav.css">
+  <link rel="stylesheet" href="styles/mobile-nav.css">
+  <link rel="stylesheet" href="styles/nav-offer.css">
+
+  <!-- Hero + shared component styles -->
+  <link rel="stylesheet" href="styles/hero.css">
+  <link rel="stylesheet" href="styles/hero-grid.css">
+  <link rel="stylesheet" href="styles/hero-hub-router.css">
+  <link rel="stylesheet" href="styles/hero-mobile.css">
+  <link rel="stylesheet" href="styles/offer-apps.css">
+  <link rel="stylesheet" href="styles/editorial.css">
+</head>
+<body>
+
+  <!-- Grid overlay (toggle with G key via debug mode — press M first) -->
+  <div class="grid-overlay" id="gridOverlay"></div>
+
+  <!-- Breakpoint indicator -->
+  <div class="bp-indicator" id="bpIndicator" style="display:none"></div>
+  <div class="hint" id="debugHint" style="display:none">G — grid &nbsp; M — hide</div>
+
+  <!-- ==========================================
+       MEGA NAV — dim overlay + dropdown panel
+       Both position:fixed, live outside main content.
+       z: dim=97, panel=98, gnav=100
+       ========================================== -->
+  <div id="megaNavDim" class="mega-nav-dim" aria-hidden="true"></div>
+
+  <div id="megaNavPanel" class="mega-nav-panel" aria-hidden="true" role="dialog" aria-label="Products menu">
+
+    <!-- ── Products pane ── -->
+    <div class="mnav-pane" data-pane="products">
+    <div class="mega-nav-body">
+
+      <!-- ── Filter list (left column) ── -->
+      <nav class="mega-nav-filters" aria-label="Product categories">
+        <button class="mnav-filter mnav-filter--active" data-filter="featured">Featured</button>
+        <button class="mnav-filter" data-filter="content-creation">Content Creation</button>
+        <button class="mnav-filter" data-filter="acrobat">Acrobat &amp; PDF</button>
+        <button class="mnav-filter" data-filter="photography">Photography</button>
+        <button class="mnav-filter" data-filter="video">Video</button>
+        <button class="mnav-filter" data-filter="design">Design</button>
+        <button class="mnav-filter" data-filter="marketing">Marketing &amp; Data</button>
+        <a href="#" class="mnav-filter mnav-filter--all">All products <span aria-hidden="true">›</span></a>
+      </nav>
+
+      <!-- ── Product grid (right column) ── -->
+      <div class="mega-nav-grid-wrap">
+
+        <!-- Featured -->
+        <div class="mnav-category" data-category="featured">
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top">
+              <img src="assets/icons/B_app_AdobeFirefly.svg" class="mnav-card-icon" width="24" height="24" alt="">
+              <div class="mnav-card-badges">
+                <span class="mnav-badge mnav-badge--new">New</span>
+                <span class="mnav-badge mnav-badge--save">Save 20%</span>
+              </div>
+            </div>
+            <div class="mnav-card-bottom">
+              <p class="mnav-card-name">Firefly</p>
+              <p class="mnav-card-desc">Create and enhance images, video, and audio with AI-powered tools.</p>
+            </div>
+          </a>
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top"><img src="assets/icons/B_app_CreativeCloud.svg" class="mnav-card-icon" width="24" height="24" alt=""></div>
+            <div class="mnav-card-bottom">
+              <p class="mnav-card-name">Creative Cloud Pro</p>
+              <p class="mnav-card-desc">Get 20+ apps including Photoshop, Illustrator, Premiere Pro, and Acrobat Pro.</p>
+            </div>
+          </a>
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top"><img src="assets/icons/B_app_Photoshop.svg" class="mnav-card-icon" width="24" height="24" alt=""></div>
+            <div class="mnav-card-bottom">
+              <p class="mnav-card-name">Photoshop</p>
+              <p class="mnav-card-desc">Create gorgeous images, rich graphics, and incredible art.</p>
+            </div>
+          </a>
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top"><img src="assets/icons/B_app_PremierePro.svg" class="mnav-card-icon" width="24" height="24" alt=""></div>
+            <div class="mnav-card-bottom">
+              <p class="mnav-card-name">Premiere Pro</p>
+              <p class="mnav-card-desc">The leading video editor for everything from social clips to feature films.</p>
+            </div>
+          </a>
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top"><img src="assets/icons/B_app_AdobeAcrobatPDF.svg" class="mnav-card-icon" width="24" height="24" alt=""></div>
+            <div class="mnav-card-bottom">
+              <p class="mnav-card-name">Acrobat</p>
+              <p class="mnav-card-desc">Quickly create, edit, sign, and manage your PDFs anywhere.</p>
+            </div>
+          </a>
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top"><img src="assets/icons/B_app_Illustrator.svg" class="mnav-card-icon" width="24" height="24" alt=""></div>
+            <div class="mnav-card-bottom">
+              <p class="mnav-card-name">Illustrator</p>
+              <p class="mnav-card-desc">Create beautiful vector designs, icons, and illustrations at any size.</p>
+            </div>
+          </a>
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top"><img src="assets/icons/B_app_ExperienceCloud.svg" class="mnav-card-icon" width="24" height="24" alt=""></div>
+            <div class="mnav-card-bottom">
+              <p class="mnav-card-name">GenStudio</p>
+              <p class="mnav-card-desc">Scale on-brand content creation with AI for marketing teams.</p>
+            </div>
+          </a>
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top"><img src="assets/icons/B_app_ExperiencePlatform.svg" class="mnav-card-icon" width="24" height="24" alt=""></div>
+            <div class="mnav-card-bottom">
+              <p class="mnav-card-name">Business Products</p>
+              <p class="mnav-card-desc">Integrated Adobe solutions to tackle pressing business challenges.</p>
+            </div>
+          </a>
+          <a href="#" class="mnav-card mnav-card--all">
+            <div class="mnav-card-top"><span class="mnav-card--all-arrow">→</span></div>
+            <div class="mnav-card-bottom">
+              <p class="mnav-card-name">All Products</p>
+              <p class="mnav-card-desc">View all Adobe products</p>
+            </div>
+          </a>
+        </div><!-- /featured -->
+
+        <!-- Content Creation -->
+        <div class="mnav-category mnav-category--hidden" data-category="content-creation">
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top">
+              <img src="assets/icons/B_app_AdobeFirefly.svg" class="mnav-card-icon" width="24" height="24" alt="">
+              <div class="mnav-card-badges"><span class="mnav-badge mnav-badge--new">New</span><span class="mnav-badge mnav-badge--save">Save 20%</span></div>
+            </div>
+            <div class="mnav-card-bottom"><p class="mnav-card-name">Firefly</p><p class="mnav-card-desc">Unlimited AI-powered image, video, and audio generation.</p></div>
+          </a>
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top"><img src="assets/icons/B_app_AdobeAcrobatPDF.svg" class="mnav-card-icon" width="24" height="24" alt=""></div>
+            <div class="mnav-card-bottom"><p class="mnav-card-name">Acrobat</p><p class="mnav-card-desc">Convert, edit, and sign PDFs on any device.</p></div>
+          </a>
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top"><img src="assets/icons/B_app_CreativeCloud.svg" class="mnav-card-icon" width="24" height="24" alt=""></div>
+            <div class="mnav-card-bottom"><p class="mnav-card-name">Express</p><p class="mnav-card-desc">Create social graphics, videos, and flyers in minutes.</p></div>
+          </a>
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top"><img src="assets/icons/B_app_PremierePro.svg" class="mnav-card-icon" width="24" height="24" alt=""></div>
+            <div class="mnav-card-bottom"><p class="mnav-card-name">Premiere</p><p class="mnav-card-desc">Edit and share professional video on any device.</p></div>
+          </a>
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top"><img src="assets/icons/B_app_Photoshop.svg" class="mnav-card-icon" width="24" height="24" alt=""></div>
+            <div class="mnav-card-bottom"><p class="mnav-card-name">Lightroom</p><p class="mnav-card-desc">Edit and organize photos on any device, anywhere.</p></div>
+          </a>
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top"><img src="assets/icons/B_app_CreativeCloud.svg" class="mnav-card-icon" width="24" height="24" alt=""></div>
+            <div class="mnav-card-bottom"><p class="mnav-card-name">Creative Cloud Pro</p><p class="mnav-card-desc">Get 20+ apps including Photoshop, Illustrator, and more.</p></div>
+          </a>
+        </div><!-- /content-creation -->
+
+        <!-- Acrobat & PDF -->
+        <div class="mnav-category mnav-category--hidden" data-category="acrobat">
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top"><img src="assets/icons/B_app_AdobeAcrobatPDF.svg" class="mnav-card-icon" width="24" height="24" alt=""></div>
+            <div class="mnav-card-bottom"><p class="mnav-card-name">Acrobat Pro</p><p class="mnav-card-desc">The complete PDF solution for editing, signing, and protecting.</p></div>
+          </a>
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top"><img src="assets/icons/B_app_AdobeAcrobatPDF.svg" class="mnav-card-icon" width="24" height="24" alt=""></div>
+            <div class="mnav-card-bottom"><p class="mnav-card-name">Acrobat Reader</p><p class="mnav-card-desc">View, annotate, and sign PDFs for free on any device.</p></div>
+          </a>
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top"><img src="assets/icons/B_app_AdobeAcrobatPDF.svg" class="mnav-card-icon" width="24" height="24" alt=""></div>
+            <div class="mnav-card-bottom"><p class="mnav-card-name">Acrobat Sign</p><p class="mnav-card-desc">Send and sign documents digitally, anytime and anywhere.</p></div>
+          </a>
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top"><img src="assets/icons/B_app_ExperiencePlatform.svg" class="mnav-card-icon" width="24" height="24" alt=""></div>
+            <div class="mnav-card-bottom"><p class="mnav-card-name">PDF Services</p><p class="mnav-card-desc">APIs to create, convert, and manipulate PDFs at scale.</p></div>
+          </a>
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top"><img src="assets/icons/B_app_ExperienceCloud.svg" class="mnav-card-icon" width="24" height="24" alt=""></div>
+            <div class="mnav-card-bottom"><p class="mnav-card-name">Document Cloud</p><p class="mnav-card-desc">Reimagine document workflows across your entire organization.</p></div>
+          </a>
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top"><img src="assets/icons/B_app_AdobeAcrobatPDF.svg" class="mnav-card-icon" width="24" height="24" alt=""></div>
+            <div class="mnav-card-bottom"><p class="mnav-card-name">Scan</p><p class="mnav-card-desc">Turn paper into searchable PDFs using your phone camera.</p></div>
+          </a>
+        </div><!-- /acrobat -->
+
+        <!-- Photography -->
+        <div class="mnav-category mnav-category--hidden" data-category="photography">
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top"><img src="assets/icons/B_app_Photoshop.svg" class="mnav-card-icon" width="24" height="24" alt=""></div>
+            <div class="mnav-card-bottom"><p class="mnav-card-name">Lightroom</p><p class="mnav-card-desc">Edit, organize, and share photos from anywhere.</p></div>
+          </a>
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top"><img src="assets/icons/B_app_Photoshop.svg" class="mnav-card-icon" width="24" height="24" alt=""></div>
+            <div class="mnav-card-bottom"><p class="mnav-card-name">Photoshop</p><p class="mnav-card-desc">Create and enhance photos, illustrations, and 3D artwork.</p></div>
+          </a>
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top"><img src="assets/icons/B_app_Photoshop.svg" class="mnav-card-icon" width="24" height="24" alt=""></div>
+            <div class="mnav-card-bottom"><p class="mnav-card-name">Lightroom Classic</p><p class="mnav-card-desc">Professional photo management and editing on your desktop.</p></div>
+          </a>
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top"><img src="assets/icons/B_app_AdobeFirefly.svg" class="mnav-card-icon" width="24" height="24" alt=""></div>
+            <div class="mnav-card-bottom"><p class="mnav-card-name">Firefly</p><p class="mnav-card-desc">AI-powered image generation built right into your workflow.</p></div>
+          </a>
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top"><img src="assets/icons/B_app_Photoshop.svg" class="mnav-card-icon" width="24" height="24" alt=""></div>
+            <div class="mnav-card-bottom"><p class="mnav-card-name">Photoshop Express</p><p class="mnav-card-desc">Quick, easy photo edits right on your mobile device.</p></div>
+          </a>
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top"><img src="assets/icons/B_app_Photoshop.svg" class="mnav-card-icon" width="24" height="24" alt=""></div>
+            <div class="mnav-card-bottom"><p class="mnav-card-name">Camera Raw</p><p class="mnav-card-desc">Process raw images with professional tools, direct from your camera.</p></div>
+          </a>
+        </div><!-- /photography -->
+
+        <!-- Video -->
+        <div class="mnav-category mnav-category--hidden" data-category="video">
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top"><img src="assets/icons/B_app_PremierePro.svg" class="mnav-card-icon" width="24" height="24" alt=""></div>
+            <div class="mnav-card-bottom"><p class="mnav-card-name">Premiere Pro</p><p class="mnav-card-desc">The industry-leading video editor for film, TV, and the web.</p></div>
+          </a>
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top"><img src="assets/icons/B_app_PremierePro.svg" class="mnav-card-icon" width="24" height="24" alt=""></div>
+            <div class="mnav-card-bottom"><p class="mnav-card-name">After Effects</p><p class="mnav-card-desc">Create cinematic motion graphics and visual effects.</p></div>
+          </a>
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top"><img src="assets/icons/B_app_ExperienceCloud.svg" class="mnav-card-icon" width="24" height="24" alt=""></div>
+            <div class="mnav-card-bottom"><p class="mnav-card-name">Frame.io</p><p class="mnav-card-desc">Cloud-based video review and collaboration for creative teams.</p></div>
+          </a>
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top"><img src="assets/icons/B_app_PremierePro.svg" class="mnav-card-icon" width="24" height="24" alt=""></div>
+            <div class="mnav-card-bottom"><p class="mnav-card-name">Audition</p><p class="mnav-card-desc">Record, mix, and restore audio with professional precision.</p></div>
+          </a>
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top"><img src="assets/icons/B_app_PremierePro.svg" class="mnav-card-icon" width="24" height="24" alt=""></div>
+            <div class="mnav-card-bottom"><p class="mnav-card-name">Premiere Rush</p><p class="mnav-card-desc">Create and share high-quality online videos, anywhere.</p></div>
+          </a>
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top"><img src="assets/icons/B_app_ExperiencePlatform.svg" class="mnav-card-icon" width="24" height="24" alt=""></div>
+            <div class="mnav-card-bottom"><p class="mnav-card-name">Character Animator</p><p class="mnav-card-desc">Animate 2D characters in real time using your face and voice.</p></div>
+          </a>
+        </div><!-- /video -->
+
+        <!-- Design -->
+        <div class="mnav-category mnav-category--hidden" data-category="design">
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top"><img src="assets/icons/B_app_Illustrator.svg" class="mnav-card-icon" width="24" height="24" alt=""></div>
+            <div class="mnav-card-bottom"><p class="mnav-card-name">Illustrator</p><p class="mnav-card-desc">Vector graphics, logos, icons, and illustrations at any size.</p></div>
+          </a>
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top"><img src="assets/icons/B_app_Illustrator.svg" class="mnav-card-icon" width="24" height="24" alt=""></div>
+            <div class="mnav-card-bottom"><p class="mnav-card-name">InDesign</p><p class="mnav-card-desc">Layout and design for print and digital publishing.</p></div>
+          </a>
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top"><img src="assets/icons/B_app_CreativeCloud.svg" class="mnav-card-icon" width="24" height="24" alt=""></div>
+            <div class="mnav-card-bottom"><p class="mnav-card-name">XD</p><p class="mnav-card-desc">Design and prototype user experiences for web and mobile.</p></div>
+          </a>
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top"><img src="assets/icons/B_app_Illustrator.svg" class="mnav-card-icon" width="24" height="24" alt=""></div>
+            <div class="mnav-card-bottom"><p class="mnav-card-name">Dimension</p><p class="mnav-card-desc">Photorealistic 3D imagery for branding and packaging design.</p></div>
+          </a>
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top"><img src="assets/icons/B_app_CreativeCloud.svg" class="mnav-card-icon" width="24" height="24" alt=""></div>
+            <div class="mnav-card-bottom"><p class="mnav-card-name">Fonts</p><p class="mnav-card-desc">Access thousands of high-quality fonts from top foundries.</p></div>
+          </a>
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top"><img src="assets/icons/B_app_ExperiencePlatform.svg" class="mnav-card-icon" width="24" height="24" alt=""></div>
+            <div class="mnav-card-bottom"><p class="mnav-card-name">Substance 3D</p><p class="mnav-card-desc">3D design tools for immersive materials and environments.</p></div>
+          </a>
+        </div><!-- /design -->
+
+        <!-- Marketing & Data -->
+        <div class="mnav-category mnav-category--hidden" data-category="marketing">
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top"><img src="assets/icons/B_app_ExperienceCloud.svg" class="mnav-card-icon" width="24" height="24" alt=""></div>
+            <div class="mnav-card-bottom"><p class="mnav-card-name">GenStudio</p><p class="mnav-card-desc">Scale on-brand content creation with AI for enterprise teams.</p></div>
+          </a>
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top"><img src="assets/icons/B_app_ExperienceCloud.svg" class="mnav-card-icon" width="24" height="24" alt=""></div>
+            <div class="mnav-card-bottom"><p class="mnav-card-name">Experience Cloud</p><p class="mnav-card-desc">End-to-end suite for marketing, analytics, and commerce.</p></div>
+          </a>
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top"><img src="assets/icons/B_app_ExperiencePlatform.svg" class="mnav-card-icon" width="24" height="24" alt=""></div>
+            <div class="mnav-card-bottom"><p class="mnav-card-name">Analytics</p><p class="mnav-card-desc">Turn customer data into actionable insights for your business.</p></div>
+          </a>
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top"><img src="assets/icons/B_app_ExperiencePlatform.svg" class="mnav-card-icon" width="24" height="24" alt=""></div>
+            <div class="mnav-card-bottom"><p class="mnav-card-name">Commerce</p><p class="mnav-card-desc">Power commerce experiences that convert and retain customers.</p></div>
+          </a>
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top"><img src="assets/icons/B_app_ExperienceCloud.svg" class="mnav-card-icon" width="24" height="24" alt=""></div>
+            <div class="mnav-card-bottom"><p class="mnav-card-name">Marketo</p><p class="mnav-card-desc">B2B marketing automation to engage and convert more leads.</p></div>
+          </a>
+          <a href="#" class="mnav-card">
+            <div class="mnav-card-top"><img src="assets/icons/B_app_ExperiencePlatform.svg" class="mnav-card-icon" width="24" height="24" alt=""></div>
+            <div class="mnav-card-bottom"><p class="mnav-card-name">Target</p><p class="mnav-card-desc">Personalize every experience with AI-powered testing.</p></div>
+          </a>
+        </div><!-- /marketing -->
+
+      </div><!-- /mega-nav-grid-wrap -->
+    </div><!-- /mega-nav-body -->
+    </div><!-- /mnav-pane products -->
+
+    <!-- ── Use Cases pane ── -->
+    <div class="mnav-pane mnav-pane--hidden" data-pane="use-cases">
+    <div class="mega-nav-body">
+      <div class="ucnav-grid">
+
+        <div class="ucnav-card">
+          <div class="ucnav-card-inner">
+            <p class="ucnav-label">Creative Professionals</p>
+            <h3 class="ucnav-title">Craft at the highest level of creative.</h3>
+            <p class="ucnav-desc">Create designs, photo, video, and more with AI in Creative Cloud apps.</p>
+            <a href="#" class="ucnav-link">See plans <svg class="ucnav-chevron" width="5" height="10" viewBox="0 0 5 10" fill="none" aria-hidden="true"><path d="M0.75 8.5L3.75 5.5L0.75 2.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+          <a href="#" class="ucnav-btn">Explore</a>
+        </div>
+
+        <div class="ucnav-card">
+          <div class="ucnav-card-inner">
+            <p class="ucnav-label">Creators</p>
+            <h3 class="ucnav-title">Create quickly and easily with AI models.</h3>
+            <p class="ucnav-desc">Generate and edit images, video, and audio with AI models in Firefly.</p>
+            <a href="#" class="ucnav-link">See plans <svg class="ucnav-chevron" width="5" height="10" viewBox="0 0 5 10" fill="none" aria-hidden="true"><path d="M0.75 8.5L3.75 5.5L0.75 2.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+          <a href="#" class="ucnav-btn">Explore</a>
+        </div>
+
+        <div class="ucnav-card">
+          <div class="ucnav-card-inner">
+            <p class="ucnav-label">Business Professionals</p>
+            <h3 class="ucnav-title">Elevate your PDFs and productivity.</h3>
+            <p class="ucnav-desc">Edit, sign, and convert PDFs and create beautiful documents with Acrobat.</p>
+            <a href="#" class="ucnav-link">See plans <svg class="ucnav-chevron" width="5" height="10" viewBox="0 0 5 10" fill="none" aria-hidden="true"><path d="M0.75 8.5L3.75 5.5L0.75 2.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+          <a href="#" class="ucnav-btn">Explore</a>
+        </div>
+
+        <div class="ucnav-card">
+          <div class="ucnav-card-inner">
+            <p class="ucnav-label">Marketing Professionals</p>
+            <h3 class="ucnav-title">Unify content, data and work with AI.</h3>
+            <p class="ucnav-desc">Prove and improve marketing impact with Adobe AI.</p>
+            <a href="#" class="ucnav-link">See plans <svg class="ucnav-chevron" width="5" height="10" viewBox="0 0 5 10" fill="none" aria-hidden="true"><path d="M0.75 8.5L3.75 5.5L0.75 2.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+          <a href="#" class="ucnav-btn">Explore</a>
+        </div>
+
+        <div class="ucnav-card">
+          <div class="ucnav-card-inner">
+            <p class="ucnav-label">Students &amp; Teachers</p>
+            <h3 class="ucnav-title">Learn, create, and save on the top tools.</h3>
+            <p class="ucnav-desc">Learn, teach, and save 40% on all the top tools in Creative Cloud Pro.</p>
+            <a href="#" class="ucnav-link">See plans <svg class="ucnav-chevron" width="5" height="10" viewBox="0 0 5 10" fill="none" aria-hidden="true"><path d="M0.75 8.5L3.75 5.5L0.75 2.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+          <a href="#" class="ucnav-btn">Explore</a>
+        </div>
+
+      </div><!-- /ucnav-grid -->
+    </div><!-- /mega-nav-body -->
+    </div><!-- /mnav-pane use-cases -->
+
+    <!-- ── Solutions pane ── -->
+    <div class="mnav-pane mnav-pane--hidden" data-pane="solutions">
+    <div class="mega-nav-body">
+
+      <div class="lnav-col">
+        <div class="lnav-list">
+          <h3 class="lnav-heading">Organizations</h3>
+          <div class="lnav-items">
+            <a href="#" class="lnav-item">Small businesses</a>
+            <a href="#" class="lnav-item">Medium and large businesses</a>
+            <a href="#" class="lnav-item">Education</a>
+            <a href="#" class="lnav-item">Government</a>
+            <a href="#" class="lnav-item">Nonprofits</a>
+          </div>
+        </div>
+        <div class="lnav-col-footer"><a href="#" class="lnav-btn">Contact us</a></div>
+      </div>
+
+      <div class="lnav-col">
+        <div class="lnav-list">
+          <h3 class="lnav-heading">Industries</h3>
+          <div class="lnav-items">
+            <a href="#" class="lnav-item">Financial Services</a>
+            <a href="#" class="lnav-item">High Tech</a>
+            <a href="#" class="lnav-item">Healthcare</a>
+            <a href="#" class="lnav-item">Government</a>
+            <a href="#" class="lnav-item">Retail</a>
+            <a href="#" class="lnav-item">Media &amp; Entertainment</a>
+          </div>
+        </div>
+        <div class="lnav-col-footer"><a href="#" class="lnav-btn">Contact us</a></div>
+      </div>
+
+      <div class="lnav-feature">
+        <img src="assets/images/nav/nav-solutions-offer.jpg" class="lnav-feature-img" alt="">
+        <div class="lnav-feature-top">
+          <img src="assets/icons/B_app_AdobeAcrobatPDF.svg" width="24" height="24" alt="">
+        </div>
+        <div class="lnav-feature-bottom">
+          <div class="lnav-feature-text">
+            <p class="lnav-feature-price">$24.99/mo</p>
+            <p class="lnav-feature-name">Acrobat for business</p>
+          </div>
+          <a href="#" class="lnav-feature-btn">Save now</a>
+        </div>
+      </div>
+
+    </div><!-- /mega-nav-body -->
+    </div><!-- /mnav-pane solutions -->
+
+    <!-- ── Learn & Support pane ── -->
+    <div class="mnav-pane mnav-pane--hidden" data-pane="learn-support">
+    <div class="mega-nav-body">
+
+      <div class="lnav-col">
+        <div class="lnav-list">
+          <h3 class="lnav-heading">Tutorials</h3>
+          <div class="lnav-items">
+            <a href="#" class="lnav-item">Content creation</a>
+            <a href="#" class="lnav-item">Documents &amp; Productivity</a>
+            <a href="#" class="lnav-item">Photo Editing</a>
+            <a href="#" class="lnav-item">Video Editing</a>
+            <a href="#" class="lnav-item">Illustration</a>
+            <a href="#" class="lnav-item">Marketing &amp; Data</a>
+          </div>
+        </div>
+        <div class="lnav-col-footer"><a href="#" class="lnav-btn">Contact us</a></div>
+      </div>
+
+      <div class="lnav-col">
+        <div class="lnav-list">
+          <h3 class="lnav-heading">Help</h3>
+          <div class="lnav-items">
+            <a href="#" class="lnav-item">Help center</a>
+            <a href="#" class="lnav-item">Adobe community</a>
+            <a href="#" class="lnav-item">Medium and large business support</a>
+            <a href="#" class="lnav-item">Developer support</a>
+            <a href="#" class="lnav-item">Download and install</a>
+          </div>
+        </div>
+        <div class="lnav-col-footer"><a href="#" class="lnav-btn">Contact us</a></div>
+      </div>
+
+      <div class="lnav-col-stack">
+        <div class="lnav-col lnav-col--auto">
+          <div class="lnav-list">
+            <h3 class="lnav-heading">More resources</h3>
+            <div class="lnav-items">
+              <a href="#" class="lnav-item">Adobe Experience League</a>
+              <a href="#" class="lnav-item">Adobe Certified Professional</a>
+              <a href="#" class="lnav-item">Adobe Education Exchange</a>
+              <a href="#" class="lnav-item">Adobe status</a>
+            </div>
+          </div>
+        </div>
+        <div class="lnav-col lnav-col--auto">
+          <div class="lnav-list">
+            <h3 class="lnav-heading">Profile</h3>
+            <div class="lnav-items">
+              <a href="#" class="lnav-item">Manage my profile</a>
+              <a href="#" class="lnav-item">Manage my subscription</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /mega-nav-body -->
+    </div><!-- /mnav-pane learn-support -->
+
+  </div><!-- /megaNavPanel -->
+
+  <!-- ==========================================
+       GNAV — fixed, z:100
+       ========================================== -->
+  <header id="gnav">
+    <div class="gnav-inner">
+      <div class="gnav-left">
+        <!-- Desktop: full wordmark logos -->
+        <img src="assets/adobe-logo.svg"       alt="Adobe" class="gnav-logo">
+        <img src="assets/adobe-logo-black.svg" alt="Adobe" class="gnav-logo-black">
+        <!-- Mobile: A lettermark logos -->
+        <div class="gnav-logo-sm-wrap" aria-hidden="true">
+          <img src="assets/adobe-logo-sm.svg"       alt="" class="gnav-logo-sm">
+          <img src="assets/adobe-logo-sm-black.svg" alt="" class="gnav-logo-sm-black">
+        </div>
+        <!-- Hamburger — mobile only -->
+        <button id="mobileNavToggle" class="gnav-hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+        <nav class="gnav-links">
+          <a href="#" class="gnav-link" id="gnavProducts">Products <span class="gnav-chevron"><svg width="8" height="5" viewBox="0 0 8 5" fill="none" aria-hidden="true"><path d="M1 1L4 4L7 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+          <a href="#" class="gnav-link" id="gnavUseCases">Use Cases <span class="gnav-chevron"><svg width="8" height="5" viewBox="0 0 8 5" fill="none" aria-hidden="true"><path d="M1 1L4 4L7 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+          <a href="#" class="gnav-link" id="gnavSolutions">Solutions <span class="gnav-chevron"><svg width="8" height="5" viewBox="0 0 8 5" fill="none" aria-hidden="true"><path d="M1 1L4 4L7 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+          <a href="#" class="gnav-link" id="gnavLearnSupport">Learn &amp; Support <span class="gnav-chevron"><svg width="8" height="5" viewBox="0 0 8 5" fill="none" aria-hidden="true"><path d="M1 1L4 4L7 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+          <a href="#" class="gnav-link">Plans</a>
+        </nav>
+      </div>
+      <div class="gnav-right">
+        <button class="gnav-apps" aria-label="Apps">
+          <img src="assets/icons/S2_Icon_AppsAll_20_N.svg" alt="">
+        </button>
+        <a href="#" class="gnav-signin">Sign In</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       MOBILE NAV OVERLAY — position:fixed, z:99
+       ========================================== -->
+  <div id="mobileNav" aria-hidden="true" role="dialog" aria-label="Navigation menu">
+    <div class="mnav-m-screens-wrap">
+      <div class="mnav-m-screens">
+
+        <!-- ── Main menu ── -->
+        <div class="mnav-m-screen" data-screen="main">
+          <nav class="mnav-m-list" aria-label="Main navigation">
+            <button class="mnav-m-item" data-target="products">Products <svg class="mnav-m-item-chevron" width="8" height="14" viewBox="0 0 8 14" fill="none" aria-hidden="true"><path d="M1 1L7 7L1 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <button class="mnav-m-item" data-target="use-cases">Use Cases <svg class="mnav-m-item-chevron" width="8" height="14" viewBox="0 0 8 14" fill="none" aria-hidden="true"><path d="M1 1L7 7L1 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <button class="mnav-m-item" data-target="solutions">Solutions <svg class="mnav-m-item-chevron" width="8" height="14" viewBox="0 0 8 14" fill="none" aria-hidden="true"><path d="M1 1L7 7L1 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <button class="mnav-m-item" data-target="learn-support">Learn &amp; Support <svg class="mnav-m-item-chevron" width="8" height="14" viewBox="0 0 8 14" fill="none" aria-hidden="true"><path d="M1 1L7 7L1 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <a href="#" class="mnav-m-item">Plans</a>
+          </nav>
+        </div>
+
+        <!-- ── Products sub-screen ── -->
+        <div class="mnav-m-screen" data-screen="products">
+          <div class="mnav-m-products-sticky">
+          <div class="mnav-m-subheader">
+            <div class="mnav-m-subheader-left">
+              <button class="mnav-m-back" aria-label="Back"><svg width="8" height="14" viewBox="0 0 8 14" fill="none" aria-hidden="true"><path d="M7 1L1 7L7 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+              <span class="mnav-m-subheader-title">Products</span>
+            </div>
+            <a href="#" class="mnav-m-subheader-link">All products <svg width="5" height="9" viewBox="0 0 5 9" fill="none" aria-hidden="true"><path d="M1 1L4.5 4.5L1 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+          <div class="mnav-m-filters-row">
+            <button class="mnav-m-pill mnav-m-pill--active" data-filter="featured">Featured</button>
+            <button class="mnav-m-pill" data-filter="content-creation">Content Creation</button>
+            <button class="mnav-m-pill" data-filter="acrobat">Acrobat &amp; PDF</button>
+            <button class="mnav-m-pill" data-filter="photography">Photography</button>
+            <button class="mnav-m-pill" data-filter="video">Video</button>
+            <button class="mnav-m-pill" data-filter="design">Design</button>
+            <button class="mnav-m-pill" data-filter="marketing">Marketing &amp; Data</button>
+          </div>
+          </div><!-- /mnav-m-products-sticky -->
+
+          <!-- Featured -->
+          <div class="mnav-m-product-list" data-category="featured">
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_AdobeFirefly.svg" class="mnav-m-product-icon" alt=""><div class="mnav-m-product-badges"><span class="mnav-m-badge mnav-m-badge--new">New</span><span class="mnav-m-badge mnav-m-badge--save">Save 20%</span></div></div><p class="mnav-m-product-name">Firefly</p><p class="mnav-m-product-desc">Create and enhance images, video, and audio with AI-powered tools.</p></a>
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_CreativeCloud.svg" class="mnav-m-product-icon" alt=""></div><p class="mnav-m-product-name">Creative Cloud Pro</p><p class="mnav-m-product-desc">Get 20+ apps including Photoshop, Illustrator, Premiere Pro, and Acrobat Pro.</p></a>
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_Photoshop.svg" class="mnav-m-product-icon" alt=""></div><p class="mnav-m-product-name">Photoshop</p><p class="mnav-m-product-desc">Create gorgeous images, rich graphics, and incredible art.</p></a>
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_PremierePro.svg" class="mnav-m-product-icon" alt=""></div><p class="mnav-m-product-name">Premiere Pro</p><p class="mnav-m-product-desc">The leading video editor for everything from social clips to feature films.</p></a>
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_AdobeAcrobatPDF.svg" class="mnav-m-product-icon" alt=""></div><p class="mnav-m-product-name">Acrobat</p><p class="mnav-m-product-desc">Quickly create, edit, sign, and manage your PDFs anywhere.</p></a>
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_Illustrator.svg" class="mnav-m-product-icon" alt=""></div><p class="mnav-m-product-name">Illustrator</p><p class="mnav-m-product-desc">Create beautiful vector designs, icons, and illustrations at any size.</p></a>
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_ExperienceCloud.svg" class="mnav-m-product-icon" alt=""></div><p class="mnav-m-product-name">GenStudio</p><p class="mnav-m-product-desc">Scale on-brand content creation with AI for marketing teams.</p></a>
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_ExperiencePlatform.svg" class="mnav-m-product-icon" alt=""></div><p class="mnav-m-product-name">Business Products</p><p class="mnav-m-product-desc">Integrated Adobe solutions to tackle pressing business challenges.</p></a>
+            <a href="#" class="mnav-m-all-products"><p class="mnav-m-all-products-arrow">→</p><p class="mnav-m-all-products-name">All products</p><p class="mnav-m-all-products-desc">View all Adobe products</p></a>
+          </div>
+
+          <!-- Content Creation -->
+          <div class="mnav-m-product-list mnav-m-product-list--hidden" data-category="content-creation">
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_AdobeFirefly.svg" class="mnav-m-product-icon" alt=""><div class="mnav-m-product-badges"><span class="mnav-m-badge mnav-m-badge--new">New</span></div></div><p class="mnav-m-product-name">Firefly</p><p class="mnav-m-product-desc">Unlimited AI-powered image, video, and audio generation.</p></a>
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_AdobeAcrobatPDF.svg" class="mnav-m-product-icon" alt=""></div><p class="mnav-m-product-name">Acrobat</p><p class="mnav-m-product-desc">Convert, edit, and sign PDFs on any device.</p></a>
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_PremierePro.svg" class="mnav-m-product-icon" alt=""></div><p class="mnav-m-product-name">Premiere</p><p class="mnav-m-product-desc">Edit and share professional video on any device.</p></a>
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_Photoshop.svg" class="mnav-m-product-icon" alt=""></div><p class="mnav-m-product-name">Lightroom</p><p class="mnav-m-product-desc">Edit and organize photos on any device, anywhere.</p></a>
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_CreativeCloud.svg" class="mnav-m-product-icon" alt=""></div><p class="mnav-m-product-name">Creative Cloud Pro</p><p class="mnav-m-product-desc">Get 20+ apps including Photoshop, Illustrator, and more.</p></a>
+          </div>
+
+          <!-- Acrobat & PDF -->
+          <div class="mnav-m-product-list mnav-m-product-list--hidden" data-category="acrobat">
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_AdobeAcrobatPDF.svg" class="mnav-m-product-icon" alt=""></div><p class="mnav-m-product-name">Acrobat Pro</p><p class="mnav-m-product-desc">The complete PDF solution for editing, signing, and protecting.</p></a>
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_AdobeAcrobatPDF.svg" class="mnav-m-product-icon" alt=""></div><p class="mnav-m-product-name">Acrobat Reader</p><p class="mnav-m-product-desc">View, annotate, and sign PDFs for free on any device.</p></a>
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_AdobeAcrobatPDF.svg" class="mnav-m-product-icon" alt=""></div><p class="mnav-m-product-name">Acrobat Sign</p><p class="mnav-m-product-desc">Send and sign documents digitally, anytime and anywhere.</p></a>
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_ExperiencePlatform.svg" class="mnav-m-product-icon" alt=""></div><p class="mnav-m-product-name">PDF Services</p><p class="mnav-m-product-desc">APIs to create, convert, and manipulate PDFs at scale.</p></a>
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_ExperienceCloud.svg" class="mnav-m-product-icon" alt=""></div><p class="mnav-m-product-name">Document Cloud</p><p class="mnav-m-product-desc">Reimagine document workflows across your entire organization.</p></a>
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_AdobeAcrobatPDF.svg" class="mnav-m-product-icon" alt=""></div><p class="mnav-m-product-name">Scan</p><p class="mnav-m-product-desc">Turn paper into searchable PDFs using your phone camera.</p></a>
+          </div>
+
+          <!-- Photography -->
+          <div class="mnav-m-product-list mnav-m-product-list--hidden" data-category="photography">
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_Photoshop.svg" class="mnav-m-product-icon" alt=""></div><p class="mnav-m-product-name">Lightroom</p><p class="mnav-m-product-desc">Edit, organize, and share photos from anywhere.</p></a>
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_Photoshop.svg" class="mnav-m-product-icon" alt=""></div><p class="mnav-m-product-name">Photoshop</p><p class="mnav-m-product-desc">Create and enhance photos, illustrations, and 3D artwork.</p></a>
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_Photoshop.svg" class="mnav-m-product-icon" alt=""></div><p class="mnav-m-product-name">Lightroom Classic</p><p class="mnav-m-product-desc">Professional photo management and editing on your desktop.</p></a>
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_AdobeFirefly.svg" class="mnav-m-product-icon" alt=""></div><p class="mnav-m-product-name">Firefly</p><p class="mnav-m-product-desc">AI-powered image generation built right into your workflow.</p></a>
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_Photoshop.svg" class="mnav-m-product-icon" alt=""></div><p class="mnav-m-product-name">Photoshop Express</p><p class="mnav-m-product-desc">Quick, easy photo edits right on your mobile device.</p></a>
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_Photoshop.svg" class="mnav-m-product-icon" alt=""></div><p class="mnav-m-product-name">Camera Raw</p><p class="mnav-m-product-desc">Process raw images with professional tools, direct from your camera.</p></a>
+          </div>
+
+          <!-- Video -->
+          <div class="mnav-m-product-list mnav-m-product-list--hidden" data-category="video">
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_PremierePro.svg" class="mnav-m-product-icon" alt=""></div><p class="mnav-m-product-name">Premiere Pro</p><p class="mnav-m-product-desc">The industry-leading video editor for film, TV, and the web.</p></a>
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_PremierePro.svg" class="mnav-m-product-icon" alt=""></div><p class="mnav-m-product-name">After Effects</p><p class="mnav-m-product-desc">Create cinematic motion graphics and visual effects.</p></a>
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_ExperienceCloud.svg" class="mnav-m-product-icon" alt=""></div><p class="mnav-m-product-name">Frame.io</p><p class="mnav-m-product-desc">Cloud-based video review and collaboration for creative teams.</p></a>
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_PremierePro.svg" class="mnav-m-product-icon" alt=""></div><p class="mnav-m-product-name">Audition</p><p class="mnav-m-product-desc">Record, mix, and restore audio with professional precision.</p></a>
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_PremierePro.svg" class="mnav-m-product-icon" alt=""></div><p class="mnav-m-product-name">Premiere Rush</p><p class="mnav-m-product-desc">Create and share high-quality online videos, anywhere.</p></a>
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_ExperiencePlatform.svg" class="mnav-m-product-icon" alt=""></div><p class="mnav-m-product-name">Character Animator</p><p class="mnav-m-product-desc">Animate 2D characters in real time using your face and voice.</p></a>
+          </div>
+
+          <!-- Design -->
+          <div class="mnav-m-product-list mnav-m-product-list--hidden" data-category="design">
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_Illustrator.svg" class="mnav-m-product-icon" alt=""></div><p class="mnav-m-product-name">Illustrator</p><p class="mnav-m-product-desc">Vector graphics, logos, icons, and illustrations at any size.</p></a>
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_Illustrator.svg" class="mnav-m-product-icon" alt=""></div><p class="mnav-m-product-name">InDesign</p><p class="mnav-m-product-desc">Layout and design for print and digital publishing.</p></a>
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_CreativeCloud.svg" class="mnav-m-product-icon" alt=""></div><p class="mnav-m-product-name">XD</p><p class="mnav-m-product-desc">Design and prototype user experiences for web and mobile.</p></a>
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_Illustrator.svg" class="mnav-m-product-icon" alt=""></div><p class="mnav-m-product-name">Dimension</p><p class="mnav-m-product-desc">Photorealistic 3D imagery for branding and packaging design.</p></a>
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_CreativeCloud.svg" class="mnav-m-product-icon" alt=""></div><p class="mnav-m-product-name">Fonts</p><p class="mnav-m-product-desc">Access thousands of high-quality fonts from top foundries.</p></a>
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_ExperiencePlatform.svg" class="mnav-m-product-icon" alt=""></div><p class="mnav-m-product-name">Substance 3D</p><p class="mnav-m-product-desc">3D design tools for immersive materials and environments.</p></a>
+          </div>
+
+          <!-- Marketing & Data -->
+          <div class="mnav-m-product-list mnav-m-product-list--hidden" data-category="marketing">
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_ExperienceCloud.svg" class="mnav-m-product-icon" alt=""></div><p class="mnav-m-product-name">GenStudio</p><p class="mnav-m-product-desc">Scale on-brand content creation with AI for enterprise teams.</p></a>
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_ExperienceCloud.svg" class="mnav-m-product-icon" alt=""></div><p class="mnav-m-product-name">Experience Cloud</p><p class="mnav-m-product-desc">End-to-end suite for marketing, analytics, and commerce.</p></a>
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_ExperiencePlatform.svg" class="mnav-m-product-icon" alt=""></div><p class="mnav-m-product-name">Analytics</p><p class="mnav-m-product-desc">Turn customer data into actionable insights for your business.</p></a>
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_ExperiencePlatform.svg" class="mnav-m-product-icon" alt=""></div><p class="mnav-m-product-name">Commerce</p><p class="mnav-m-product-desc">Power commerce experiences that convert and retain customers.</p></a>
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_ExperienceCloud.svg" class="mnav-m-product-icon" alt=""></div><p class="mnav-m-product-name">Marketo</p><p class="mnav-m-product-desc">B2B marketing automation to engage and convert more leads.</p></a>
+            <a href="#" class="mnav-m-product-card"><div class="mnav-m-product-card-top"><img src="assets/icons/B_app_ExperiencePlatform.svg" class="mnav-m-product-icon" alt=""></div><p class="mnav-m-product-name">Target</p><p class="mnav-m-product-desc">Personalize every experience with AI-powered testing.</p></a>
+          </div>
+        </div><!-- /products screen -->
+
+        <!-- ── Use Cases sub-screen ── -->
+        <div class="mnav-m-screen" data-screen="use-cases">
+          <div class="mnav-m-subheader">
+            <div class="mnav-m-subheader-left">
+              <button class="mnav-m-back" aria-label="Back"><svg width="8" height="14" viewBox="0 0 8 14" fill="none" aria-hidden="true"><path d="M7 1L1 7L7 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+              <span class="mnav-m-subheader-title">Use Cases</span>
+            </div>
+          </div>
+          <div class="mnav-m-uc-list">
+            <div class="mnav-m-uc-card"><p class="mnav-m-uc-label">Creators</p><h3 class="mnav-m-uc-title">Create quickly and easily with AI models.</h3><p class="mnav-m-uc-desc">Generate and edit images, video, and audio with AI models in Firefly.</p><a href="#" class="mnav-m-uc-link">See plans <svg width="5" height="9" viewBox="0 0 5 9" fill="none" aria-hidden="true"><path d="M1 1L4.5 4.5L1 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="#" class="mnav-m-uc-explore">Explore</a></div>
+            <div class="mnav-m-uc-card"><p class="mnav-m-uc-label">Business Professionals</p><h3 class="mnav-m-uc-title">Elevate your PDFs and productivity.</h3><p class="mnav-m-uc-desc">Edit, sign, and convert PDFs and create beautiful documents with Acrobat.</p><a href="#" class="mnav-m-uc-link">See plans <svg width="5" height="9" viewBox="0 0 5 9" fill="none" aria-hidden="true"><path d="M1 1L4.5 4.5L1 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="#" class="mnav-m-uc-explore">Explore</a></div>
+            <div class="mnav-m-uc-card"><p class="mnav-m-uc-label">Creative Professionals</p><h3 class="mnav-m-uc-title">Craft at the highest level of creative.</h3><p class="mnav-m-uc-desc">Create designs, photo, video, and more with AI in Creative Cloud Pro.</p><a href="#" class="mnav-m-uc-link">See plans <svg width="5" height="9" viewBox="0 0 5 9" fill="none" aria-hidden="true"><path d="M1 1L4.5 4.5L1 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="#" class="mnav-m-uc-explore">Explore</a></div>
+            <div class="mnav-m-uc-card"><p class="mnav-m-uc-label">Marketing Professionals</p><h3 class="mnav-m-uc-title">Unify data, content, and workflows.</h3><p class="mnav-m-uc-desc">Deliver great customer experiences, polished documents, and much more.</p><a href="#" class="mnav-m-uc-link">Contact us <svg width="5" height="9" viewBox="0 0 5 9" fill="none" aria-hidden="true"><path d="M1 1L4.5 4.5L1 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="#" class="mnav-m-uc-explore">Explore</a></div>
+            <div class="mnav-m-uc-card"><p class="mnav-m-uc-label">Students &amp; Teachers</p><h3 class="mnav-m-uc-title">Learn, create, and save on the top tools.</h3><p class="mnav-m-uc-desc">Learn, teach, and save 40% on all the top tools in Creative Cloud Pro.</p><a href="#" class="mnav-m-uc-link">See plans <svg width="5" height="9" viewBox="0 0 5 9" fill="none" aria-hidden="true"><path d="M1 1L4.5 4.5L1 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="#" class="mnav-m-uc-explore">Explore</a></div>
+          </div>
+        </div>
+
+        <!-- ── Solutions sub-screen ── -->
+        <div class="mnav-m-screen" data-screen="solutions">
+          <div class="mnav-m-subheader">
+            <div class="mnav-m-subheader-left">
+              <button class="mnav-m-back" aria-label="Back"><svg width="8" height="14" viewBox="0 0 8 14" fill="none" aria-hidden="true"><path d="M7 1L1 7L7 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+              <span class="mnav-m-subheader-title">Solutions</span>
+            </div>
+          </div>
+          <div class="mnav-m-section">
+            <div class="mnav-m-group">
+              <p class="mnav-m-group-heading">Organizations</p>
+              <a href="#" class="mnav-m-group-link">Small businesses</a>
+              <a href="#" class="mnav-m-group-link">Medium and large businesses</a>
+              <a href="#" class="mnav-m-group-link">Education</a>
+              <a href="#" class="mnav-m-group-link">Government</a>
+              <a href="#" class="mnav-m-group-link">Nonprofits</a>
+              <a href="#" class="mnav-m-group-contact">Contact us</a>
+            </div>
+            <div class="mnav-m-group">
+              <p class="mnav-m-group-heading">Industries</p>
+              <a href="#" class="mnav-m-group-link">Financial Services</a>
+              <a href="#" class="mnav-m-group-link">High tech</a>
+              <a href="#" class="mnav-m-group-link">Healthcare</a>
+              <a href="#" class="mnav-m-group-link">Government</a>
+              <a href="#" class="mnav-m-group-link">Retail</a>
+              <a href="#" class="mnav-m-group-link">Media &amp; Entertainment</a>
+              <a href="#" class="mnav-m-group-contact">Contact us</a>
+            </div>
+            <div class="mnav-m-feature-card">
+              <img src="assets/images/nav/nav-solutions-offer.jpg" class="mnav-m-feature-img" alt="">
+              <img src="assets/icons/B_app_AdobeAcrobatPDF.svg" class="mnav-m-feature-icon" alt="">
+              <div class="mnav-m-feature-overlay">
+                <p class="mnav-m-feature-price">$24.99/mo</p>
+                <p class="mnav-m-feature-name">Acrobat for business</p>
+                <a href="#" class="mnav-m-feature-btn">Save now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Learn & Support sub-screen ── -->
+        <div class="mnav-m-screen" data-screen="learn-support">
+          <div class="mnav-m-subheader">
+            <div class="mnav-m-subheader-left">
+              <button class="mnav-m-back" aria-label="Back"><svg width="8" height="14" viewBox="0 0 8 14" fill="none" aria-hidden="true"><path d="M7 1L1 7L7 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+              <span class="mnav-m-subheader-title">Learn &amp; Support</span>
+            </div>
+          </div>
+          <div class="mnav-m-section">
+            <div class="mnav-m-group">
+              <p class="mnav-m-group-heading">Tutorials</p>
+              <a href="#" class="mnav-m-group-link">Content creation</a>
+              <a href="#" class="mnav-m-group-link">Documents &amp; Productivity</a>
+              <a href="#" class="mnav-m-group-link">Photo Editing</a>
+              <a href="#" class="mnav-m-group-link">Video Editing</a>
+              <a href="#" class="mnav-m-group-link">Illustration</a>
+              <a href="#" class="mnav-m-group-link">Marketing &amp; Data</a>
+              <a href="#" class="mnav-m-group-contact">Contact us</a>
+            </div>
+            <div class="mnav-m-group">
+              <p class="mnav-m-group-heading">Help</p>
+              <a href="#" class="mnav-m-group-link">Help center</a>
+              <a href="#" class="mnav-m-group-link">Adobe community</a>
+              <a href="#" class="mnav-m-group-link">Medium and large business support</a>
+              <a href="#" class="mnav-m-group-link">Developer support</a>
+              <a href="#" class="mnav-m-group-link">Download and install</a>
+              <a href="#" class="mnav-m-group-contact">Contact us</a>
+            </div>
+            <div class="mnav-m-group">
+              <p class="mnav-m-group-heading">More resources</p>
+              <a href="#" class="mnav-m-group-link">Adobe Experience League</a>
+              <a href="#" class="mnav-m-group-link">Adobe Certified Professional</a>
+              <a href="#" class="mnav-m-group-link">Adobe Education Exchange</a>
+              <a href="#" class="mnav-m-group-link">Adobe status</a>
+            </div>
+            <div class="mnav-m-group">
+              <p class="mnav-m-group-heading">Profile</p>
+              <a href="#" class="mnav-m-group-link">Manage my profile</a>
+              <a href="#" class="mnav-m-group-link">Manage my subscription</a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /mnav-m-screens -->
+    </div><!-- /mnav-m-screens-wrap -->
+  </div><!-- /#mobileNav -->
+
+  <!-- ==========================================
+       PAGE CONTENT — smooth scroll wrapper
+       ========================================== -->
+  <div id="smooth-wrapper">
+  <div id="smooth-content">
+  <main>
+
+    <!-- ══════════════════════════════════════
+         HERO — scroll-pinned with image grid
+         ══════════════════════════════════════ -->
+    <div class="hero-pin-spacer">
+      <section id="hero">
+
+        <!-- Hero copy (z-index: 1 — grid images scroll over this) -->
+        <div class="hero-text">
+          <div class="hero-app-id">
+            <img src="assets/icons/B_app_AdobeAcrobatPDF.svg" alt="">
+            <span class="t-eyebrow">PDF &amp; Productivity</span>
+          </div>
+          <h1 class="t-title-1">With great power comes<br>great productivity.</h1>
+          <p class="t-body-m">Do your best work faster with AI-powered document insights, secure collaboration, and professional content creation — all in one place.</p>
+          <div class="hero-ctas">
+            <a href="#" class="btn-primary">Try it free</a>
+            <a href="#" class="btn-secondary">Buy now</a>
+          </div>
+        </div>
+
+        <!-- Image grid (z-index: 2 — positioned absolutely, overflows hero edges) -->
+        <div class="hero-image-grid" aria-hidden="true">
+
+          <div class="grid-col" data-col="1">
+            <div class="grid-card" data-grid-slot="1"><img src="assets/images/hero/col-1_img-01.png" alt="" width="584" height="788"></div>
+            <div class="grid-card" data-grid-row="2"><img src="assets/images/hero/col-1_img-02.png" alt="" width="584" height="584"></div>
+          </div>
+
+          <div class="grid-col" data-col="2">
+            <div class="grid-card" data-grid-slot="2"><img src="assets/images/hero/col-2_img-01.png" alt="" width="584" height="584"></div>
+            <div class="grid-card" data-grid-row="2"><img src="assets/images/hero/col-2_img-02.png" alt="" width="584" height="584"></div>
+          </div>
+
+          <div class="grid-col" data-col="3">
+            <div class="grid-card" data-grid-slot="3"><img src="assets/images/hero/col-3_img-01.png" alt="" width="584" height="584"></div>
+            <div class="grid-card" data-grid-row="2"><img src="assets/images/hero/col-3_img-02.png" alt="" width="584" height="788"></div>
+          </div>
+
+          <div class="grid-col" data-col="4">
+            <div class="grid-card" data-grid-slot="4"><img src="assets/images/hero/col-4_img-01.png" alt="" width="584" height="584"></div>
+            <div class="grid-card" data-grid-row="2"><img src="assets/images/hero/col-4_img-02.png" alt="" width="584" height="788"></div>
+          </div>
+
+          <div class="grid-col" data-col="5">
+            <div class="grid-card"><img src="assets/images/hero/col-5_img-01.png" alt="" width="584" height="584"></div>
+            <div class="grid-card" data-grid-slot="5" data-grid-row="2"><img src="assets/images/hero/col-5_img-02.png" alt="" width="584" height="584"></div>
+          </div>
+
+        </div><!-- /.hero-image-grid -->
+
+        <!-- Mobile-only 5-column grid (hidden on desktop). Fixed 164px cols, centered.
+             Center col row 2 is occupied by the Sales hub card (flying mode).
+             The .hmg-slot--sales placeholder holds layout space for JS to measure. -->
+        <div class="hero-mobile-grid" aria-hidden="true">
+          <div class="hmg-col hmg-col--outer-left">
+            <div class="hmg-card">
+              <img src="assets/images/hero/col-1_img-01.png" alt="" width="584" height="788">
+            </div>
+            <div class="hmg-card">
+              <img src="assets/images/hero/col-1_img-02.png" alt="" width="584" height="584">
+            </div>
+          </div>
+          <div class="hmg-col hmg-col--left">
+            <div class="hmg-card">
+              <img src="assets/images/hero/col-2_img-01.png" alt="" width="584" height="584">
+            </div>
+            <div class="hmg-card">
+              <img src="assets/images/hero/col-2_img-02.png" alt="" width="584" height="584">
+            </div>
+          </div>
+          <div class="hmg-col hmg-col--center">
+            <div class="hmg-card">
+              <img src="assets/images/hero/col-3_img-01.png" alt="" width="584" height="584">
+            </div>
+            <div class="hmg-slot--sales"></div>
+          </div>
+          <div class="hmg-col hmg-col--right">
+            <div class="hmg-card">
+              <img src="assets/images/hero/col-4_img-01.png" alt="" width="584" height="584">
+            </div>
+            <div class="hmg-card">
+              <img src="assets/images/hero/col-4_img-02.png" alt="" width="584" height="788">
+            </div>
+          </div>
+          <div class="hmg-col hmg-col--outer-right">
+            <div class="hmg-card">
+              <img src="assets/images/hero/col-5_img-01.png" alt="" width="584" height="584">
+            </div>
+            <div class="hmg-card">
+              <img src="assets/images/hero/col-5_img-02.png" alt="" width="584" height="584">
+            </div>
+          </div>
+        </div>
+
+        <!-- Hub title — sits 40px above the settled carousel, scroll-driven opacity. -->
+        <h2 class="hero-hub-title t-title-2" data-ta aria-hidden="true">Work faster.<br>No matter the work.</h2>
+
+        <!-- Hub router (z-index: 3 — fades in at Phase 4, pointer-events off until complete) -->
+        <div class="hero-hub-router" aria-hidden="true">
+          <div class="hhub-track">
+
+            <div class="hhub-card" data-index="0">
+              <div class="hhub-card-header">
+                <span class="hhub-card-label">Sales</span>
+              </div>
+              <div class="hhub-card-media">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="assets/images/hero/mobile/Expanded.png" width="704" height="560">
+                  <img class="hhub-card-img" src="assets/images/hero/sales.png" alt="" width="584" height="788">
+                </picture>
+              </div>
+              <div class="hhub-card-footer">
+                <div class="hhub-card-copy">
+                  <p class="hhub-card-tagline">Close more deals.</p>
+                  <p class="hhub-card-body">Turn insights into action and accelerate your pipeline with AI-powered tools.</p>
+                </div>
+                <span class="hhub-card-cta" aria-hidden="true"></span>
+              </div>
+            </div>
+
+            <div class="hhub-card" data-index="1">
+              <div class="hhub-card-header">
+                <span class="hhub-card-label">Marketing</span>
+              </div>
+              <div class="hhub-card-media">
+                <img class="hhub-card-img" src="assets/images/hero/marketing.png" alt="" width="584" height="788">
+              </div>
+              <div class="hhub-card-footer">
+                <div class="hhub-card-copy">
+                  <p class="hhub-card-tagline">Take the pain out of campaigns.</p>
+                  <p class="hhub-card-body">Quickly create and edit images, video, and audio with creative AI.</p>
+                </div>
+                <span class="hhub-card-cta" aria-hidden="true"></span>
+              </div>
+            </div>
+
+            <div class="hhub-card" data-index="2">
+              <div class="hhub-card-header">
+                <span class="hhub-card-label">Legal</span>
+              </div>
+              <div class="hhub-card-media">
+                <img class="hhub-card-img" src="assets/images/hero/legal.png" alt="" width="584" height="788">
+              </div>
+              <div class="hhub-card-footer">
+                <div class="hhub-card-copy">
+                  <p class="hhub-card-tagline">Move the fine print faster.</p>
+                  <p class="hhub-card-body">Draft, review, and manage contracts and compliance documents at scale.</p>
+                </div>
+                <span class="hhub-card-cta" aria-hidden="true"></span>
+              </div>
+            </div>
+
+            <div class="hhub-card" data-index="3">
+              <div class="hhub-card-header">
+                <span class="hhub-card-label">Human Resources</span>
+              </div>
+              <div class="hhub-card-media">
+                <img class="hhub-card-img" src="assets/images/hero/human-resources.png" alt="" width="584" height="788">
+              </div>
+              <div class="hhub-card-footer">
+                <div class="hhub-card-copy">
+                  <p class="hhub-card-tagline">Make policy more personal.</p>
+                  <p class="hhub-card-body">Streamline hiring, onboarding, and employee communications with ease.</p>
+                </div>
+                <span class="hhub-card-cta" aria-hidden="true"></span>
+              </div>
+            </div>
+
+          </div><!-- /.hhub-track -->
+        </div><!-- /.hero-hub-router -->
+
+      </section><!-- /#hero -->
+    </div><!-- /.hero-pin-spacer -->
+
+    <!-- ══════════════════════════════════════
+         EDITORIAL — sits behind hero's rounded bottom
+         ══════════════════════════════════════ -->
+    <section id="editorial" class="editorial">
+      <div class="editorial-parallax">
+
+        <div class="editorial-copy" data-ta-group>
+          <h2 class="editorial-title t-title-2" data-ta>There&rsquo;s more to<br>Acrobat than Acrobat.</h2>
+          <p class="editorial-sub t-body-l" data-ta>Work smarter with 70+ professional PDF tools to create, edit, sign, share, and more &mdash; all powered by AI. And that&rsquo;s just the beginning.</p>
+        </div>
+
+        <div class="editorial-cards">
+
+          <!-- Understand quickly — tall square, image fills card, copy insets top-left -->
+          <article class="ed-card ed-card--left">
+            <img class="ed-card-img" src="assets/images/editorial/bento-img-1.png" alt="">
+            <div class="ed-card-copy">
+              <h3 class="ed-card-title">Understand quickly.</h3>
+              <p class="ed-card-body">Ask your custom or prebuilt AI Assistant to quickly summarize, analyze, provide insights, turn docs into decks, and more.</p>
+            </div>
+          </article>
+
+          <!-- Collaborate effortlessly — shorter image card, copy below on gray -->
+          <article class="ed-card ed-card--right">
+            <div class="ed-card-media">
+              <img class="ed-card-img" src="assets/images/editorial/bento-img-2.png" alt="">
+            </div>
+            <div class="ed-card-copy">
+              <h3 class="ed-card-title">Collaborate effortlessly.</h3>
+              <p class="ed-card-body">Share a secure PDF Space with teammates, where everyone can ask AI Assistant to help with research, strategy, planning, or quick learning.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+  </div><!-- /#smooth-content -->
+  </div><!-- /#smooth-wrapper -->
+
+  <!-- Lenis smooth scroll -->
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+
+  <!-- GSAP -->
+  <script src="vendor/gsap.min.js"></script>
+  <script src="vendor/ScrollTrigger.min.js"></script>
+
+  <!-- Smooth scroll (Lenis + ScrollTrigger integration) -->
+  <script>
+    (function () {
+      var lenis = new Lenis({ lerp: 0.1, smoothWheel: true });
+      lenis.on('scroll', ScrollTrigger.update);
+      gsap.ticker.add(function (time) { lenis.raf(time * 1000); });
+      gsap.ticker.lagSmoothing(0);
+      window.__lenis = lenis;
+    }());
+  </script>
+
+  <!-- Nav scroll state -->
+  <script>
+    (function () {
+      var gnav = document.getElementById('gnav');
+      function updateNav(e) {
+        var y = e ? e.scroll : window.scrollY;
+        gnav.classList.toggle('gnav--scrolled', y > 40);
+      }
+      if (window.__lenis) {
+        window.__lenis.on('scroll', updateNav);
+      } else {
+        window.addEventListener('scroll', function () { updateNav(); }, { passive: true });
+      }
+    }());
+  </script>
+
+  <!-- Mega nav dropdown (desktop) -->
+  <script src="scripts/mega-nav.js"></script>
+
+  <!-- Mobile nav overlay -->
+  <script src="scripts/mobile-nav.js"></script>
+
+  <!-- Hero grid animation + hub router.
+       Breakpoint orchestrator loads LAST — it's the sole caller of the
+       build/cleanup hooks that the three scripts above export on window. -->
+  <script src="scripts/hub-router.js"></script>
+  <script src="scripts/hero-grid.js"></script>
+  <script src="scripts/hero-grid-mobile.js"></script>
+  <script src="scripts/hero-breakpoint-orchestrator.js"></script>
+
+  <!-- Dev tuner for the chrome-reveal scroll window (bottom-right panel) -->
+  <script src="scripts/reveal-tuner.js"></script>
+
+  <!-- Editorial parallax + shared line-by-line text reveal -->
+  <script src="scripts/editorial.js"></script>
+  <script src="scripts/text-animate.js"></script>
+
+  <!-- Debug: grid overlay + breakpoint indicator (M to show, G to toggle grid) -->
+  <script>
+    (function () {
+      var debugMode  = false;
+      var gridVisible = false;
+      var overlay   = document.getElementById('gridOverlay');
+      var indicator = document.getElementById('bpIndicator');
+      var hint      = document.getElementById('debugHint');
+      var BPS = ['XS', 'S', 'M', 'L', 'XL'];
+
+      function getBP() {
+        var w = window.innerWidth;
+        if (w <  768) return { name: 'XS', cols: 6  };
+        if (w < 1024) return { name: 'S',  cols: 6  };
+        if (w < 1280) return { name: 'M',  cols: 12 };
+        if (w <= 1440) return { name: 'L', cols: 12 };
+        return             { name: 'XL', cols: 12 };
+      }
+
+      function rebuildOverlay(cols) {
+        overlay.innerHTML = '';
+        for (var i = 0; i < cols; i++) overlay.appendChild(document.createElement('span'));
+      }
+
+      function updateIndicator() {
+        var bp = getBP();
+        var w  = window.innerWidth;
+        var h  = window.innerHeight;
+        var html = w + ' &times; ' + h + ' &nbsp;&middot;';
+        BPS.forEach(function (b) {
+          html += b === bp.name
+            ? '&nbsp; <strong>' + b + '</strong>'
+            : '&nbsp; <span style="opacity:.3">' + b + '</span>';
+        });
+        indicator.innerHTML = html;
+        if (gridVisible) rebuildOverlay(bp.cols);
+      }
+
+      document.addEventListener('keydown', function (e) {
+        if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+        var k = e.key.toLowerCase();
+        if (k === 'm') {
+          debugMode = !debugMode;
+          indicator.style.display = debugMode ? '' : 'none';
+          hint.style.display      = debugMode ? '' : 'none';
+          if (debugMode) updateIndicator();
+          else { gridVisible = false; overlay.classList.remove('visible'); }
+        }
+        if (k === 'g' && debugMode) {
+          gridVisible = !gridVisible;
+          if (gridVisible) { rebuildOverlay(getBP().cols); overlay.classList.add('visible'); }
+          else overlay.classList.remove('visible');
+        }
+      });
+
+      window.addEventListener('resize', function () {
+        if (debugMode) updateIndicator();
+      }, { passive: true });
+    }());
+  </script>
+
+</body>
+</html>

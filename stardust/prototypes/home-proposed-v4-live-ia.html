@@ -1,0 +1,1646 @@
+<!DOCTYPE html>
+<!--
+_provenance:
+  page: home
+  source: https://business.adobe.com/
+  writtenBy: stardust:prototype
+  writtenAt: 2026-05-07
+  iteration: 4 (live IA match — observed from real full-page screenshot)
+  againstDirection: stardust/direction.md
+  renderedVia: stardust-direct
+  rationale: |
+    Mirrors the actual live home page IA, observed via user-supplied
+    full-page screenshot (Adobe + Semrush co-branded dark hero, CX
+    Enterprise as flagship pitch with 3 cards, Recent announcements
+    carousel, 3-card solutions, AI Brand Concierge prompt with rainbow
+    bar, tabbed product portfolio, Ford testimonial, customer logo
+    strip, closing CTA with brand-score sidecard, rich footer).
+    Reuses the design tokens + animations from v3.
+  designSpec: [DESIGN.md, DESIGN.json]
+  inputs:
+    - user-supplied screenshot of business.adobe.com (2026-05-07)
+    - stardust/current/pages/home.json (subheads + product names)
+    - stardust/prototypes/home-proposed-v3-content-match.html (motion port)
+  unsourcedContent:
+    - { kind: "logo", note: "Semrush logotype rendered as text + product mnemonics still placeholders" }
+    - { kind: "imagery", note: "CX Enterprise card visuals + Ford screenshot use placeholder treatments" }
+  stardustVersion: 0.3.0
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adobe for Business | Enterprise Digital Marketing Solutions</title>
+  <link rel="icon" type="image/svg+xml" href="assets/adobe-logo-red.svg">
+  <style>
+    :root {
+      --color-background-default: #ffffff;
+      --color-background-subtle: #f8f8f8;
+      --color-background-strong: #f3f3f3;
+      --color-content-default: #131313;
+      --color-content-subtle: rgba(0,0,0,0.64);
+      --color-content-soft: #4a4a4a;
+      --color-primary: #3b63fb;
+      --color-primary-strong: #274dea;
+      --color-border: #e1e1e1;
+      --color-divider: #e9e9e9;
+      --color-adobe-red: #eb1000;
+      --color-semrush-red: #ff642d;
+
+      --font-display: "Adobe Clean Display", "Adobe Clean", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      --font-body: "Adobe Clean", "Adobe Clean Display", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+
+      --type-super-size: 96px;
+      --type-title-1-size: 80px;
+      --type-title-2-size: 56px;
+      --type-title-3-size: 48px;
+      --type-title-4-size: 24px;
+      --type-body-l-size: 20px;
+      --type-body-m-size: 16px;
+      --type-body-s-size: 14px;
+      --type-eyebrow-size: 13px;
+
+      --radius-hero: 32px;
+      --radius-card: 16px;
+      --radius-pill: 999px;
+      --radius-chip: 4px;
+
+      --section-y-desktop: 96px;
+      --grid-margin: 8.333%;
+      --grid-gutter: 8px;
+      --container-max: 1920px;
+
+      --shadow-card-hover: 0 4px 100px rgba(0,0,0,0.25);
+      --shadow-floating: 0 16px 48px rgba(0,0,0,0.16);
+
+      --nav-height: 56px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      :root {
+        --type-super-size: 64px;
+        --type-title-1-size: 48px;
+        --type-title-2-size: 40px;
+        --type-title-3-size: 32px;
+        --type-title-4-size: 20px;
+        --type-body-l-size: 18px;
+        --grid-margin: 24px;
+        --section-y-desktop: 64px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      :root {
+        --type-super-size: 44px;
+        --type-title-1-size: 36px;
+        --type-title-2-size: 30px;
+        --type-title-3-size: 24px;
+        --type-title-4-size: 20px;
+        --type-body-l-size: 16px;
+        --grid-margin: 24px;
+        --section-y-desktop: 48px;
+      }
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      font-family: var(--font-body);
+      font-size: var(--type-body-m-size);
+      line-height: 1.4;
+      color: var(--color-content-default);
+      background: var(--color-background-default);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    h1, h2, h3, h4, h5, h6, p { margin: 0; }
+    a { color: inherit; text-decoration: none; }
+    img, svg { display: block; max-width: 100%; }
+    button { font: inherit; cursor: pointer; border: 0; background: none; }
+    ul, ol { margin: 0; padding: 0; list-style: none; }
+
+    .t-super     { font-family: var(--font-display); font-weight: 900; font-size: var(--type-super-size);   line-height: 0.96; letter-spacing: -0.04em; }
+    .t-title-1   { font-family: var(--font-display); font-weight: 900; font-size: var(--type-title-1-size); line-height: 0.98; letter-spacing: -0.04em; }
+    .t-title-2   { font-family: var(--font-display); font-weight: 900; font-size: var(--type-title-2-size); line-height: 1.02; letter-spacing: -0.03em; }
+    .t-title-3   { font-family: var(--font-display); font-weight: 900; font-size: var(--type-title-3-size); line-height: 1.04; letter-spacing: -0.03em; }
+    .t-title-4   { font-family: var(--font-display); font-weight: 900; font-size: var(--type-title-4-size); line-height: 1.1; letter-spacing: -0.02em; }
+    .t-body-l    { font-size: var(--type-body-l-size);  line-height: 1.4; }
+    .t-body-m    { font-size: var(--type-body-m-size);  line-height: 1.5; }
+    .t-body-s    { font-size: var(--type-body-s-size);  line-height: 1.5; letter-spacing: 0.01em; }
+    .t-eyebrow   { font-weight: 700; font-size: var(--type-eyebrow-size); line-height: 1.3; letter-spacing: 0.08em; text-transform: uppercase; }
+
+    [data-ta] .ta-line       { display: block; }
+    [data-ta] .ta-line-inner { display: block; will-change: transform, opacity; }
+
+    /* Buttons */
+    .ds-btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      height: 40px; padding: 0 18px;
+      font-family: var(--font-body); font-weight: 700; font-size: 14px; line-height: 1;
+      border-radius: var(--radius-pill);
+      transition: background 0.18s ease, color 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
+      white-space: nowrap;
+      border: 1px solid transparent;
+      cursor: pointer;
+    }
+    .ds-btn-primary {
+      color: #fff;
+      background: var(--color-content-default);
+      border-color: var(--color-content-default);
+    }
+    .ds-btn-primary:hover { background: #2c2c2c; border-color: #2c2c2c; }
+    .ds-btn-secondary {
+      color: var(--color-content-default);
+      background: transparent;
+      border-color: rgba(0,0,0,0.7);
+    }
+    .ds-btn-secondary:hover { background: rgba(0,0,0,0.06); }
+    .ds-btn-ghost-light {
+      color: #fff;
+      background: transparent;
+      border-color: rgba(255,255,255,0.5);
+    }
+    .ds-btn-ghost-light:hover { background: rgba(255,255,255,0.1); }
+    .ds-btn-link {
+      display: inline-flex; align-items: center; gap: 4px;
+      font-family: var(--font-body); font-weight: 700; font-size: 14px;
+      color: var(--color-content-default);
+    }
+    .ds-btn-link::after { content: "→"; font-weight: 400; }
+    .ds-btn-link:hover { color: var(--color-primary); }
+
+    /* ============================================
+       GLOBAL NAV — slim white pill, top-aligned
+       Matches live: thin nav, logo left, link list,
+       small icons + Get started pill on right.
+       ============================================ */
+    .gnav {
+      position: sticky; top: 0;
+      z-index: 100;
+      background: #fff;
+      border-bottom: 1px solid var(--color-divider);
+    }
+    .gnav-inner {
+      max-width: var(--container-max);
+      margin: 0 auto;
+      height: var(--nav-height);
+      padding: 0 24px;
+      display: flex; align-items: center; gap: 24px;
+    }
+    .gnav-brand { display: flex; align-items: center; gap: 8px; flex: none; }
+    .gnav-brand svg { width: 26px; height: 22px; fill: var(--color-adobe-red); }
+    .gnav-brand .name { font-family: var(--font-display); font-weight: 900; font-size: 15px; letter-spacing: -0.01em; color: var(--color-content-default); white-space: nowrap; }
+    .gnav-list {
+      display: flex; align-items: center; gap: 18px;
+    }
+    .gnav-link { font-size: 14px; font-weight: 500; padding: 8px 4px; color: var(--color-content-default); }
+    .gnav-link:hover { color: var(--color-primary); }
+    .gnav-spacer { flex: 1; }
+    .gnav-actions { display: flex; align-items: center; gap: 8px; }
+    .gnav-icon {
+      width: 32px; height: 32px;
+      display: inline-flex; align-items: center; justify-content: center;
+      border-radius: 999px;
+      color: var(--color-content-default);
+      background: transparent;
+    }
+    .gnav-icon:hover { background: var(--color-background-subtle); }
+    .gnav-icon.red { color: var(--color-adobe-red); }
+    .gnav-cta {
+      padding: 8px 14px; font-size: 13px; font-weight: 700;
+      color: #fff; border-radius: var(--radius-pill);
+      background: var(--color-content-default);
+    }
+    @media (max-width: 1023px) { .gnav-list { display: none; } }
+
+    /* ============================================
+       HERO — Adobe + Semrush co-branded dark gradient
+       ============================================ */
+    .hero {
+      position: relative;
+      background: radial-gradient(ellipse 90% 70% at 50% 30%, #4a2575 0%, #1a0530 50%, #07020e 100%);
+      color: #fff;
+      padding: 64px 24px 88px;
+      text-align: center;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: "";
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(circle at 20% 80%, rgba(120,60,200,0.4), transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(255,90,30,0.18), transparent 50%);
+      pointer-events: none;
+    }
+    .hero-inner {
+      position: relative;
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex; flex-direction: column; align-items: center;
+      gap: 20px;
+    }
+    .hero-lockup {
+      display: flex; align-items: center; gap: 24px;
+      margin-bottom: 8px;
+    }
+    .hero-lockup .adobe {
+      display: inline-flex; align-items: center; gap: 8px;
+    }
+    .hero-lockup .adobe svg {
+      width: 56px; height: 48px; fill: var(--color-adobe-red);
+    }
+    .hero-lockup .adobe-mark {
+      font-family: var(--font-display); font-weight: 900; font-size: 56px; line-height: 1; letter-spacing: -0.04em;
+      color: var(--color-adobe-red);
+    }
+    .hero-lockup .plus {
+      font-family: var(--font-display); font-weight: 400; font-size: 36px; color: rgba(255,255,255,0.7);
+    }
+    .hero-lockup .semrush {
+      display: inline-flex; align-items: center; gap: 10px;
+    }
+    .hero-lockup .semrush-mark {
+      width: 44px; height: 44px; border-radius: 12px;
+      background: var(--color-semrush-red);
+      display: inline-flex; align-items: center; justify-content: center;
+      color: #fff; font-family: var(--font-display); font-weight: 900; font-size: 28px; line-height: 1;
+    }
+    .hero-lockup .semrush-name {
+      font-family: var(--font-display); font-weight: 900; font-size: 44px; letter-spacing: -0.02em;
+      color: #fff;
+    }
+    .hero h1 {
+      max-width: 18ch;
+      font-family: var(--font-display); font-weight: 900;
+      font-size: clamp(28px, 4vw, 44px);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      color: #fff;
+    }
+    .hero .lead {
+      max-width: 56ch;
+      font-size: 16px; line-height: 1.5;
+      color: rgba(255,255,255,0.78);
+    }
+    .hero-ctas { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-top: 8px; }
+    .hero .ds-btn-primary { background: #fff; border-color: #fff; color: var(--color-content-default); }
+    .hero .ds-btn-primary:hover { background: rgba(255,255,255,0.92); }
+    .hero .ds-btn-ghost-light { color: #fff; }
+
+    /* ============================================
+       CX ENTERPRISE PITCH — black ground, 3 cards
+       ============================================ */
+    .cx-enterprise {
+      background: #000;
+      color: #fff;
+      padding: var(--section-y-desktop) 24px;
+      text-align: center;
+    }
+    .cx-enterprise-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex; flex-direction: column; align-items: center;
+      gap: 16px;
+    }
+    .cx-enterprise .t-eyebrow { color: rgba(255,255,255,0.7); }
+    .cx-enterprise h2 {
+      max-width: 18ch;
+      color: #fff;
+      margin-top: 4px;
+    }
+    .cx-enterprise .lead {
+      max-width: 64ch;
+      font-size: 17px;
+      color: rgba(255,255,255,0.72);
+      margin-bottom: 16px;
+    }
+    .cx-enterprise .ds-btn-primary {
+      background: #fff; border-color: #fff; color: #000;
+    }
+    .cx-enterprise .ds-btn-primary:hover { background: rgba(255,255,255,0.9); }
+
+    .cx-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      width: 100%;
+      margin-top: 32px;
+    }
+    .cx-card {
+      position: relative;
+      border-radius: var(--radius-card);
+      overflow: hidden;
+      padding: 32px 28px 0;
+      min-height: 380px;
+      display: flex; flex-direction: column;
+      text-align: left;
+      color: var(--color-content-default);
+      transition: transform 0.18s ease;
+    }
+    .cx-card:hover { transform: translateY(-2px); }
+    .cx-card.brand-intel {
+      background: linear-gradient(165deg, #ffd5c5 0%, #ffb89c 50%, #d97a55 100%);
+    }
+    .cx-card.coworker {
+      background: #f5f5f5;
+    }
+    .cx-card.analytics {
+      background: linear-gradient(180deg, #e3eaff 0%, #c7d4f8 60%, #b8d6c5 100%);
+    }
+    .cx-card h3 {
+      font-family: var(--font-display); font-weight: 900;
+      font-size: 22px; line-height: 1.1; letter-spacing: -0.02em;
+      margin-bottom: 12px;
+    }
+    .cx-card p {
+      font-size: 14px; line-height: 1.45;
+      color: var(--color-content-soft);
+      max-width: 32ch;
+    }
+    .cx-card .card-cta {
+      margin-top: 20px;
+      align-self: flex-start;
+      padding: 8px 14px;
+      background: #fff;
+      border-radius: var(--radius-pill);
+      font-size: 13px; font-weight: 700;
+      color: var(--color-content-default);
+      border: 1px solid rgba(0,0,0,0.1);
+    }
+    .cx-card .visual {
+      margin-top: auto;
+      align-self: stretch;
+      flex: 1;
+      min-height: 180px;
+      position: relative;
+      margin: 24px -28px 0;
+    }
+    .cx-card.brand-intel .visual {
+      background:
+        radial-gradient(circle at 30% 40%, rgba(255,80,40,0.7), transparent 50%),
+        radial-gradient(circle at 70% 60%, rgba(255,120,80,0.5), transparent 60%);
+    }
+    .cx-card.coworker .visual {
+      background:
+        linear-gradient(180deg, #ffffff, #e9e9e9),
+        repeating-linear-gradient(0deg, transparent 0, transparent 14px, rgba(0,0,0,0.04) 14px, rgba(0,0,0,0.04) 15px);
+      background-blend-mode: multiply;
+      border-top: 1px solid rgba(0,0,0,0.04);
+    }
+    .cx-card.coworker .visual::before {
+      content: "";
+      position: absolute; inset: 16px;
+      background: #fff;
+      border: 1px solid rgba(0,0,0,0.06);
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    }
+    .cx-card.coworker .visual::after {
+      content: "Identify at-risk customers and launch a retention experience";
+      position: absolute; left: 28px; right: 28px; top: 28px;
+      font-size: 12px; font-weight: 600; line-height: 1.3;
+      color: var(--color-content-default);
+      max-width: 200px;
+    }
+    .cx-card.analytics .visual {
+      display: flex; gap: 8px; padding: 0 16px 16px; align-items: flex-end;
+      margin: 24px 0 0;
+    }
+    .cx-card.analytics .stat {
+      flex: 1;
+      background: #fff;
+      border-radius: 12px;
+      padding: 16px;
+      text-align: left;
+    }
+    .cx-card.analytics .stat .label { font-size: 10px; font-weight: 700; color: var(--color-content-soft); text-transform: uppercase; letter-spacing: 0.05em; }
+    .cx-card.analytics .stat .value { font-family: var(--font-display); font-weight: 900; font-size: 22px; line-height: 1; margin-top: 4px; letter-spacing: -0.02em; }
+    .cx-card.analytics .stat .delta { font-size: 11px; color: #1a8754; margin-top: 4px; font-weight: 600; }
+
+    @media (max-width: 1023px) {
+      .cx-cards { grid-template-columns: 1fr; }
+    }
+
+    /* ============================================
+       RECENT ANNOUNCEMENTS — carousel
+       ============================================ */
+    .announcements {
+      background: var(--color-background-subtle);
+      padding: var(--section-y-desktop) 24px;
+    }
+    .announcements-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .announcements h2 {
+      font-family: var(--font-display); font-weight: 900;
+      font-size: var(--type-title-3-size);
+      letter-spacing: -0.03em;
+      margin-bottom: 40px;
+    }
+    .announce-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      text-align: left;
+    }
+    .announce-card {
+      background: #fff;
+      border-radius: var(--radius-card);
+      padding: 28px;
+      display: flex; flex-direction: column; gap: 14px;
+      min-height: 200px;
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+      border: 1px solid var(--color-divider);
+    }
+    .announce-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    }
+    .announce-card .tag {
+      display: inline-block;
+      font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--color-content-soft);
+    }
+    .announce-card h3 {
+      font-family: var(--font-body); font-weight: 700;
+      font-size: 17px; line-height: 1.35;
+      color: var(--color-content-default);
+      flex: 1;
+    }
+    .announce-card .pill {
+      align-self: flex-start;
+      padding: 6px 14px;
+      border: 1px solid rgba(0,0,0,0.15);
+      border-radius: var(--radius-pill);
+      font-size: 12px; font-weight: 700;
+      color: var(--color-content-default);
+    }
+    .announce-controls {
+      display: flex; justify-content: center; gap: 10px;
+      margin-top: 32px;
+    }
+    .announce-controls button {
+      width: 36px; height: 36px;
+      border-radius: 999px;
+      background: #fff;
+      border: 1px solid var(--color-divider);
+      color: var(--color-content-default);
+      font-size: 16px;
+      display: inline-flex; align-items: center; justify-content: center;
+    }
+    .announce-controls button:hover { background: var(--color-background-strong); }
+    @media (max-width: 1023px) { .announce-grid { grid-template-columns: 1fr; } }
+
+    /* ============================================
+       BUSINESS SOLUTIONS — 3 cards w/ image bottom
+       ============================================ */
+    .biz-solutions {
+      background: var(--color-background-default);
+      padding: var(--section-y-desktop) 24px;
+    }
+    .biz-solutions-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .biz-solutions h2 {
+      font-family: var(--font-display); font-weight: 900;
+      font-size: var(--type-title-2-size);
+      letter-spacing: -0.03em;
+      max-width: 24ch;
+      margin: 0 auto;
+    }
+    .biz-solutions .lead {
+      margin: 16px auto 48px;
+      max-width: 56ch;
+      color: var(--color-content-soft);
+    }
+    .biz-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      text-align: left;
+    }
+    .biz-card {
+      background: #fff;
+      border-radius: var(--radius-card);
+      overflow: hidden;
+      display: flex; flex-direction: column;
+      border: 1px solid var(--color-divider);
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+      min-height: 380px;
+    }
+    .biz-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    }
+    .biz-card .body {
+      padding: 28px 28px 20px;
+      display: flex; flex-direction: column; gap: 12px;
+      flex: 1;
+    }
+    .biz-card h3 {
+      font-family: var(--font-display); font-weight: 900;
+      font-size: 22px; line-height: 1.1; letter-spacing: -0.02em;
+    }
+    .biz-card p {
+      font-size: 14px; line-height: 1.5;
+      color: var(--color-content-soft);
+    }
+    .biz-card .pill {
+      align-self: flex-start;
+      padding: 7px 14px;
+      border: 1px solid rgba(0,0,0,0.15);
+      border-radius: var(--radius-pill);
+      font-size: 12px; font-weight: 700;
+      color: var(--color-content-default);
+      margin-top: 8px;
+    }
+    .biz-card .image {
+      height: 140px;
+      position: relative;
+      margin: 0 12px 12px;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .biz-card.bv .image { background: linear-gradient(135deg, #c8d8ee, #6b8bbb); }
+    .biz-card.bv .image::after {
+      content: ""; position: absolute; inset: 30% 38% 24% 12%;
+      background: rgba(255,80,40,0.7);
+      border-radius: 50% 30% 40% 50%;
+      filter: blur(2px);
+    }
+    .biz-card.csc .image { background: linear-gradient(135deg, #eaccc7, #d68e8c); }
+    .biz-card.csc .image::after {
+      content: "Discover spring essentials"; position: absolute; left: 20px; bottom: 16px;
+      color: #fff; font-family: var(--font-display); font-weight: 700; font-size: 14px;
+    }
+    .biz-card.ce .image { background: linear-gradient(135deg, #d6e0ee, #bccbe0); }
+    .biz-card.ce .image::after {
+      content: "Personalized journey"; position: absolute; left: 20px; bottom: 16px;
+      color: var(--color-content-default); font-family: var(--font-display); font-weight: 700; font-size: 14px;
+    }
+
+    @media (max-width: 1023px) { .biz-grid { grid-template-columns: 1fr; } }
+
+    /* ============================================
+       AI BRAND CONCIERGE PROMPT
+       ============================================ */
+    .rainbow-bar {
+      height: 6px;
+      background: linear-gradient(90deg,
+        #ff5e6c 0%, #ff8a3d 18%, #ffce4f 35%,
+        #6cd66e 52%, #4ab2ff 70%, #845cff 88%, #ff5ec0 100%);
+    }
+    .concierge {
+      background: var(--color-background-default);
+      padding: var(--section-y-desktop) 24px;
+    }
+    .concierge-inner {
+      max-width: 880px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .concierge h2 {
+      font-family: var(--font-display); font-weight: 900;
+      font-size: var(--type-title-2-size);
+      letter-spacing: -0.03em;
+      margin-bottom: 16px;
+      max-width: 22ch;
+      margin-left: auto; margin-right: auto;
+    }
+    .concierge .lead {
+      color: var(--color-content-soft);
+      max-width: 56ch;
+      margin: 0 auto 32px;
+    }
+    .concierge-input {
+      display: flex; align-items: center;
+      width: 100%;
+      padding: 14px 20px;
+      border: 1px solid var(--color-divider);
+      border-radius: var(--radius-pill);
+      background: #fff;
+      gap: 12px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.04);
+    }
+    .concierge-input .placeholder {
+      flex: 1;
+      text-align: left;
+      color: var(--color-content-soft);
+      font-size: 15px;
+    }
+    .concierge-input .send {
+      width: 32px; height: 32px;
+      border-radius: 999px;
+      background: var(--color-content-default);
+      color: #fff;
+      display: inline-flex; align-items: center; justify-content: center;
+      flex: none;
+    }
+    .prompt-chips {
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 8px;
+      margin-top: 20px;
+    }
+    .prompt-chip {
+      padding: 8px 14px;
+      border: 1px solid var(--color-divider);
+      border-radius: var(--radius-pill);
+      background: #fff;
+      font-size: 13px; font-weight: 500;
+      color: var(--color-content-default);
+      transition: background 0.15s ease;
+    }
+    .prompt-chip:hover { background: var(--color-background-subtle); }
+    .concierge .footnote {
+      margin-top: 28px;
+      font-size: 11px;
+      color: var(--color-content-soft);
+      max-width: 80ch;
+      margin-left: auto; margin-right: auto;
+      line-height: 1.5;
+    }
+    .concierge .footnote a { color: var(--color-primary); font-weight: 600; }
+
+    /* ============================================
+       PORTFOLIO — tabbed product panel
+       ============================================ */
+    .portfolio {
+      background: var(--color-background-subtle);
+      padding: var(--section-y-desktop) 24px;
+    }
+    .portfolio-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+    .portfolio h2 {
+      font-family: var(--font-display); font-weight: 900;
+      font-size: var(--type-title-2-size);
+      letter-spacing: -0.03em;
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    .portfolio-tabs {
+      display: flex; flex-wrap: wrap; justify-content: center;
+      gap: 4px;
+      margin-bottom: 40px;
+    }
+    .ptab {
+      padding: 8px 16px;
+      border-radius: var(--radius-pill);
+      background: transparent;
+      font-size: 14px; font-weight: 700;
+      color: var(--color-content-default);
+      cursor: pointer;
+      transition: background 0.15s ease, color 0.15s ease;
+      border: 1px solid transparent;
+    }
+    .ptab:hover { background: rgba(0,0,0,0.04); }
+    .ptab.active {
+      background: var(--color-content-default);
+      color: #fff;
+    }
+
+    .portfolio-panel {
+      display: none;
+      grid-template-columns: 4fr 4fr 4fr;
+      gap: 32px;
+      align-items: stretch;
+    }
+    .portfolio-panel.active { display: grid; }
+
+    .portfolio-panel .left {
+      background: #fff;
+      border: 1px solid var(--color-divider);
+      border-radius: var(--radius-card);
+      padding: 32px;
+      display: flex; flex-direction: column; gap: 16px;
+    }
+    .portfolio-panel .left h3 {
+      font-family: var(--font-display); font-weight: 900;
+      font-size: 32px; letter-spacing: -0.03em; line-height: 1.05;
+    }
+    .portfolio-panel .left p {
+      color: var(--color-content-soft);
+      font-size: 14px; line-height: 1.5;
+    }
+    .portfolio-panel .center {
+      background: #fff;
+      border: 1px solid var(--color-divider);
+      border-radius: var(--radius-card);
+      padding: 32px;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      min-height: 360px;
+      position: relative;
+      overflow: hidden;
+    }
+    .portfolio-panel .center .preview {
+      width: 100%;
+      height: 240px;
+      border-radius: 12px;
+      background:
+        linear-gradient(180deg, #fafafa, #f0f0f0);
+      position: relative;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    }
+    .portfolio-panel .center .preview::after {
+      content: "Optimize for LLMs";
+      position: absolute; left: 16px; top: 16px;
+      font-family: var(--font-display); font-weight: 900; font-size: 18px;
+      color: var(--color-primary);
+      background: #fff; padding: 8px 14px; border-radius: 999px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .portfolio-panel .center .label {
+      position: absolute; right: 16px; bottom: 16px;
+      background: var(--color-content-default);
+      color: #fff;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 12px; font-weight: 700;
+    }
+    .portfolio-panel .right {
+      background: #fff;
+      border: 1px solid var(--color-divider);
+      border-radius: var(--radius-card);
+      padding: 32px;
+      display: flex; flex-direction: column; gap: 4px;
+    }
+    .portfolio-panel .right h4 {
+      font-family: var(--font-display); font-weight: 900;
+      font-size: 22px; letter-spacing: -0.02em;
+      margin-bottom: 16px;
+    }
+    .portfolio-panel .right .product-link {
+      display: flex; align-items: center; gap: 12px;
+      padding: 12px 0;
+      border-top: 1px solid var(--color-divider);
+      font-size: 14px; font-weight: 600;
+      color: var(--color-content-default);
+    }
+    .portfolio-panel .right .product-link:first-of-type { border-top: 1px solid var(--color-divider); }
+    .portfolio-panel .right .product-link svg,
+    .portfolio-panel .right .product-link img {
+      width: 16px; height: 16px; flex: none;
+      color: var(--color-adobe-red);
+    }
+    .portfolio-panel .right .badge {
+      background: #ff5e6c;
+      color: #fff;
+      font-size: 9px; font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 999px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-left: 4px;
+    }
+    .portfolio-panel .right .product-link:hover { color: var(--color-primary); }
+    .portfolio-panel .right .product-link::after {
+      content: "→";
+      margin-left: auto;
+      color: var(--color-content-soft);
+      font-weight: 400;
+    }
+
+    .portfolio-explore {
+      display: flex; justify-content: center;
+      margin-top: 24px;
+    }
+
+    @media (max-width: 1023px) {
+      .portfolio-panel.active { grid-template-columns: 1fr; }
+    }
+
+    /* ============================================
+       FORD TESTIMONIAL
+       ============================================ */
+    .testimonial {
+      background: var(--color-background-subtle);
+      padding: var(--section-y-desktop) 24px;
+    }
+    .testimonial-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 5fr 7fr;
+      gap: 64px;
+      align-items: center;
+    }
+    .testimonial .quote {
+      display: flex; flex-direction: column; gap: 24px;
+    }
+    .testimonial .ford-mark {
+      width: 80px;
+      font-family: serif; font-weight: 700; font-style: italic;
+      font-size: 28px; letter-spacing: 0.02em;
+      color: #003478;
+      border: 2px solid #003478;
+      border-radius: 999px;
+      padding: 4px 16px;
+      text-align: center;
+    }
+    .testimonial blockquote {
+      font-family: var(--font-display); font-weight: 900;
+      font-size: 26px; line-height: 1.25; letter-spacing: -0.02em;
+      color: var(--color-content-default);
+      margin: 0;
+    }
+    .testimonial blockquote::before {
+      content: "“";
+      font-size: 1em; line-height: 1;
+    }
+    .testimonial .attribution {
+      font-size: 13px;
+      color: var(--color-content-soft);
+    }
+    .testimonial .testimonial-image {
+      background: linear-gradient(135deg, #d6e0ee, #aebbcf);
+      border-radius: var(--radius-card);
+      aspect-ratio: 7 / 5;
+      position: relative;
+      overflow: hidden;
+    }
+    .testimonial .testimonial-image::before {
+      content: "";
+      position: absolute; left: 16px; top: 16px;
+      width: 56%; height: 70%;
+      background: rgba(255,255,255,0.85);
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    }
+    .testimonial .testimonial-image::after {
+      content: "Ford from the Road";
+      position: absolute; left: 24px; top: 28px;
+      font-family: var(--font-display); font-weight: 900;
+      font-size: 18px; color: var(--color-content-default);
+    }
+    @media (max-width: 1023px) {
+      .testimonial-inner { grid-template-columns: 1fr; gap: 32px; }
+    }
+
+    /* ============================================
+       CUSTOMER LOGO STRIP
+       ============================================ */
+    .customers {
+      background: var(--color-background-default);
+      padding: var(--section-y-desktop) 24px;
+      text-align: center;
+    }
+    .customers h2 {
+      font-family: var(--font-display); font-weight: 900;
+      font-size: var(--type-title-2-size);
+      letter-spacing: -0.03em;
+      max-width: 22ch;
+      margin: 0 auto 40px;
+    }
+    .customer-logos {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+      gap: 56px;
+      max-width: 1100px;
+      margin: 0 auto 24px;
+    }
+    .customer-mark {
+      font-family: var(--font-display); font-weight: 900;
+      font-size: 18px;
+      color: var(--color-content-default);
+      letter-spacing: -0.01em;
+      opacity: 0.78;
+      transition: opacity 0.2s ease;
+      text-align: center; line-height: 1.0;
+    }
+    .customer-mark[data-placeholder="logo"] {
+      padding: 8px 16px;
+    }
+    .customer-mark:hover { opacity: 1; }
+    .customers .read-more {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 8px 18px;
+      border: 1px solid var(--color-divider);
+      border-radius: var(--radius-pill);
+      font-size: 13px; font-weight: 700;
+      color: var(--color-content-default);
+      margin-top: 8px;
+    }
+    .customers .read-more:hover { background: var(--color-background-subtle); }
+    .customers .read-more::after { content: "→"; font-weight: 400; }
+
+    /* ============================================
+       CLOSING CTA — 2-col with brand-score sidecard
+       ============================================ */
+    .closing {
+      background: #000;
+      color: #fff;
+      padding: var(--section-y-desktop) 24px;
+    }
+    .closing-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 6fr 6fr;
+      gap: 48px;
+      align-items: center;
+    }
+    .closing h2 {
+      font-family: var(--font-display); font-weight: 900;
+      font-size: var(--type-title-1-size);
+      line-height: 1.0;
+      letter-spacing: -0.04em;
+      max-width: 14ch;
+      color: #fff;
+      margin-bottom: 28px;
+    }
+    .closing .ds-btn-primary {
+      background: #fff; border-color: #fff; color: #000;
+    }
+    .closing .ds-btn-primary:hover { background: rgba(255,255,255,0.9); }
+    .closing-image {
+      position: relative;
+      aspect-ratio: 5 / 4;
+      border-radius: var(--radius-card);
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse at 30% 20%, #c44a3a 0%, #8b1f1f 40%, #2a0a0c 100%);
+    }
+    .closing-image::before {
+      content: "";
+      position: absolute; inset: 12% 10% 12% 26%;
+      background:
+        radial-gradient(ellipse at 50% 35%, rgba(255,200,180,0.6) 0%, transparent 60%),
+        linear-gradient(180deg, #d65a3a 30%, #952218 70%);
+      border-radius: 16px;
+    }
+    .closing-image .badge {
+      position: absolute; left: 24px; top: 24px;
+      background: #fff; color: var(--color-content-default);
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 11px; font-weight: 700;
+      letter-spacing: 0.04em;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    .closing-image .stat {
+      position: absolute; right: 24px; top: 24px;
+      background: #fff; color: var(--color-content-default);
+      padding: 12px 16px;
+      border-radius: 999px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+      display: flex; align-items: center; gap: 8px;
+      font-size: 12px;
+    }
+    .closing-image .stat strong {
+      font-family: var(--font-display); font-weight: 900; font-size: 18px;
+    }
+    .closing-image .pill-cta {
+      position: absolute; right: 24px; bottom: 24px;
+      background: var(--color-adobe-red); color: #fff;
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-size: 13px; font-weight: 700;
+      box-shadow: 0 4px 16px rgba(235,16,0,0.4);
+      display: inline-flex; align-items: center; gap: 6px;
+    }
+    .closing-image .pill-cta::after { content: "→"; }
+    @media (max-width: 1023px) {
+      .closing-inner { grid-template-columns: 1fr; gap: 32px; }
+    }
+
+    /* ============================================
+       FOOTER
+       ============================================ */
+    .footer {
+      background: var(--color-background-default);
+      color: var(--color-content-default);
+      padding: 64px 24px 24px;
+      border-top: 1px solid var(--color-divider);
+      font-size: 13px;
+    }
+    .footer-inner { max-width: 1280px; margin: 0 auto; }
+    .footer-cta {
+      display: flex; gap: 24px; flex-wrap: wrap;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--color-divider);
+      margin-bottom: 32px;
+    }
+    .footer-cta a { font-weight: 700; }
+    .footer-cta a::after { content: " →"; color: var(--color-content-soft); font-weight: 400; }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 32px;
+      margin-bottom: 40px;
+    }
+    .footer-col h4 {
+      font-family: var(--font-body);
+      font-size: 13px; font-weight: 700;
+      margin-bottom: 12px;
+      color: var(--color-content-default);
+    }
+    .footer-col ul { display: flex; flex-direction: column; gap: 6px; }
+    .footer-col a {
+      font-size: 13px;
+      color: var(--color-content-soft);
+    }
+    .footer-col a:hover { color: var(--color-content-default); }
+    .footer-bar {
+      display: flex; align-items: center; justify-content: space-between;
+      padding-top: 24px;
+      border-top: 1px solid var(--color-divider);
+      gap: 16px; flex-wrap: wrap;
+      font-size: 12px;
+      color: var(--color-content-soft);
+    }
+    .footer-bar .meta { display: flex; gap: 16px; flex-wrap: wrap; }
+    .footer-bar .lockup { display: flex; align-items: center; gap: 8px; }
+    .footer-bar .lockup svg { width: 18px; height: 16px; fill: var(--color-adobe-red); }
+    .footer-bar .lockup span { font-family: var(--font-display); font-weight: 900; font-size: 13px; color: var(--color-content-default); letter-spacing: -0.01em; }
+    .footer-bar .region {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 4px 10px;
+      border: 1px solid var(--color-divider);
+      border-radius: var(--radius-pill);
+      background: transparent;
+      color: var(--color-content-default);
+      font-size: 12px;
+    }
+    @media (max-width: 1023px) { .footer-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 640px) { .footer-grid { grid-template-columns: 1fr; gap: 24px; } }
+
+    /* Reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+      [data-ta-group] [data-ta-line] { transform: none !important; opacity: 1 !important; }
+      [data-ta] .ta-line-inner, [data-ta-unit] { transform: none !important; opacity: 1 !important; }
+    }
+  </style>
+</head>
+<body data-page="home">
+
+<!-- =========================================
+     GLOBAL NAV — slim white pill
+     ========================================= -->
+<nav class="gnav" id="gnav" data-section="global-nav" data-purpose="nav">
+  <div class="gnav-inner">
+    <a class="gnav-brand" href="/" aria-label="Adobe for Business">
+      <svg viewBox="0 0 240 234" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M152 0h88v234L152 0zM88 0H0v234L88 0zm32 86 56 132h-37l-17-43H81l37-89z"/></svg>
+      <span class="name">for Business</span>
+    </a>
+    <ul class="gnav-list">
+      <li><a class="gnav-link" href="#products">Products</a></li>
+      <li><a class="gnav-link" href="#ai">AI</a></li>
+      <li><a class="gnav-link" href="#industries">Industries</a></li>
+      <li><a class="gnav-link" href="#roles">Roles</a></li>
+      <li><a class="gnav-link" href="#resources">Resources</a></li>
+      <li><a class="gnav-link" href="#support">Support</a></li>
+    </ul>
+    <div class="gnav-spacer"></div>
+    <button class="gnav-cta">Get started</button>
+    <div class="gnav-actions">
+      <button class="gnav-icon" aria-label="Search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <button class="gnav-icon red" aria-label="Adobe">
+        <svg width="16" height="14" viewBox="0 0 240 234" fill="currentColor"><path d="M152 0h88v234L152 0zM88 0H0v234L88 0zm32 86 56 132h-37l-17-43H81l37-89z"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- =========================================
+     HERO — Adobe + Semrush co-branded
+     ========================================= -->
+<section class="hero" data-section="hero" data-purpose="hero" data-ta-group>
+  <div class="hero-inner">
+    <div class="hero-lockup" data-ta-unit aria-label="Adobe + Semrush">
+      <span class="adobe">
+        <svg viewBox="0 0 240 234" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M152 0h88v234L152 0zM88 0H0v234L88 0zm32 86 56 132h-37l-17-43H81l37-89z"/></svg>
+        <span class="adobe-mark">Adobe</span>
+      </span>
+      <span class="plus">+</span>
+      <span class="semrush">
+        <span class="semrush-mark">Sr</span>
+        <span class="semrush-name">SEMRUSH</span>
+      </span>
+    </div>
+    <h1 data-ta>Adobe completes the acquisition of Semrush.</h1>
+    <p class="lead" data-ta>Access the world's most powerful data for AI search optimization.</p>
+    <div class="hero-ctas" data-ta-unit>
+      <a class="ds-btn ds-btn-primary" href="https://business.adobe.com/products/semrush.html">Learn about the product</a>
+      <a class="ds-btn ds-btn-ghost-light" href="http://news.adobe.com/news/2026/04/adobe-completes-semrush-acquisition">Read the announcement</a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================
+     CX ENTERPRISE PITCH — black ground, 3 cards
+     ========================================= -->
+<section class="cx-enterprise" data-section="cx-enterprise" data-purpose="flagship-pitch">
+  <div class="cx-enterprise-inner" data-ta-group>
+    <span class="t-eyebrow" data-ta-unit>Adobe for Business</span>
+    <h2 class="t-title-2" data-ta>Customer experience orchestration starts with Adobe CX Enterprise.</h2>
+    <p class="lead" data-ta>Deliver personalized, on-brand content and experiences across the entire customer lifecycle with Adobe's end-to-end agentic system for CXO.</p>
+    <div data-ta-unit><a class="ds-btn ds-btn-primary" href="#cx-enterprise">Learn more</a></div>
+
+    <div class="cx-cards" data-ta-unit>
+      <a class="cx-card brand-intel" href="#brand-intelligence">
+        <h3>Adobe Brand Intelligence</h3>
+        <p>Create content with a continuously learning, agentic system that understands your full brand identity.</p>
+        <span class="card-cta">Learn more</span>
+        <div class="visual"></div>
+      </a>
+      <a class="cx-card coworker" href="#cx-coworker">
+        <h3>Adobe CX Enterprise Coworker</h3>
+        <p>Execute complex, cross-system workflows using an AI agent that understands your business context.</p>
+        <span class="card-cta">Learn more</span>
+        <div class="visual"></div>
+      </a>
+      <a class="cx-card analytics" href="#cx-analytics">
+        <h3>Adobe CX Analytics</h3>
+        <p>Bring your customer experience and enterprise data together, delivering fast insights and activation at scale.</p>
+        <span class="card-cta">Learn more</span>
+        <div class="visual">
+          <div class="stat">
+            <span class="label">Campaign performance</span>
+            <span class="value">$2.3M</span>
+            <span class="delta">↑ 12.4%</span>
+          </div>
+          <div class="stat">
+            <span class="label">Conversion</span>
+            <span class="value">5.2%</span>
+            <span class="delta">Seriously high performing</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================
+     RECENT ANNOUNCEMENTS — carousel
+     ========================================= -->
+<section class="announcements" data-section="announcements" data-purpose="news">
+  <div class="announcements-inner" data-ta-group>
+    <h2 data-ta>Recent announcements.</h2>
+    <div class="announce-grid" data-ta-unit>
+      <a class="announce-card" href="#announce-1">
+        <span class="tag">Product innovation</span>
+        <h3>Adobe Engagement Intelligence optimizes customer journeys with goal-driven, decisioning intelligence.</h3>
+        <span class="pill">Learn more</span>
+      </a>
+      <a class="announce-card" href="#announce-2">
+        <span class="tag">Partner news</span>
+        <h3>Adobe and NVIDIA power AI-first creative intelligence at scale.</h3>
+        <span class="pill">Learn more</span>
+      </a>
+      <a class="announce-card" href="#announce-3">
+        <span class="tag">Product release</span>
+        <h3>Turn your best content into campaigns with Adobe GenStudio for Content Marketing.</h3>
+        <span class="pill">Learn more</span>
+      </a>
+    </div>
+    <div class="announce-controls">
+      <button aria-label="Previous">‹</button>
+      <button aria-label="Next">›</button>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================
+     BUSINESS SOLUTIONS — 3 cards
+     ========================================= -->
+<section class="biz-solutions" data-section="solutions" data-purpose="solutions" id="solutions">
+  <div class="biz-solutions-inner" data-ta-group>
+    <h2 data-ta>Business solutions from Adobe — the customer experience orchestration leader.</h2>
+    <p class="lead" data-ta>Adobe solutions bring together best-in-class products to help drive business growth.</p>
+    <div class="biz-grid" data-ta-unit>
+      <a class="biz-card bv" href="#brand-visibility">
+        <div class="body">
+          <h3>Brand visibility</h3>
+          <p>Optimize visibility and engagement to ensure your brand is discoverable to both humans and AI agents.</p>
+          <span class="pill">Learn more</span>
+        </div>
+        <div class="image" aria-hidden="true"></div>
+      </a>
+      <a class="biz-card csc" href="#content-supply">
+        <div class="body">
+          <h3>Content supply chain</h3>
+          <p>Transform and optimize your content supply chain through connected workflows and the power of AI.</p>
+          <span class="pill">Learn more</span>
+        </div>
+        <div class="image" aria-hidden="true"></div>
+      </a>
+      <a class="biz-card ce" href="#customer-engagement">
+        <div class="body">
+          <h3>Customer engagement</h3>
+          <p>Scale personalization with connected data, insights, audiences, and journeys on an agentic experience platform.</p>
+          <span class="pill">Learn more</span>
+        </div>
+        <div class="image" aria-hidden="true"></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================
+     RAINBOW BAR + BRAND CONCIERGE PROMPT
+     ========================================= -->
+<div class="rainbow-bar"></div>
+<section class="concierge" data-section="brand-concierge" data-purpose="ai-prompt">
+  <div class="concierge-inner" data-ta-group>
+    <h2 data-ta>How can Adobe help your business today?</h2>
+    <p class="lead" data-ta>Ask Adobe Brand Concierge to learn about products, features, and business solutions.</p>
+    <button class="concierge-input" data-ta-unit aria-label="Open Brand Concierge">
+      <span class="placeholder">Explore what's possible</span>
+      <span class="send" aria-hidden="true">↑</span>
+    </button>
+    <div class="prompt-chips" data-ta-unit>
+      <button class="prompt-chip">How do I modernize my content workflow?</button>
+      <button class="prompt-chip">What are the benefits of using CXO agents?</button>
+      <button class="prompt-chip">What is Adobe CX Enterprise?</button>
+      <button class="prompt-chip">Talk to an expert about CXO products.</button>
+    </div>
+    <p class="footnote">Use of this AI chatbot is subject to Adobe's <a href="#privacy">Privacy Policy</a>. Don't share sensitive data. AI responses are not 100% accurate. Confirm responses with a human, may be inaccurate, and may offer products we are not selling. Generative AI Terms.</p>
+  </div>
+</section>
+
+<!-- =========================================
+     PORTFOLIO — tabbed product panel
+     ========================================= -->
+<section class="portfolio" data-section="portfolio" data-purpose="product-index" id="products">
+  <div class="portfolio-inner" data-ta-group>
+    <h2 data-ta>Explore all Adobe for Business products.</h2>
+    <nav class="portfolio-tabs" aria-label="Product domains" data-ta-unit>
+      <button class="ptab active" data-tab="ai">AI &amp; agents</button>
+      <button class="ptab" data-tab="content">Content &amp; workflows</button>
+      <button class="ptab" data-tab="creativity">Creativity &amp; design</button>
+      <button class="ptab" data-tab="data">Data &amp; analytics</button>
+      <button class="ptab" data-tab="campaigns">Campaigns</button>
+      <button class="ptab" data-tab="documents">Documents</button>
+    </nav>
+
+    <div class="portfolio-panel active" data-panel="ai" data-ta-unit>
+      <div class="left">
+        <h3>AI at Adobe.</h3>
+        <p>Give your teams the productivity tools and always-on insights to deliver true personalization at scale with Adobe's AI solutions.</p>
+      </div>
+      <div class="center">
+        <div class="preview"><span class="label">2K mentions</span></div>
+      </div>
+      <div class="right">
+        <h4>Explore products.</h4>
+        <a class="product-link" href="#brand-intel"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 22,20 2,20"/></svg>Brand Intelligence<span class="badge">New</span></a>
+        <a class="product-link" href="#agent-orchestrator"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 22,20 2,20"/></svg>Experience Platform Agent Orchestrator</a>
+        <a class="product-link" href="#llm-optimizer"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 22,20 2,20"/></svg>LLM Optimizer</a>
+        <a class="product-link" href="#brand-concierge"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 22,20 2,20"/></svg>Brand Concierge</a>
+        <a class="product-link" href="#aem-sites-optimizer"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 22,20 2,20"/></svg>Experience Manager Sites Optimizer</a>
+        <a class="product-link" href="#jo-experimentation"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 22,20 2,20"/></svg>Journey Optimizer Experimentation Accelerator</a>
+      </div>
+    </div>
+
+    <div class="portfolio-panel" data-panel="content">
+      <div class="left">
+        <h3>AI-powered content management and end-to-end workflows.</h3>
+        <p>Streamline collaboration and meet the ever-growing demand for content. Adobe offers centralized management, simplified cross-team workflows, scalable content, composable commerce, and powerful personalization.</p>
+      </div>
+      <div class="center"><div class="preview"></div></div>
+      <div class="right">
+        <h4>Explore products.</h4>
+        <a class="product-link" href="#"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 22,20 2,20"/></svg>Adobe GenStudio for Performance Marketing</a>
+        <a class="product-link" href="#"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 22,20 2,20"/></svg>Adobe Experience Manager Sites</a>
+        <a class="product-link" href="#"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 22,20 2,20"/></svg>Adobe Experience Manager Assets</a>
+        <a class="product-link" href="#"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 22,20 2,20"/></svg>Adobe Commerce</a>
+        <a class="product-link" href="#"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 22,20 2,20"/></svg>Adobe Workfront</a>
+      </div>
+    </div>
+
+    <div class="portfolio-panel" data-panel="creativity">
+      <div class="left">
+        <h3>Unleash creativity at scale.</h3>
+        <p>Adobe's creative solutions for enterprises bring together the most comprehensive creative technology with the power of generative AI to scale creative content production, maintain brand consistency, and drive business growth.</p>
+      </div>
+      <div class="center"><div class="preview"></div></div>
+      <div class="right">
+        <h4>Explore products.</h4>
+        <a class="product-link" href="#"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 22,20 2,20"/></svg>Adobe Creative Cloud for Enterprise</a>
+        <a class="product-link" href="#"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 22,20 2,20"/></svg>Adobe Express</a>
+        <a class="product-link" href="#"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 22,20 2,20"/></svg>Adobe Firefly</a>
+        <a class="product-link" href="#"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 22,20 2,20"/></svg>Adobe Frame.io</a>
+      </div>
+    </div>
+
+    <div class="portfolio-panel" data-panel="data">
+      <div class="left">
+        <h3>Data and insights for a competitive edge.</h3>
+        <p>Connect the entire data-to-insights-to-action workflow. Adobe centralizes data collection, processing, analysis, B2C and B2B segmentation, and reporting — for better business decisions and customer experiences.</p>
+      </div>
+      <div class="center"><div class="preview"></div></div>
+      <div class="right">
+        <h4>Explore products.</h4>
+        <a class="product-link" href="#"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 22,20 2,20"/></svg>Adobe Analytics</a>
+        <a class="product-link" href="#"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 22,20 2,20"/></svg>Customer Journey Analytics</a>
+        <a class="product-link" href="#"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 22,20 2,20"/></svg>Adobe Real-Time CDP</a>
+        <a class="product-link" href="#"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 22,20 2,20"/></svg>Adobe Mix Modeler</a>
+      </div>
+    </div>
+
+    <div class="portfolio-panel" data-panel="campaigns">
+      <div class="left">
+        <h3>Advanced marketing automation, management, and insights.</h3>
+        <p>Deliver real-time, personalized, multi-channel journeys for both B2B and B2C customers with collaborative tools that let sales and marketing teams work in sync.</p>
+      </div>
+      <div class="center"><div class="preview"></div></div>
+      <div class="right">
+        <h4>Explore products.</h4>
+        <a class="product-link" href="#"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 22,20 2,20"/></svg>Adobe Journey Optimizer</a>
+        <a class="product-link" href="#"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 22,20 2,20"/></svg>Adobe Journey Optimizer B2B Edition</a>
+        <a class="product-link" href="#"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 22,20 2,20"/></svg>Adobe Marketo Engage</a>
+      </div>
+    </div>
+
+    <div class="portfolio-panel" data-panel="documents">
+      <div class="left">
+        <h3>Accelerated document workflows that deliver more impact.</h3>
+        <p>Organize documents into a connected, insight-rich hub. Adobe Acrobat Studio combines trusted PDF tools with AI-powered insights, secure knowledge spaces, and standout content creation.</p>
+      </div>
+      <div class="center"><div class="preview"></div></div>
+      <div class="right">
+        <h4>Explore products.</h4>
+        <a class="product-link" href="#"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 22,20 2,20"/></svg>Adobe Acrobat Studio</a>
+        <a class="product-link" href="#"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 22,20 2,20"/></svg>Adobe Acrobat Sign</a>
+      </div>
+    </div>
+
+    <div class="portfolio-explore">
+      <a class="ds-btn ds-btn-secondary" href="#all-products">Explore all products</a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================
+     FORD TESTIMONIAL
+     ========================================= -->
+<section class="testimonial" data-section="testimonial" data-purpose="proof">
+  <div class="testimonial-inner">
+    <div class="quote" data-ta-group>
+      <span class="ford-mark" data-ta-unit aria-label="Ford">Ford</span>
+      <blockquote data-ta>Our Adobe solutions haven't just made us faster. They've given us the time to be more creative, more strategic, and better at connecting with diverse audiences through the stories we tell.</blockquote>
+      <div class="attribution" data-ta-unit>Jordan Mammo, Managing Editor, Ford From the Road</div>
+      <div data-ta-unit><a class="ds-btn ds-btn-secondary" href="#ford-story">Read story</a></div>
+    </div>
+    <div class="testimonial-image" aria-hidden="true"></div>
+  </div>
+</section>
+
+<!-- =========================================
+     CUSTOMER LOGO STRIP
+     ========================================= -->
+<section class="customers" data-section="customers" data-purpose="proof">
+  <div data-ta-group>
+    <h2 data-ta>Adobe is transforming the world's biggest brands.</h2>
+    <div class="customer-logos" data-ta-unit>
+      <a class="customer-mark" href="#case-coca-cola" data-placeholder="logo">Coca-Cola</a>
+      <a class="customer-mark" href="#case-qualcomm" data-placeholder="logo">Qualcomm</a>
+      <a class="customer-mark" href="#case-premier-league" data-placeholder="logo">Premier League</a>
+      <a class="customer-mark" href="#case-prudential" data-placeholder="logo">Prudential</a>
+      <a class="customer-mark" href="#case-cisco" data-placeholder="logo">cisco</a>
+      <a class="customer-mark" href="#case-home-depot" data-placeholder="logo">The Home Depot</a>
+    </div>
+    <a class="read-more" href="#all-stories" data-ta-unit>Read more stories</a>
+  </div>
+</section>
+
+<!-- =========================================
+     CLOSING CTA — 2-col with brand-score sidecard
+     ========================================= -->
+<section class="closing" data-section="closing-cta" data-purpose="conversion" id="contact">
+  <div class="closing-inner">
+    <div data-ta-group>
+      <h2 data-ta>Let's talk about what Adobe for Business can do for you.</h2>
+      <div data-ta-unit><a class="ds-btn ds-btn-primary" href="#contact-form">Get started</a></div>
+    </div>
+    <div class="closing-image" aria-hidden="true">
+      <span class="badge">Brand score</span>
+      <span class="stat"><strong>2,480</strong>Engagement</span>
+      <span class="pill-cta">Create customer journey</span>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================
+     FOOTER
+     ========================================= -->
+<footer class="footer" data-section="global-footer" data-purpose="sitemap">
+  <div class="footer-inner">
+    <div class="footer-cta">
+      <a href="#contact-us">Contact us</a>
+      <a href="#request-demo">Request a demo</a>
+    </div>
+
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Our solutions</h4>
+        <ul>
+          <li><a href="#">Customer engagement</a></li>
+          <li><a href="#">Content supply chain</a></li>
+          <li><a href="#">Brand visibility</a></li>
+          <li><a href="#">B2B CX orchestration</a></li>
+          <li><a href="#">AI for business</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Large &amp; medium business</h4>
+        <ul>
+          <li><a href="#">Adobe products</a></li>
+          <li><a href="#">Adobe Analytics</a></li>
+          <li><a href="#">Adobe Express</a></li>
+          <li><a href="#">Firefly Enterprise</a></li>
+          <li><a href="#">Acrobat Sign</a></li>
+          <li><a href="#">Acrobat Studio</a></li>
+          <li><a href="#">Creative Cloud</a></li>
+          <li><a href="#">Experience Manager</a></li>
+          <li><a href="#">Real-Time CDP</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Individuals &amp; small business</h4>
+        <ul>
+          <li><a href="#">Explore all products</a></li>
+          <li><a href="#">Adobe Express</a></li>
+          <li><a href="#">Adobe Firefly</a></li>
+          <li><a href="#">Adobe Stock</a></li>
+          <li><a href="#">Creative Cloud</a></li>
+          <li><a href="#">Illustrator</a></li>
+          <li><a href="#">Photoshop</a></li>
+          <li><a href="#">Premiere</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources &amp; support</h4>
+        <ul>
+          <li><a href="#">Resource center</a></li>
+          <li><a href="#">Customer success stories</a></li>
+          <li><a href="#">Adobe Business blog</a></li>
+          <li><a href="#">Education &amp; training</a></li>
+          <li><a href="#">Creative Cloud support</a></li>
+          <li><a href="#">Community forum</a></li>
+          <li><a href="#">Development partners</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Adobe</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">AI Overview</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Newsroom</a></li>
+          <li><a href="#">Corporate responsibility</a></li>
+          <li><a href="#">Investor relations</a></li>
+          <li><a href="#">Supply chain</a></li>
+          <li><a href="#">Trust at Adobe</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bar">
+      <div class="lockup">
+        <svg viewBox="0 0 240 234" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M152 0h88v234L152 0zM88 0H0v234L88 0zm32 86 56 132h-37l-17-43H81l37-89z"/></svg>
+        <span>Adobe</span>
+      </div>
+      <div class="meta">
+        <span>Copyright © 2026 Adobe. All rights reserved.</span>
+        <a href="#">Privacy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Cookie preferences</a>
+        <a href="#">Do not sell or share my personal information</a>
+        <a href="#">AdChoices</a>
+      </div>
+      <button class="region">English (US) ▾</button>
+    </div>
+  </div>
+</footer>
+
+<!-- =========================================
+     SCROLL-DRIVEN MOTION — text-animate only
+     (Hero is no longer scroll-pinned — the live IA puts the
+      flagship pitch on its own section, so the mosaic-converge
+      doesn't apply here. Text-animate cascade still drives every
+      section header.)
+     ========================================= -->
+<script>
+(function () {
+  'use strict';
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  function clamp01(v) { return v < 0 ? 0 : (v > 1 ? 1 : v); }
+  var vh = window.innerHeight;
+
+  function measureLines(el, text) {
+    var cs = getComputedStyle(el);
+    var words = text.trim().split(/\s+/);
+    if (!words.length) return [];
+    var tmp = document.createElement('div');
+    tmp.setAttribute('aria-hidden', 'true');
+    tmp.style.cssText = ['position:absolute','visibility:hidden','pointer-events:none','top:0','left:0',
+      'width:' + el.offsetWidth + 'px',
+      'font-family:' + cs.fontFamily, 'font-size:' + cs.fontSize, 'font-weight:' + cs.fontWeight,
+      'line-height:' + cs.lineHeight, 'letter-spacing:' + cs.letterSpacing, 'white-space:' + cs.whiteSpace].join(';');
+    tmp.innerHTML = words.map(function (w) { return '<span style="display:inline">' + w.replace(/</g,'&lt;') + '</span>'; }).join(' ');
+    document.body.appendChild(tmp);
+    var spans = tmp.querySelectorAll('span');
+    var lines = [], cur = [], lastTop = null;
+    spans.forEach(function (sp, i) {
+      var top = Math.round(sp.getBoundingClientRect().top);
+      if (lastTop === null) lastTop = top;
+      if (top !== lastTop) { lines.push(cur.join(' ')); cur = []; lastTop = top; }
+      cur.push(words[i]);
+    });
+    if (cur.length) lines.push(cur.join(' '));
+    document.body.removeChild(tmp);
+    return lines.filter(Boolean);
+  }
+  function wrapLines(el) {
+    if (el.querySelector('.ta-line-inner')) return Array.from(el.querySelectorAll('.ta-line-inner'));
+    var segments = el.innerHTML.split(/<br\s*\/?>/gi);
+    var allLines = [];
+    segments.forEach(function (seg) {
+      var plain = seg.replace(/<[^>]+>/g, '').trim();
+      if (!plain) return;
+      allLines = allLines.concat(measureLines(el, plain));
+    });
+    if (!allLines.length) return [];
+    el.innerHTML = allLines.map(function (l) { return '<span class="ta-line"><span class="ta-line-inner">' + l + '</span></span>'; }).join('');
+    return Array.from(el.querySelectorAll('.ta-line-inner'));
+  }
+
+  var taGroups = [];
+  function buildTAGroups() {
+    var BASE = vh * 0.05;
+    Array.from(document.querySelectorAll('[data-ta-group]')).forEach(function (group) {
+      var nodes = Array.from(group.querySelectorAll('[data-ta], [data-ta-unit]'));
+      if (!nodes.length) return;
+      var items = [];
+      nodes.forEach(function (n) {
+        if (n.hasAttribute('data-ta-unit')) items.push(n);
+        else items = items.concat(wrapLines(n));
+      });
+      items.forEach(function (it, i) {
+        it.style.transform = 'translate3d(0, ' + ((i + 1) * BASE) + 'px, 0)';
+        it.style.opacity = '0';
+        it.style.willChange = 'transform, opacity';
+      });
+      taGroups.push({ group: group, items: items, base: BASE });
+    });
+  }
+  function applyTextAnimate() {
+    taGroups.forEach(function (g) {
+      var r = g.group.getBoundingClientRect();
+      var start = vh * 0.92, end = vh * 0.45;
+      var t = clamp01((start - r.top) / (start - end));
+      var e = 1 - (1 - t) * (1 - t);
+      g.items.forEach(function (it, i) {
+        var startY = (i + 1) * g.base;
+        it.style.transform = 'translate3d(0, ' + (startY * (1 - e)) + 'px, 0)';
+        it.style.opacity = e;
+      });
+    });
+  }
+
+  /* Tab switching for portfolio */
+  function initTabs() {
+    var tabs = Array.from(document.querySelectorAll('.ptab'));
+    var panels = Array.from(document.querySelectorAll('.portfolio-panel'));
+    tabs.forEach(function (t) {
+      t.addEventListener('click', function () {
+        var key = t.getAttribute('data-tab');
+        tabs.forEach(function (x) { x.classList.toggle('active', x === t); });
+        panels.forEach(function (p) { p.classList.toggle('active', p.getAttribute('data-panel') === key); });
+      });
+    });
+  }
+
+  var ticking = false;
+  function tick() { applyTextAnimate(); }
+  function onScroll() {
+    if (!ticking) {
+      requestAnimationFrame(function () { tick(); ticking = false; });
+      ticking = true;
+    }
+  }
+
+  function boot() {
+    buildTAGroups();
+    initTabs();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', function () { vh = window.innerHeight; tick(); }, { passive: true });
+    tick();
+  }
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot);
+  else boot();
+})();
+</script>
+
+</body>
+</html>

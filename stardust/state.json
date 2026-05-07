@@ -1,0 +1,61 @@
+{
+  "direction": {
+    "resolvedAt": "2026-05-07",
+    "phrase": "Redesign business.adobe.com using the design team's reference prototypes (references/hub, references/bizpro-hub) as the source of truth.",
+    "directionFile": "stardust/direction.md",
+    "mode": "brand-faithful + reference-override",
+    "variantMode": "single"
+  },
+  "site": {
+    "originUrl": "https://business.adobe.com",
+    "extractedAt": "2026-05-07",
+    "pageCap": 5,
+    "totalDiscovered": 5,
+    "crawled": 5,
+    "browser": "firefox (chromium hit ERR_HTTP2_PROTOCOL_ERROR on this Akamai edge)"
+  },
+  "pages": [
+    {
+      "slug": "home",
+      "url": "https://business.adobe.com/",
+      "status": "prototyped",
+      "currentStatePath": "stardust/current/pages/home.json",
+      "prototypePath": "stardust/prototypes/home.html",
+      "migratedPath": null,
+      "proposedPath": "stardust/prototypes/home-proposed.html",
+      "shapePath": "stardust/prototypes/home-shape.md"
+    },
+    {
+      "slug": "genstudio",
+      "url": "https://business.adobe.com/products/genstudio",
+      "status": "directed",
+      "currentStatePath": "stardust/current/pages/genstudio.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "adobe-analytics",
+      "url": "https://business.adobe.com/products/adobe-analytics",
+      "status": "directed",
+      "currentStatePath": "stardust/current/pages/adobe-analytics.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "experience-manager-sites",
+      "url": "https://business.adobe.com/products/experience-manager/sites/aem-sites",
+      "status": "directed",
+      "currentStatePath": "stardust/current/pages/experience-manager-sites.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "marketo",
+      "url": "https://business.adobe.com/products/marketo",
+      "status": "directed",
+      "currentStatePath": "stardust/current/pages/marketo.json",
+      "prototypePath": null,
+      "migratedPath": null
+    }
+  ]
+}

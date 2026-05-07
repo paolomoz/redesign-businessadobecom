@@ -1,0 +1,481 @@
+{
+  "_provenance": {
+    "generatedAt": "2026-05-07T12:20:56.948Z",
+    "pages": [
+      "adobe-analytics",
+      "experience-manager-sites",
+      "genstudio",
+      "home",
+      "marketo"
+    ]
+  },
+  "origin": "https://business.adobe.com",
+  "palette": {
+    "background": [],
+    "text": [
+      {
+        "value": "rgb(44, 44, 44)",
+        "count": 3754
+      },
+      {
+        "value": "rgb(0, 0, 0)",
+        "count": 410
+      },
+      {
+        "value": "rgb(41, 41, 41)",
+        "count": 126
+      },
+      {
+        "value": "rgb(39, 77, 234)",
+        "count": 102
+      },
+      {
+        "value": "rgb(255, 255, 255)",
+        "count": 97
+      },
+      {
+        "value": "rgb(104, 104, 104)",
+        "count": 19
+      },
+      {
+        "value": "rgb(59, 99, 251)",
+        "count": 9
+      },
+      {
+        "value": "rgb(112, 112, 112)",
+        "count": 6
+      },
+      {
+        "value": "rgb(45, 45, 45)",
+        "count": 3
+      },
+      {
+        "value": "rgb(109, 109, 109)",
+        "count": 2
+      }
+    ],
+    "border": [
+      {
+        "value": "rgb(44, 44, 44)",
+        "count": 11
+      },
+      {
+        "value": "rgba(0, 0, 0, 0)",
+        "count": 11
+      },
+      {
+        "value": "rgb(59, 99, 251)",
+        "count": 8
+      },
+      {
+        "value": "rgb(255, 255, 255)",
+        "count": 7
+      },
+      {
+        "value": "rgb(218, 218, 218)",
+        "count": 3
+      },
+      {
+        "value": "rgb(238, 238, 238) rgb(44, 44, 44)",
+        "count": 3
+      },
+      {
+        "value": "rgb(144, 144, 144) rgb(144, 144, 144) rgba(0, 0, 0, 0)",
+        "count": 2
+      }
+    ]
+  },
+  "type": {
+    "families": [
+      {
+        "family": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+        "count": 4105
+      },
+      {
+        "family": "serif",
+        "count": 383
+      },
+      {
+        "family": "-apple-system",
+        "count": 40
+      },
+      {
+        "family": "",
+        "count": 3
+      }
+    ],
+    "sizesByFamily": {
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif": [
+        {
+          "weight": "400",
+          "size": "18px",
+          "count": 3131
+        },
+        {
+          "weight": "700",
+          "size": "24px",
+          "count": 454
+        },
+        {
+          "weight": "400",
+          "size": "14px",
+          "count": 144
+        },
+        {
+          "weight": "800",
+          "size": "24px",
+          "count": 128
+        },
+        {
+          "weight": "700",
+          "size": "18px",
+          "count": 96
+        },
+        {
+          "weight": "400",
+          "size": "12px",
+          "count": 32
+        },
+        {
+          "weight": "700",
+          "size": "28px",
+          "count": 23
+        },
+        {
+          "weight": "700",
+          "size": "15px",
+          "count": 17
+        },
+        {
+          "weight": "700",
+          "size": "36px",
+          "count": 14
+        },
+        {
+          "weight": "600",
+          "size": "18px",
+          "count": 13
+        },
+        {
+          "weight": "700",
+          "size": "19px",
+          "count": 12
+        },
+        {
+          "weight": "400",
+          "size": "22px",
+          "count": 7
+        }
+      ],
+      "serif": [
+        {
+          "weight": "400",
+          "size": "16px",
+          "count": 383
+        }
+      ],
+      "-apple-system": [
+        {
+          "weight": "400",
+          "size": "13.3333px",
+          "count": 37
+        },
+        {
+          "weight": "300",
+          "size": "20px",
+          "count": 3
+        }
+      ],
+      "": [
+        {
+          "weight": "",
+          "size": "",
+          "count": 3
+        }
+      ]
+    }
+  },
+  "motifs": {
+    "radius": [
+      {
+        "value": "16px",
+        "count": 20
+      },
+      {
+        "value": "4px 4px 0px 0px",
+        "count": 13
+      },
+      {
+        "value": "25px",
+        "count": 6
+      },
+      {
+        "value": "50%",
+        "count": 6
+      },
+      {
+        "value": "4px",
+        "count": 3
+      },
+      {
+        "value": "20px",
+        "count": 1
+      }
+    ],
+    "shadow": [
+      {
+        "value": "rgba(0, 0, 0, 0.2) 0px 3px 3px 0px",
+        "count": 6
+      },
+      {
+        "value": "rgba(0, 0, 0, 0.2) 0px 2px 4px 0px",
+        "count": 3
+      },
+      {
+        "value": "rgba(0, 0, 0, 0.25) 0px 4px 4px 0px",
+        "count": 3
+      },
+      {
+        "value": "rgb(144, 144, 144) 0px -1px 0px 0px inset",
+        "count": 2
+      },
+      {
+        "value": "rgba(0, 0, 0, 0.1) -4px 0px 4px -2px",
+        "count": 2
+      }
+    ]
+  },
+  "voice": {
+    "heroHeadline": "Adobe completes the acquisition of Semrush.",
+    "outlineSample": [
+      "Adobe completes the acquisition of Semrush.",
+      "Explore all Adobe for Business products.",
+      "AI at Adobe.",
+      "Explore products.",
+      "AI-powered content management and end-to-end workflows.",
+      "Explore products.",
+      "Unleash creativity at scale.",
+      "Explore products.",
+      "Data and insights for a competitive edge.",
+      "Explore products.",
+      "Advanced marketing automation, management, and insights.",
+      "Explore products."
+    ],
+    "ctaSamples": [
+      "Learn about the product",
+      "Read the announcement"
+    ]
+  },
+  "systemComponents": {
+    "headers": [
+      {
+        "slug": "adobe-analytics",
+        "header": {
+          "tag": "header",
+          "links": [
+            {
+              "text": "",
+              "href": "https://business.adobe.com/"
+            },
+            {
+              "text": "Analytics",
+              "href": null
+            },
+            {
+              "text": "Get started",
+              "href": "/request-consultation.html?mktfrm_poi=analyticssolnpremium"
+            },
+            {
+              "text": "Experience Cloud",
+              "href": "https://experiencecloud.adobe.com/exc-content/login.html"
+            },
+            {
+              "text": "Commerce (Magento)",
+              "href": "https://account.magento.com/customer/account/login"
+            },
+            {
+              "text": "Marketo Engage",
+              "href": "https://login.marketo.com/"
+            },
+            {
+              "text": "Workfront",
+              "href": "/products/workfront/login.html"
+            },
+            {
+              "text": "",
+              "href": "https://www.adobe.com/"
+            },
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Products",
+              "href": "/products.html"
+            }
+          ]
+        }
+      },
+      {
+        "slug": "experience-manager-sites",
+        "header": {
+          "tag": "header",
+          "links": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Products",
+              "href": "/products"
+            },
+            {
+              "text": "Adobe Experience Manager",
+              "href": "/products/experience-manager/adobe-experience-manager"
+            }
+          ]
+        }
+      },
+      {
+        "slug": "genstudio",
+        "header": {
+          "tag": "header",
+          "links": [
+            {
+              "text": "",
+              "href": "https://business.adobe.com/"
+            },
+            {
+              "text": "GenStudio",
+              "href": null
+            },
+            {
+              "text": "Customer Success",
+              "href": "/customer-success-stories.html?sh_=Content+Supply+Chain"
+            },
+            {
+              "text": "Get started",
+              "href": "/request-consultation.html"
+            },
+            {
+              "text": "Experience Cloud",
+              "href": "https://experiencecloud.adobe.com/exc-content/login.html"
+            },
+            {
+              "text": "Commerce (Magento)",
+              "href": "https://account.magento.com/customer/account/login"
+            },
+            {
+              "text": "Marketo Engage",
+              "href": "https://login.marketo.com/"
+            },
+            {
+              "text": "Workfront",
+              "href": "/products/workfront/login.html"
+            },
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Products",
+              "href": "/products.html"
+            }
+          ]
+        }
+      },
+      {
+        "slug": "home",
+        "header": {
+          "tag": "header",
+          "links": []
+        }
+      },
+      {
+        "slug": "marketo",
+        "header": {
+          "tag": "header",
+          "links": [
+            {
+              "text": "",
+              "href": "https://business.adobe.com/"
+            },
+            {
+              "text": "Marketo Engage",
+              "href": null
+            },
+            {
+              "text": "Get started",
+              "href": "/request-consultation.html?mktfrm_poi=marketoengagementplatform"
+            },
+            {
+              "text": "Experience Cloud",
+              "href": "https://experiencecloud.adobe.com/exc-content/login.html"
+            },
+            {
+              "text": "Commerce (Magento)",
+              "href": "https://account.magento.com/customer/account/login"
+            },
+            {
+              "text": "Marketo Engage",
+              "href": "https://login.marketo.com/"
+            },
+            {
+              "text": "Workfront",
+              "href": "/products/workfront/login.html"
+            },
+            {
+              "text": "",
+              "href": "https://www.adobe.com/"
+            },
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Products",
+              "href": "/products.html"
+            }
+          ]
+        }
+      }
+    ],
+    "footers": [
+      {
+        "slug": "adobe-analytics",
+        "footer": {
+          "tag": "footer",
+          "links": []
+        }
+      },
+      {
+        "slug": "experience-manager-sites",
+        "footer": {
+          "tag": "footer",
+          "links": []
+        }
+      },
+      {
+        "slug": "genstudio",
+        "footer": {
+          "tag": "footer",
+          "links": []
+        }
+      },
+      {
+        "slug": "home",
+        "footer": {
+          "tag": "footer",
+          "links": []
+        }
+      },
+      {
+        "slug": "marketo",
+        "footer": {
+          "tag": "footer",
+          "links": []
+        }
+      }
+    ]
+  }
+}

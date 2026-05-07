@@ -1,0 +1,1342 @@
+{
+  "_provenance": {
+    "url": "https://business.adobe.com/products/genstudio",
+    "slug": "genstudio",
+    "extractedAt": "2026-05-07T12:20:02.157Z",
+    "waitMs": 13757,
+    "waitMode": "medium (fallback)",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    }
+  },
+  "title": "Adobe GenStudio | Enterprise Generative AI Content Platform",
+  "meta": {
+    "description": "Create, manage, and scale on-brand content faster with Adobe GenStudio, an AI-powered, end-to-end content supply chain platform built for enterprise teams.",
+    "ogTitle": "Adobe GenStudio | Enterprise Generative AI Content Platform",
+    "ogDescription": "Create, manage, and scale on-brand content faster with Adobe GenStudio, an AI-powered, end-to-end content supply chain platform built for enterprise teams.",
+    "ogImage": "https://business.adobe.com/products/media_139c5a89608cad47419e1c8bbfd629c83f33486c3.png?width=1200&format=pjpg&optimize=medium",
+    "themeColor": null
+  },
+  "outline": [
+    {
+      "level": 4,
+      "text": "Something went wrong."
+    },
+    {
+      "level": 1,
+      "text": "Adobe GenStudio"
+    },
+    {
+      "level": 2,
+      "text": "Build a content supply chain for the AI world."
+    },
+    {
+      "level": 2,
+      "text": "Workflows, planning, and metadata."
+    },
+    {
+      "level": 3,
+      "text": "Included products"
+    },
+    {
+      "level": 2,
+      "text": "Rebuild creative foundations."
+    },
+    {
+      "level": 3,
+      "text": "Included products"
+    },
+    {
+      "level": 2,
+      "text": "Scaled content production."
+    },
+    {
+      "level": 3,
+      "text": "Included products"
+    },
+    {
+      "level": 2,
+      "text": "On-brand content creation for marketers."
+    },
+    {
+      "level": 3,
+      "text": "Included products"
+    },
+    {
+      "level": 2,
+      "text": "Asset management and reuse."
+    },
+    {
+      "level": 3,
+      "text": "Included products"
+    },
+    {
+      "level": 2,
+      "text": "Intelligent content insights."
+    },
+    {
+      "level": 3,
+      "text": "Included products"
+    },
+    {
+      "level": 2,
+      "text": "Introducing adobe brand intelligence system."
+    },
+    {
+      "level": 2,
+      "text": "The Total Economic Impact™ of Adobe’s Content Supply Chain Solution"
+    },
+    {
+      "level": 2,
+      "text": "Helping businesses drive impact."
+    },
+    {
+      "level": 2,
+      "text": "Let us show you the full power of Adobe GenStudio."
+    },
+    {
+      "level": 2,
+      "text": "Questions? We have answers."
+    },
+    {
+      "level": 3,
+      "text": "Adobe GenStudio"
+    },
+    {
+      "level": 3,
+      "text": "Adobe GenStudio"
+    },
+    {
+      "level": 3,
+      "text": "Request demo"
+    },
+    {
+      "level": 3,
+      "text": "Request demo"
+    },
+    {
+      "level": 3,
+      "text": "Build a content supply chain for the AI world."
+    },
+    {
+      "level": 3,
+      "text": "Build a content supply chain for the AI world."
+    },
+    {
+      "level": 3,
+      "text": "Workflows, planning, and metadata."
+    },
+    {
+      "level": 3,
+      "text": "Workflows, planning, and metadata."
+    },
+    {
+      "level": 3,
+      "text": "Learn about Adobe’s approach"
+    },
+    {
+      "level": 3,
+      "text": "Learn about Adobe’s approach"
+    },
+    {
+      "level": 3,
+      "text": "Included products"
+    },
+    {
+      "level": 3,
+      "text": "Included products"
+    },
+    {
+      "level": 3,
+      "text": "Workfront"
+    },
+    {
+      "level": 3,
+      "text": "Workfront"
+    },
+    {
+      "level": 3,
+      "text": "Workfront Planning"
+    },
+    {
+      "level": 3,
+      "text": "Workfront Planning"
+    },
+    {
+      "level": 3,
+      "text": "Frame.io for Business"
+    },
+    {
+      "level": 3,
+      "text": "Frame.io for Business"
+    },
+    {
+      "level": 3,
+      "text": "Experience Manager Assets"
+    },
+    {
+      "level": 3,
+      "text": "Experience Manager Assets"
+    },
+    {
+      "level": 3,
+      "text": "Rebuild creative foundations."
+    },
+    {
+      "level": 3,
+      "text": "Rebuild creative foundations."
+    },
+    {
+      "level": 3,
+      "text": "Creative Cloud for Enterprise"
+    },
+    {
+      "level": 3,
+      "text": "Creative Cloud for Enterprise"
+    },
+    {
+      "level": 3,
+      "text": "Scaled content production."
+    },
+    {
+      "level": 3,
+      "text": "Scaled content production."
+    },
+    {
+      "level": 3,
+      "text": "Firefly Creative Production for Enterprise"
+    },
+    {
+      "level": 3,
+      "text": "Firefly Creative Production for Enterprise"
+    },
+    {
+      "level": 3,
+      "text": "3D digital twin"
+    },
+    {
+      "level": 3,
+      "text": "3D digital twin"
+    },
+    {
+      "level": 3,
+      "text": "Firefly Custom Models"
+    },
+    {
+      "level": 3,
+      "text": "Firefly Custom Models"
+    },
+    {
+      "level": 3,
+      "text": "Firefly Foundry"
+    },
+    {
+      "level": 3,
+      "text": "Firefly Foundry"
+    },
+    {
+      "level": 3,
+      "text": "On-brand content creation for marketers."
+    },
+    {
+      "level": 3,
+      "text": "On-brand content creation for marketers."
+    },
+    {
+      "level": 3,
+      "text": "GenStudio for Performance Marketing"
+    },
+    {
+      "level": 3,
+      "text": "GenStudio for Performance Marketing"
+    },
+    {
+      "level": 3,
+      "text": "GenStudio for Content Marketing"
+    },
+    {
+      "level": 3,
+      "text": "GenStudio for Content Marketing"
+    },
+    {
+      "level": 3,
+      "text": "Adobe Express"
+    },
+    {
+      "level": 3,
+      "text": "Adobe Express"
+    },
+    {
+      "level": 3,
+      "text": "Asset management and reuse."
+    },
+    {
+      "level": 3,
+      "text": "Asset management and reuse."
+    },
+    {
+      "level": 3,
+      "text": "Intelligent content insights."
+    },
+    {
+      "level": 3,
+      "text": "Intelligent content insights."
+    },
+    {
+      "level": 3,
+      "text": "Content Analytics"
+    },
+    {
+      "level": 3,
+      "text": "Content Analytics"
+    },
+    {
+      "level": 3,
+      "text": "Introducing Adobe Brand Intelligence System."
+    },
+    {
+      "level": 3,
+      "text": "Introducing Adobe Brand Intelligence System."
+    },
+    {
+      "level": 3,
+      "text": "Learn more"
+    },
+    {
+      "level": 3,
+      "text": "Learn more"
+    },
+    {
+      "level": 3,
+      "text": "How Adobe GenStudio orchestrates agentic workflows."
+    },
+    {
+      "level": 3,
+      "text": "How Adobe GenStudio orchestrates agentic workflows."
+    },
+    {
+      "level": 3,
+      "text": "The Total Economic Impact™ of Adobe’s Content Supply Chain Solution"
+    },
+    {
+      "level": 3,
+      "text": "The Total Economic Impact™ of Adobe’s Content Supply Chain Solution"
+    },
+    {
+      "level": 3,
+      "text": "Read report"
+    },
+    {
+      "level": 3,
+      "text": "Read report"
+    },
+    {
+      "level": 3,
+      "text": "Helping businesses drive impact."
+    },
+    {
+      "level": 3,
+      "text": "Helping businesses drive impact."
+    },
+    {
+      "level": 3,
+      "text": "Learn more about Adobe GenStudio."
+    },
+    {
+      "level": 3,
+      "text": "Learn more about Adobe GenStudio."
+    },
+    {
+      "level": 3,
+      "text": "Let us show you the full power of Adobe GenStudio."
+    },
+    {
+      "level": 3,
+      "text": "Let us show you the full power of Adobe GenStudio."
+    },
+    {
+      "level": 3,
+      "text": "Questions? We have answers."
+    },
+    {
+      "level": 3,
+      "text": "Questions? We have answers."
+    },
+    {
+      "level": 3,
+      "text": "What is Adobe GenStudio?"
+    },
+    {
+      "level": 3,
+      "text": "What is Adobe GenStudio?"
+    },
+    {
+      "level": 3,
+      "text": "content supply chain solution"
+    },
+    {
+      "level": 3,
+      "text": "content supply chain solution"
+    },
+    {
+      "level": 3,
+      "text": "Can I buy Adobe GenStudio?"
+    },
+    {
+      "level": 3,
+      "text": "Can I buy Adobe GenStudio?"
+    },
+    {
+      "level": 3,
+      "text": "What products make up Adobe GenStudio?"
+    },
+    {
+      "level": 3,
+      "text": "What products make up Adobe GenStudio?"
+    },
+    {
+      "level": 3,
+      "text": "Adobe Workfront"
+    },
+    {
+      "level": 3,
+      "text": "Adobe Workfront"
+    },
+    {
+      "level": 3,
+      "text": "Adobe Frame.io for Business"
+    },
+    {
+      "level": 3,
+      "text": "Adobe Frame.io for Business"
+    },
+    {
+      "level": 3,
+      "text": "Adobe Experience Manager Assets"
+    },
+    {
+      "level": 3,
+      "text": "Adobe Experience Manager Assets"
+    },
+    {
+      "level": 3,
+      "text": "Adobe Creative Cloud for Enterprise"
+    },
+    {
+      "level": 3,
+      "text": "Adobe Creative Cloud for Enterprise"
+    },
+    {
+      "level": 3,
+      "text": "Adobe Firefly Custom Models"
+    },
+    {
+      "level": 3,
+      "text": "Adobe Firefly Custom Models"
+    },
+    {
+      "level": 3,
+      "text": "Adobe Firefly Foundry"
+    },
+    {
+      "level": 3,
+      "text": "Adobe Firefly Foundry"
+    },
+    {
+      "level": 3,
+      "text": "Adobe GenStudio for Performance Marketing"
+    },
+    {
+      "level": 3,
+      "text": "Adobe GenStudio for Performance Marketing"
+    },
+    {
+      "level": 3,
+      "text": "Adobe Express for Business"
+    },
+    {
+      "level": 3,
+      "text": "Adobe Express for Business"
+    },
+    {
+      "level": 3,
+      "text": "Adobe Content Analytics"
+    },
+    {
+      "level": 3,
+      "text": "Adobe Content Analytics"
+    },
+    {
+      "level": 3,
+      "text": "How does Adobe GenStudio help marketing and creative teams?"
+    },
+    {
+      "level": 3,
+      "text": "How does Adobe GenStudio help marketing and creative teams?"
+    },
+    {
+      "level": 3,
+      "text": "What outcomes can marketing and creative teams expect from Adobe GenStudio?"
+    },
+    {
+      "level": 3,
+      "text": "What outcomes can marketing and creative teams expect from Adobe GenStudio?"
+    },
+    {
+      "level": 3,
+      "text": "How is Adobe GenStudio different from other content operations solutions?"
+    },
+    {
+      "level": 3,
+      "text": "How is Adobe GenStudio different from other content operations solutions?"
+    },
+    {
+      "level": 3,
+      "text": "How does Adobe GenStudio support brand governance and compliance?"
+    },
+    {
+      "level": 3,
+      "text": "How does Adobe GenStudio support brand governance and compliance?"
+    },
+    {
+      "level": 3,
+      "text": "Does Adobe GenStudio integrate with third-party tools and systems?"
+    },
+    {
+      "level": 3,
+      "text": "Does Adobe GenStudio integrate with third-party tools and systems?"
+    },
+    {
+      "level": 3,
+      "text": "What’s the onboarding and adoption process like?"
+    },
+    {
+      "level": 3,
+      "text": "What’s the onboarding and adoption process like?"
+    },
+    {
+      "level": 3,
+      "text": "Let’s talk about what Adobe can do for your business."
+    },
+    {
+      "level": 3,
+      "text": "Let’s talk about what Adobe can do for your business."
+    },
+    {
+      "level": 3,
+      "text": "Get started"
+    },
+    {
+      "level": 3,
+      "text": "Get started"
+    }
+  ],
+  "sections": [
+    {
+      "index": 0,
+      "tag": "section",
+      "className": "feds-navItem feds-navItem--section feds-navItem--megaMenu",
+      "height": 63,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(41, 41, 41)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "Main Menu"
+    },
+    {
+      "index": 1,
+      "tag": "div",
+      "className": "section",
+      "height": 560,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "Adobe GenStudio\n\nYour end-to-end content supply chain solution for the AI world — built to deliver speed, scale, and measurable impact.\n\nRequest demo"
+    },
+    {
+      "index": 2,
+      "tag": "div",
+      "className": "section",
+      "height": 302,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "Build a content supply chain for the AI world.\n\nEmpower marketing and creative teams to plan, create, and deliver content efficiently with Adobe GenStudio, an integrated content supply chain solution that features AI-powered brand intelligence, shared context, and seamless workflows."
+    },
+    {
+      "index": 3,
+      "tag": "div",
+      "className": "section tablist-genstudio-section",
+      "height": 1700,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "Workflow & planning\nCreative foundations\nScaled content production\nMarketer-led creation\nAsset management\nContent insights\ntab\ngenstudio, 1\nstyle\nm spacing\n#FCEBF1\nWorkflows, planning, and metadata.\n\nGain enterprise-wide visibility into plans, align work to business goals with contextual intelligence, and orchestrate seamless human and agentic workflows.\n\nLearn about Adobe’s approach\n\n#000000\n#000000\n#000000\n#000000\nIncluded products\n Workfront\n Workfront Planning\n Frame.io for Business\n Experience Manager Assets\nstyle\nstatic-links, l-spacing\nbackground\n#ffffff\nmasonry\nspan 8, span 4"
+    },
+    {
+      "index": 4,
+      "tag": "div",
+      "className": "section",
+      "height": 1557,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "tab\ngenstudio, 1\nstyle\nm spacing\n#FCEBF1\nWorkflows, planning, and metadata.\n\nGain enterprise-wide visibility into plans, align work to business goals with contextual intelligence, and orchestrate seamless human and agentic workflows.\n\nLearn about Adobe’s approach\n\n#000000\n#000000\n#000000\n#000000\nIncluded products\n Workfront\n Workfront Planning\n Frame.io for Business\n Experience Manager Assets\nstyle\nstatic-links, l-spacing\nbackground\n#ffffff\nmasonry\nspan 8, span 4"
+    },
+    {
+      "index": 5,
+      "tag": "div",
+      "className": "section",
+      "height": 0,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "tab\n            genstudio, 2\n          \n          \n            style\n            m spacing\n          \n        \n        \n          \n            #FCEBF1\n          \n          \n            \n              Rebuild creative foundations.\n              Build a creative foundation to deliver high-quality content faster and more efficiently with AI-powered tools and workflows, freeing creative teams to focus on the work that delivers impact.\n              Learn about Adobe’s approach\n            \n            \n              \n                \n                \n                \n                \n             "
+    },
+    {
+      "index": 6,
+      "tag": "div",
+      "className": "section",
+      "height": 0,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "tab\n            genstudio, 3\n          \n          \n            style\n            m spacing\n          \n        \n        \n          \n            #FCEBF1\n          \n          \n            \n              Scaled content production.\n              Automate high-volume workflows and generate high-fidelity assets at market speed without compromising brand governance or quality.\n              Learn about Adobe’s approach\n            \n            \n              \n                \n                \n                \n                \n              \n            \n          \n        \n        \n          \n        "
+    },
+    {
+      "index": 7,
+      "tag": "div",
+      "className": "section",
+      "height": 0,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "tab\n            genstudio, 4\n          \n          \n            style\n            m spacing\n          \n        \n        \n          \n            #FCEBF1\n          \n          \n            \n              On-brand content creation for marketers.\n              Securely generate, adapt, and activate assets using AI-driven, self-serve content creation that provides brand guardrails and automated localization capabilities.\n              Learn about Adobe’s approach\n            \n            \n              \n                \n                \n                \n                \n              \n            \n  "
+    },
+    {
+      "index": 8,
+      "tag": "div",
+      "className": "section",
+      "height": 0,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "tab\n            genstudio, 5\n          \n          \n            style\n            m spacing\n          \n        \n        \n          \n            #FCEBF1\n          \n          \n            \n              Asset management and reuse.\n              Transform how you manage content with AI and automation to deliver unprecedented levels of efficiency and governance.\n              Learn about Adobe’s approach\n            \n            \n              \n                \n                \n                \n                \n              \n            \n          \n        \n        \n          \n            #000\n   "
+    },
+    {
+      "index": 9,
+      "tag": "div",
+      "className": "section",
+      "height": 0,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "tab\n            genstudio, 6\n          \n          \n            style\n            m spacing\n          \n        \n        \n          \n            #FCEBF1\n          \n          \n            \n              Intelligent content insights.\n              Boost the performance of creative content with insights gleaned from the asset and attribute levels.\n              Learn about Adobe’s approach\n            \n            \n              \n                \n                \n                \n                \n              \n            \n          \n        \n        \n          \n            #000\n          \n       "
+    },
+    {
+      "index": 10,
+      "tag": "div",
+      "className": "section",
+      "height": 0,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": ""
+    },
+    {
+      "index": 11,
+      "tag": "div",
+      "className": "section",
+      "height": 939,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "Introducing adobe brand intelligence system.\n\nbrand intelligence system is a continuously learning, agentic system that captures the nuances that brand guidelines can’t convey – your team’s collective judgement, insights, and decisions. By encoding this knowledge into a structured brand ontology, it informs creative decisions, validates content, and ensures every asset is on-brand and built to perform.\n\nLearn more"
+    },
+    {
+      "index": 12,
+      "tag": "div",
+      "className": "section",
+      "height": 1036,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "#FFF\nThe Total Economic Impact™ of Adobe’s Content Supply Chain Solution\n\nRead report\n\nstyle\nxl spacing\nmasonry\nfull-width"
+    },
+    {
+      "index": 13,
+      "tag": "div",
+      "className": "section",
+      "height": 157,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "Helping businesses drive impact."
+    },
+    {
+      "index": 14,
+      "tag": "div",
+      "className": "section",
+      "height": 603,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "Item width\n150"
+    },
+    {
+      "index": 15,
+      "tag": "div",
+      "className": "section",
+      "height": 0,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": ""
+    },
+    {
+      "index": 16,
+      "tag": "div",
+      "className": "section",
+      "height": 182,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "Let us show you the full power of Adobe GenStudio.\nMarketo Configurator Friday, April 10, 2026 at 19:32\nSuccess content\nThank you for your interest in Adobe GenStudio. Your request has been submitted to an Adobe representative who will contact you shortly."
+    },
+    {
+      "index": 17,
+      "tag": "div",
+      "className": "section",
+      "height": 3064,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "Questions? We have answers.\nWhat is Adobe GenStudio?\nAdobe GenStudio is Adobe’s end-to-end content supply chain solution — a connected set of products that integrates purpose-built AI into every stage of the enterprise content workflow and is optimized for agility, brand governance, and content adaptation, in order to increase content ROI and deliver high-impact content.\nCan I buy Adobe GenStudio?\nYes, you can buy GenStudio, the complete solution.\nWhat products make up Adobe GenStudio?\n\nGenStudio brings together Adobe’s best-in-class creative and marketing tools into one connected system.\n\nAdo"
+    },
+    {
+      "index": 18,
+      "tag": "div",
+      "className": "section",
+      "height": 6616,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "title\nBuild a content supply chain with Adobe GenStudio.\nCardDescription\nPlan, create, and deliver content efficiently across teams with AI-powered brand intelligence, shared context, and seamless workflows.\ncardDate\n2026-03-10\ncta1Text\nLearn more\ncardImage\nprimaryTag\ncaas:content-type/product-page\nTags\ncaas:content-type/product-page,caas:products/genstudio\nAdobe GenStudio\nAdobe GenStudio\nRequest demo\nRequest demo\nBuild a content supply chain for the AI world.\nBuild a content supply chain for the AI world.\nWorkflows, planning, and metadata.\nWorkflows, planning, and metadata.\nLearn about Adobe’"
+    }
+  ],
+  "ctas": [
+    {
+      "text": "Get started",
+      "href": "/request-consultation.html",
+      "role": "a"
+    },
+    {
+      "text": "GenStudio",
+      "href": null,
+      "role": "button"
+    },
+    {
+      "text": "Overview",
+      "href": null,
+      "role": "link"
+    },
+    {
+      "text": "Explore Products",
+      "href": null,
+      "role": "button"
+    },
+    {
+      "text": "Customer Success",
+      "href": "/customer-success-stories.html?sh_=Content+Supply+Chain",
+      "role": "a"
+    },
+    {
+      "text": "Resources",
+      "href": null,
+      "role": "button"
+    },
+    {
+      "text": "Get started",
+      "href": "/request-consultation.html",
+      "role": "a"
+    },
+    {
+      "text": "Request demo",
+      "href": "https://business.adobe.com/products/genstudio.html#let-us-show-you-the-full-power-of-adobe-genstudio",
+      "role": "a"
+    },
+    {
+      "text": "Workflow & planning",
+      "href": null,
+      "role": "tab"
+    }
+  ],
+  "links": {
+    "internal": [
+      "/de/products/genstudio.html",
+      "/",
+      "/customer-success-stories.html",
+      "/request-consultation.html",
+      "/products/workfront/login.html",
+      "/products.html",
+      "/products/genstudio.html",
+      "/solutions/content-supply-chain/workflow-planning.html",
+      "/products/workfront.html",
+      "/products/workfront/strategic-planning.html",
+      "/products/frameio-business.html",
+      "/products/experience-manager/assets.html",
+      "/solutions/content-supply-chain/rebuild-creative-foundations.html",
+      "/products/creativecloud-business.html",
+      "/solutions/content-supply-chain/scaled-content-production.html",
+      "/products/firefly-business/firefly-creative-production.html",
+      "/products/firefly-business/firefly-creative-production/digital-twins.html",
+      "/products/firefly-business/custom-models.html",
+      "/products/firefly-business/firefly-foundry.html",
+      "/solutions/content-supply-chain/marketer-led-creation.html",
+      "/products/genstudio/performance-marketing.html",
+      "/products/genstudio/content-marketing.html",
+      "/products/express-business.html",
+      "/solutions/content-supply-chain/asset-management.html",
+      "/products/genstudio-for-performance-marketing.html",
+      "/solutions/content-supply-chain/content-insights.html",
+      "/products/adobe-analytics/content-analytics.html",
+      "/products/brand-intelligence.html",
+      "/resources/reports/forrester-tei-adobe-content-supply-chain.html",
+      "/fragments/products/genstudio/hub-deeper-content",
+      "/blog/how-to/create-a-content-supply-chain-that-will-stand-the-test-of-time"
+    ],
+    "external": [
+      "https://experiencecloud.adobe.com/exc-content/login.html",
+      "https://account.magento.com/customer/account/login",
+      "https://login.marketo.com/",
+      "https://milo.adobe.com/tools/marketo"
+    ]
+  },
+  "colors": [
+    [
+      "color::rgb(44, 44, 44)",
+      983
+    ],
+    [
+      "color::rgb(0, 0, 0)",
+      86
+    ],
+    [
+      "color::rgb(41, 41, 41)",
+      38
+    ],
+    [
+      "color::rgb(39, 77, 234)",
+      24
+    ],
+    [
+      "color::rgb(255, 255, 255)",
+      16
+    ],
+    [
+      "color::rgb(104, 104, 104)",
+      9
+    ],
+    [
+      "bg::rgb(243, 243, 243)",
+      7
+    ],
+    [
+      "bg::rgb(255, 255, 255)",
+      5
+    ],
+    [
+      "border::rgba(0, 0, 0, 0)",
+      5
+    ],
+    [
+      "bg::rgb(248, 248, 248)",
+      4
+    ],
+    [
+      "color::rgb(59, 99, 251)",
+      4
+    ],
+    [
+      "bg::rgb(59, 99, 251)",
+      3
+    ],
+    [
+      "border::rgb(59, 99, 251)",
+      2
+    ],
+    [
+      "color::rgb(112, 112, 112)",
+      2
+    ],
+    [
+      "border::rgb(255, 255, 255)",
+      2
+    ],
+    [
+      "bg::rgba(0, 0, 0, 0.5)",
+      1
+    ],
+    [
+      "color::rgb(45, 45, 45)",
+      1
+    ],
+    [
+      "border::rgb(218, 218, 218)",
+      1
+    ],
+    [
+      "border::rgb(238, 238, 238) rgb(44, 44, 44)",
+      1
+    ],
+    [
+      "bg::rgb(0, 0, 0)",
+      1
+    ],
+    [
+      "bg::rgb(36, 36, 36)",
+      1
+    ],
+    [
+      "color::rgb(109, 109, 109)",
+      1
+    ],
+    [
+      "border::rgb(144, 144, 144) rgb(144, 144, 144) rgba(0, 0, 0, 0)",
+      1
+    ]
+  ],
+  "fonts": [
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|400|18px",
+      847
+    ],
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|700|24px",
+      114
+    ],
+    [
+      "serif|400|16px",
+      80
+    ],
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|400|14px",
+      44
+    ],
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|700|18px",
+      26
+    ],
+    [
+      "-apple-system|400|13.3333px",
+      11
+    ],
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|400|12px",
+      10
+    ],
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|700|28px",
+      9
+    ],
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|600|18px",
+      6
+    ],
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|700|36px",
+      3
+    ],
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|700|14px",
+      2
+    ],
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|700|15px",
+      2
+    ],
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|400|22px",
+      2
+    ],
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|700|12px",
+      1
+    ],
+    [
+      "-apple-system|300|20px",
+      1
+    ],
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|700|20px",
+      1
+    ],
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|700|16px",
+      1
+    ],
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|600|14px",
+      1
+    ],
+    [
+      "||",
+      1
+    ],
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|700|80px",
+      1
+    ],
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|700|22px",
+      1
+    ],
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|700|19px",
+      1
+    ]
+  ],
+  "radii": [
+    [
+      "4px 4px 0px 0px",
+      6
+    ],
+    [
+      "16px",
+      3
+    ],
+    [
+      "50%",
+      2
+    ],
+    [
+      "4px",
+      1
+    ],
+    [
+      "25px",
+      1
+    ]
+  ],
+  "shadows": [
+    [
+      "rgba(0, 0, 0, 0.2) 0px 3px 3px 0px",
+      2
+    ],
+    [
+      "rgba(0, 0, 0, 0.2) 0px 2px 4px 0px",
+      1
+    ],
+    [
+      "rgba(0, 0, 0, 0.25) 0px 4px 4px 0px",
+      1
+    ],
+    [
+      "rgb(144, 144, 144) 0px -1px 0px 0px inset",
+      1
+    ],
+    [
+      "rgba(0, 0, 0, 0.1) -4px 0px 4px -2px",
+      1
+    ]
+  ],
+  "media": {
+    "images": [
+      {
+        "src": "https://business.adobe.com/assets/icons/gnav/adobe-for-business-web-lockup-rev2.svg",
+        "alt": "Adobe for business",
+        "width": 300,
+        "height": 58
+      },
+      {
+        "src": "https://business.adobe.com/federal/assets/svgs/accessibility-pause.svg",
+        "alt": "Pause motion",
+        "width": 40,
+        "height": 40
+      },
+      {
+        "src": "https://business.adobe.com/federal/assets/svgs/accessibility-play.svg",
+        "alt": "Play motion",
+        "width": 40,
+        "height": 40
+      },
+      {
+        "src": "https://business.adobe.com/products/media_1b70f34ee303e37f4a0fbedf6d26ae6d3b9b245d1.png?width=2000&format=webply&optimize=medium",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/assets/icons/products/genstudio/logo-workfront.svg",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/assets/icons/products/genstudio/logo-workfront.svg",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/assets/icons/products/genstudio/logo-frameio.svg",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/assets/icons/products/genstudio/logo-experience-manager-assets.svg",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/products/media_13feeb2e5e4a82463de5a9b1659780861255d6db5.png?width=750&format=png&optimize=medium",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/assets/icons/products/genstudio/logo-creative-cloud.svg",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/assets/icons/products/genstudio/logo-frameio.svg",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/products/media_19740158be74399e1429fe044ed57ac4f9f4c1dde.png?width=750&format=png&optimize=medium",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/assets/icons/products/genstudio/logo-experience-manager-assets.svg",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/assets/icons/products/genstudio/logo-firefly.svg",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/assets/icons/products/genstudio/logo-firefly.svg",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/assets/icons/products/genstudio/logo-firefly.svg",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/products/media_18b3480b021a83052e6aa5502a927e78aa2d31a77.png?width=750&format=png&optimize=medium",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/assets/icons/products/genstudio/logo-experience-manager-assets.svg",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/assets/icons/products/genstudio/logo-experience-manager-assets.svg",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/assets/icons/products/genstudio/logo-express.svg",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/products/media_102beaaa69bf0b69e24c7befeaa217e0135977ffa.png?width=750&format=png&optimize=medium",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/assets/icons/products/genstudio/logo-experience-manager-assets.svg",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/assets/icons/products/genstudio/logo-workfront.svg",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/products/media_19c6dadb412bf5f502055ac216237ef8ca9cd2dc5.png?width=750&format=png&optimize=medium",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/assets/icons/products/genstudio/logo-experience-manager-assets.svg",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/assets/icons/products/genstudio/logo-experience-manager-assets.svg",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/products/media_19b261876d371f7a33b9191452d042b3ed55398d6.png?width=2000&format=webply&optimize=medium",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/products/media_162e61b8cbcbba17de5da05ace0e5c5ccf0ae7037.png?width=2000&format=webply&optimize=medium",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/assets/icons/products/genstudio/logo-coca-cola.svg",
+        "alt": "Coca Cola",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/assets/icons/products/genstudio/logo-pfizer.svg",
+        "alt": "Pfizer",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/assets/icons/products/genstudio/logo-ibm.svg",
+        "alt": "IBM",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/assets/icons/products/genstudio/logo-kate-spade.svg",
+        "alt": "Kate Spade",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/assets/icons/products/genstudio/logo-newell.svg",
+        "alt": "Newell",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/assets/icons/products/genstudio/logo-estee-lauder.svg",
+        "alt": "Estee Lauder",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/assets/icons/products/genstudio/logo-coach.svg",
+        "alt": "Coach",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/assets/icons/products/genstudio/logo-lenovo.svg",
+        "alt": "Lenovo",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/products/media_119263ccd192d5cf5ab76f6647e764b56c9802a4e.png?width=750&format=png&optimize=medium",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/assets/icons/products/genstudio/logo-kinesso.svg",
+        "alt": "Kinesso",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/assets/icons/products/genstudio/logo-jll.svg",
+        "alt": "JLL",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/products/media_139c5a89608cad47419e1c8bbfd629c83f33486c3.png?width=750&format=png&optimize=medium",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      }
+    ],
+    "svg": 4,
+    "video": 1,
+    "iframe": 0
+  },
+  "forms": [],
+  "systemComponents": {
+    "header": {
+      "tag": "header",
+      "links": [
+        {
+          "text": "",
+          "href": "https://business.adobe.com/"
+        },
+        {
+          "text": "GenStudio",
+          "href": null
+        },
+        {
+          "text": "Customer Success",
+          "href": "/customer-success-stories.html?sh_=Content+Supply+Chain"
+        },
+        {
+          "text": "Get started",
+          "href": "/request-consultation.html"
+        },
+        {
+          "text": "Experience Cloud",
+          "href": "https://experiencecloud.adobe.com/exc-content/login.html"
+        },
+        {
+          "text": "Commerce (Magento)",
+          "href": "https://account.magento.com/customer/account/login"
+        },
+        {
+          "text": "Marketo Engage",
+          "href": "https://login.marketo.com/"
+        },
+        {
+          "text": "Workfront",
+          "href": "/products/workfront/login.html"
+        },
+        {
+          "text": "Home",
+          "href": "/"
+        },
+        {
+          "text": "Products",
+          "href": "/products.html"
+        }
+      ]
+    },
+    "footer": {
+      "tag": "footer",
+      "links": []
+    }
+  }
+}

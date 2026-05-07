@@ -1,0 +1,1457 @@
+<!DOCTYPE html>
+<!--
+_provenance:
+  page: home
+  source: https://business.adobe.com/
+  writtenBy: stardust:prototype
+  writtenAt: 2026-05-07
+  iteration: 3 (live content match — same design system as v2-editorial, different copy)
+  againstDirection: stardust/direction.md (resolvedAt 2026-05-07)
+  renderedVia: stardust-direct
+  rationale: |
+    Reuses the design system + scroll-driven motion from references/hub
+    but the IA, copy, product names, section subheads, and editorial-story
+    titles all match the captured live content from
+    stardust/current/pages/home.json. Hero is the Semrush announcement
+    (the actual H1 on live), products in live order with full names,
+    Summit 2026 marquee, editorial stories band, full 6-card solutions
+    grid, customer marquee.
+  designSpec: [DESIGN.md, DESIGN.json]
+  inputs:
+    - stardust/current/pages/home.json (every section text + outline)
+    - stardust/prototypes/home-proposed-v2-editorial.html (design system, motion port)
+    - references/hub/scripts/{hero,hero-grid,text-animate,editorial}.js
+  unsourcedContent:
+    - { kind: "logo", note: "customer logos are typographic placeholders" }
+    - { kind: "imagery", note: "editorial-story tile images use placeholder gradients/captured photography from references" }
+  stardustVersion: 0.3.0
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adobe for Business | Enterprise Digital Marketing Solutions</title>
+  <link rel="icon" type="image/svg+xml" href="assets/adobe-logo-red.svg">
+  <style>
+    :root {
+      --color-background-default: #ffffff;
+      --color-background-subtle: #f8f8f8;
+      --color-background-strong: #f3f3f3;
+      --color-content-default: #131313;
+      --color-content-subtle: rgba(0,0,0,0.64);
+      --color-content-soft: #4a4a4a;
+      --color-content-muted: #6e6e6e;
+      --color-primary: #3b63fb;
+      --color-primary-strong: #274dea;
+      --color-border: #e1e1e1;
+      --color-divider: #e9e9e9;
+      --color-adobe-red: #eb1000;
+
+      --font-display: "Adobe Clean Display", "Adobe Clean", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      --font-body: "Adobe Clean", "Adobe Clean Display", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+
+      --type-super-size: 96px;     --type-super-lh: 0.94;  --type-super-ls: -0.04em;
+      --type-title-1-size: 80px;   --type-title-1-lh: 0.96; --type-title-1-ls: -0.04em;
+      --type-title-2-size: 56px;   --type-title-2-lh: 1.0;  --type-title-2-ls: -0.03em;
+      --type-title-3-size: 48px;   --type-title-3-lh: 1.0;  --type-title-3-ls: -0.03em;
+      --type-title-4-size: 24px;   --type-title-4-lh: 1.0;  --type-title-4-ls: -0.02em;
+      --type-body-l-size: 20px;    --type-body-l-lh: 1.3;
+      --type-body-m-size: 16px;    --type-body-m-lh: 1.3;
+      --type-body-s-size: 14px;    --type-body-s-lh: 1.3;
+      --type-eyebrow-size: 16px;   --type-eyebrow-lh: 1.3;  --type-eyebrow-ls: -0.01em;
+      --type-label-size: 14px;
+      --type-caption-size: 12px;
+
+      --radius-hero: 32px;
+      --radius-card: 16px;
+      --radius-pill: 999px;
+      --radius-chip: 4px;
+
+      --space-base: 8px;
+      --section-y-desktop: 96px;
+      --grid-margin: 8.333%;
+      --grid-gutter: 8px;
+      --container-max: 1920px;
+
+      --shadow-card-hover: 0 4px 100px rgba(0,0,0,0.25);
+      --shadow-floating: 0 16px 48px rgba(0,0,0,0.16);
+
+      --nav-height: 64px;
+      --hero-scroll-distance: 220vh;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      :root {
+        --type-super-size: 72px;
+        --type-title-1-size: 56px;
+        --type-title-2-size: 40px;
+        --type-title-3-size: 32px;
+        --type-title-4-size: 20px;
+        --type-body-l-size: 18px;
+        --grid-margin: 24px;
+        --section-y-desktop: 64px;
+        --hero-scroll-distance: 180vh;
+      }
+    }
+
+    @media (max-width: 767px) {
+      :root {
+        --type-super-size: 56px;
+        --type-title-1-size: 40px;
+        --type-title-2-size: 32px;
+        --type-title-3-size: 24px;
+        --type-title-4-size: 20px;
+        --type-body-l-size: 16px;
+        --grid-margin: 24px;
+        --section-y-desktop: 48px;
+        --hero-scroll-distance: 100vh;
+      }
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scrollbar-gutter: stable; -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--font-body);
+      font-size: var(--type-body-m-size);
+      line-height: var(--type-body-m-lh);
+      color: var(--color-content-default);
+      background: var(--color-background-default);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: clip;
+    }
+    h1, h2, h3, h4, h5, h6, p { margin: 0; }
+    a { color: inherit; text-decoration: none; }
+    img, svg { display: block; max-width: 100%; }
+    button { font: inherit; cursor: pointer; }
+    ul, ol { margin: 0; padding: 0; list-style: none; }
+
+    .t-super     { font-family: var(--font-display); font-weight: 900; font-size: var(--type-super-size);   line-height: var(--type-super-lh);   letter-spacing: var(--type-super-ls); }
+    .t-title-1   { font-family: var(--font-display); font-weight: 900; font-size: var(--type-title-1-size); line-height: var(--type-title-1-lh); letter-spacing: var(--type-title-1-ls); }
+    .t-title-2   { font-family: var(--font-display); font-weight: 900; font-size: var(--type-title-2-size); line-height: var(--type-title-2-lh); letter-spacing: var(--type-title-2-ls); }
+    .t-title-3   { font-family: var(--font-display); font-weight: 900; font-size: var(--type-title-3-size); line-height: var(--type-title-3-lh); letter-spacing: var(--type-title-3-ls); }
+    .t-title-4   { font-family: var(--font-display); font-weight: 900; font-size: var(--type-title-4-size); line-height: var(--type-title-4-lh); letter-spacing: var(--type-title-4-ls); }
+    .t-body-l    { font-size: var(--type-body-l-size);  line-height: var(--type-body-l-lh); }
+    .t-body-m    { font-size: var(--type-body-m-size);  line-height: var(--type-body-m-lh); }
+    .t-body-s    { font-size: var(--type-body-s-size);  line-height: var(--type-body-s-lh); letter-spacing: 0.01em; }
+    .t-eyebrow   { font-weight: 700; font-size: var(--type-eyebrow-size); line-height: var(--type-eyebrow-lh); letter-spacing: -0.01em; text-transform: none; white-space: nowrap; }
+
+    [data-ta] .ta-line       { display: block; }
+    [data-ta] .ta-line-inner { display: block; will-change: transform, opacity; }
+
+    .ds-btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      height: 44px; padding: 0 22px;
+      font-family: var(--font-body); font-weight: 700; font-size: 15px; line-height: 1;
+      border-radius: var(--radius-pill);
+      transition: background 0.18s ease, color 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
+      white-space: nowrap;
+    }
+    .ds-btn-primary {
+      color: #fff;
+      background: var(--color-content-default);
+      border: 1px solid var(--color-content-default);
+    }
+    .ds-btn-primary:hover { background: #2c2c2c; }
+    .ds-btn-secondary {
+      color: var(--color-content-default);
+      background: transparent;
+      border: 1px solid rgba(0,0,0,0.7);
+    }
+    .ds-btn-secondary:hover { background: rgba(0,0,0,0.06); }
+    .ds-btn-link {
+      display: inline-flex; align-items: center; gap: 4px;
+      color: var(--color-content-default);
+      font-family: var(--font-body); font-weight: 700; font-size: 15px;
+    }
+    .ds-btn-link::after { content: "→"; font-weight: 400; }
+    .ds-btn-link:hover { color: var(--color-primary); }
+
+    /* Global nav */
+    .gnav {
+      position: fixed; top: 12px; left: 0; right: 0;
+      z-index: 100;
+      pointer-events: none;
+    }
+    .gnav-inner {
+      width: calc(100% - 48px);
+      max-width: 1872px;
+      margin: 0 auto;
+      height: var(--nav-height);
+      padding: 0 24px;
+      display: flex; align-items: center; gap: 24px;
+      background: rgba(255,255,255,0.51);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-radius: var(--radius-pill);
+      pointer-events: auto;
+      transition: background 0.2s ease, box-shadow 0.2s ease;
+    }
+    .gnav.scrolled .gnav-inner {
+      background: rgba(255,255,255,0.92);
+      box-shadow: var(--shadow-floating);
+    }
+    .gnav-logo { width: 28px; height: 24px; flex: none; }
+    .gnav-logo svg { width: 100%; height: 100%; fill: var(--color-adobe-red); }
+    .gnav-list {
+      display: flex; align-items: center; gap: 20px;
+      flex: 1;
+    }
+    .gnav-link { font-size: 14px; font-weight: 500; padding: 8px 4px; }
+    .gnav-link:hover { color: var(--color-primary); }
+    .gnav-spacer { flex: 1; }
+    .gnav-actions { display: flex; align-items: center; gap: 8px; }
+    .gnav-signin {
+      padding: 6px 14px; font-size: 13px; font-weight: 700;
+      border: 1px solid rgba(0,0,0,0.2);
+      border-radius: var(--radius-pill);
+      background: transparent;
+    }
+    .gnav-signin:hover { background: rgba(0,0,0,0.06); }
+    .gnav-cta {
+      padding: 6px 14px; font-size: 13px; font-weight: 700;
+      color: #fff; border: 0;
+      border-radius: var(--radius-pill);
+      background: var(--color-content-default);
+    }
+    @media (max-width: 1023px) {
+      .gnav-list { display: none; }
+    }
+
+    /* HERO — Semrush announcement (matches live H1) */
+    .hero-pin-spacer {
+      height: var(--hero-scroll-distance);
+      position: relative;
+    }
+    .hero {
+      position: sticky; top: 0;
+      height: 100vh;
+      overflow: visible;
+      background: var(--color-background-default);
+      border-radius: 0 0 var(--radius-hero) var(--radius-hero);
+      z-index: 2;
+    }
+    .hero-text {
+      position: absolute;
+      top: 18vh;
+      left: 0; right: 0;
+      z-index: 3;
+      display: flex; flex-direction: column; align-items: center;
+      text-align: center;
+      gap: 18px;
+      padding: 0 var(--grid-margin);
+      will-change: transform, opacity;
+    }
+    .hero-text .t-eyebrow { color: var(--color-content-soft); }
+    .hero-text h1 {
+      max-width: 18ch;
+      color: var(--color-content-default);
+    }
+    .hero-text .lead {
+      max-width: 56ch;
+      color: var(--color-content-soft);
+    }
+    .hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-top: 8px; }
+
+    /* Mosaic */
+    .hero-mosaic-wrap {
+      position: absolute;
+      inset: 0;
+      top: 70vh;
+      z-index: 2;
+      pointer-events: none;
+      overflow: visible;
+      will-change: transform;
+    }
+    .hero-mosaic {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      max-width: 1600px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .mosaic-col {
+      display: flex; flex-direction: column;
+      gap: 8px;
+      width: 20.2vw; max-width: 291px; min-width: 140px;
+      will-change: transform;
+    }
+    .mosaic-card {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      border-radius: var(--radius-card);
+      overflow: hidden;
+      background: var(--color-background-strong);
+      position: relative;
+      opacity: 0;
+      clip-path: inset(50% round 16px);
+      will-change: clip-path, opacity;
+    }
+    .mosaic-card.in {
+      opacity: 1;
+      clip-path: inset(0% round 16px);
+      transition: clip-path 0.55s cubic-bezier(0.4, 0, 0.2, 1) var(--reveal-delay, 0s),
+                  opacity 0.45s ease var(--reveal-delay, 0s);
+    }
+    .mosaic-card img { width: 100%; height: 100%; object-fit: cover; }
+    .mosaic-card.label {
+      display: flex; flex-direction: column; justify-content: flex-end; padding: 16px;
+      color: #fff;
+    }
+    .mosaic-card.label .name { font-family: var(--font-display); font-weight: 900; font-size: 18px; line-height: 1; letter-spacing: -0.01em; margin-top: auto; }
+    .mosaic-card.label .icon { width: 28px; height: 28px; }
+    .mosaic-card.brand {
+      background: var(--color-primary); color: #fff;
+      display: flex; flex-direction: column; justify-content: space-between; padding: 16px;
+    }
+    .mosaic-card.brand .small { font-size: 11px; font-weight: 700; opacity: 0.85; text-transform: uppercase; letter-spacing: 0.08em; }
+    .mosaic-card.brand .name { font-family: var(--font-display); font-weight: 900; font-size: 22px; line-height: 1; letter-spacing: -0.02em; }
+
+    @media (max-width: 1023px) {
+      .hero-mosaic { gap: 8px !important; }
+      .mosaic-col { width: 28vw; transform: none !important; }
+      .mosaic-col[data-col="3"], .mosaic-col[data-col="4"] { display: none; }
+      .hero-mosaic-wrap { transform: none !important; top: 60vh; }
+      .hero-text { top: 14vh; }
+    }
+    @media (max-width: 640px) {
+      .mosaic-col[data-col="2"] { display: none; }
+      .mosaic-col { width: 40vw; }
+    }
+
+    /* Summit 2026 marquee — radial gradient (sourced from live: idx 2) */
+    .summit-marquee {
+      position: relative;
+      z-index: 1;
+      margin-top: 0;
+      padding: 24px var(--grid-margin);
+      background: radial-gradient(170.24% 67.73% at 50.55% 75.74%, #545454 9.54%, #000 58%);
+      color: #fff;
+    }
+    .summit-marquee-inner {
+      max-width: var(--container-max);
+      margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .summit-marquee .left {
+      display: flex; align-items: center; gap: 16px;
+      font-size: 14px;
+    }
+    .summit-marquee .label {
+      font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+      font-size: 11px;
+      padding: 4px 10px;
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: var(--radius-pill);
+    }
+    .summit-marquee strong { font-family: var(--font-display); font-weight: 900; font-size: 18px; letter-spacing: -0.01em; }
+    .summit-marquee .cta {
+      color: #fff; font-weight: 700; font-size: 14px;
+      display: inline-flex; align-items: center; gap: 6px;
+    }
+    .summit-marquee .cta::after { content: "→"; }
+
+    /* Editorial section — parallax, sits under hero's rounded bottom */
+    .editorial-section {
+      position: relative;
+      z-index: 0;
+      margin-top: -32px;
+      background: var(--color-background-subtle);
+      overflow: hidden;
+      padding: 192px 0 0;
+    }
+    .editorial-parallax { will-change: transform; }
+
+    /* Portfolio anchor */
+    .portfolio-anchor {
+      padding: 0 0 var(--section-y-desktop);
+    }
+    .portfolio-anchor-inner {
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 var(--grid-margin);
+      display: grid;
+      grid-template-columns: 8fr 4fr;
+      gap: 64px;
+      align-items: end;
+    }
+    .portfolio-anchor-inner h2 { max-width: 14ch; color: var(--color-content-default); }
+    .portfolio-anchor-inner .t-eyebrow { display: block; color: var(--color-content-soft); margin-bottom: 16px; }
+    .anchor-tabs {
+      display: flex; flex-wrap: wrap; gap: 6px;
+      align-self: end;
+    }
+    .anchor-tab {
+      padding: 10px 16px;
+      border: 1px solid var(--color-divider);
+      border-radius: var(--radius-pill);
+      background: #fff;
+      font-size: 13px; font-weight: 700;
+      color: var(--color-content-default);
+      transition: background 0.15s ease, border-color 0.15s ease;
+      white-space: nowrap;
+    }
+    .anchor-tab:hover, .anchor-tab.active { background: var(--color-content-default); border-color: var(--color-content-default); color: #fff; }
+    @media (max-width: 1023px) {
+      .portfolio-anchor-inner { grid-template-columns: 1fr; gap: 32px; }
+    }
+
+    /* Domain cluster */
+    .domain-cluster { background: var(--color-background-subtle); padding: calc(var(--section-y-desktop) / 2) 0 var(--section-y-desktop); }
+    .cluster-inner { max-width: var(--container-max); margin: 0 auto; padding: 0 var(--grid-margin); }
+    .cluster-header {
+      display: grid;
+      grid-template-columns: 5fr 7fr;
+      gap: 64px;
+      align-items: end;
+      margin-bottom: 40px;
+    }
+    .cluster-header .left .t-eyebrow { display: block; color: var(--color-content-soft); margin-bottom: 12px; }
+    .cluster-header h3 { max-width: 18ch; }
+    .cluster-header .dek { max-width: 56ch; color: var(--color-content-soft); }
+    .cluster-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+    .cluster-grid.three { grid-template-columns: repeat(3, 1fr); }
+    .cluster-grid.two { grid-template-columns: repeat(2, 1fr); }
+    .cluster-grid.five { grid-template-columns: repeat(5, 1fr); }
+    @media (max-width: 1023px) {
+      .cluster-header { grid-template-columns: 1fr; gap: 16px; }
+      .cluster-grid, .cluster-grid.three, .cluster-grid.two, .cluster-grid.five { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 640px) {
+      .cluster-grid, .cluster-grid.three, .cluster-grid.two, .cluster-grid.five { grid-template-columns: 1fr; }
+    }
+    .product-card {
+      display: flex; flex-direction: column;
+      background: var(--color-background-default);
+      border-radius: var(--radius-card);
+      padding: 24px;
+      gap: 16px;
+      min-height: 240px;
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+    }
+    .product-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    }
+    .product-card .icon { width: 32px; height: 32px; }
+    .product-card .body { display: flex; flex-direction: column; gap: 8px; flex: 1; }
+    .product-card h4 { color: var(--color-content-default); }
+    .product-card .desc { color: var(--color-content-soft); font-size: 14px; line-height: 1.4; }
+    .product-card .link { color: var(--color-primary); font-size: 14px; font-weight: 700; display: inline-flex; align-items: center; gap: 4px; }
+    .product-card .link::after { content: "→"; font-weight: 400; }
+    .cluster-footer { margin-top: 24px; display: flex; justify-content: flex-end; }
+
+    /* Editorial stories band */
+    .editorial-stories {
+      background: var(--color-background-default);
+      padding: var(--section-y-desktop) 0;
+    }
+    .editorial-stories-inner {
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 var(--grid-margin);
+    }
+    .editorial-stories-header { margin-bottom: 48px; max-width: 56ch; }
+    .editorial-stories-header h2 { color: var(--color-content-default); }
+    .editorial-stories-header .t-eyebrow { display: block; color: var(--color-content-soft); margin-bottom: 12px; }
+
+    .stories-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-auto-rows: minmax(280px, auto);
+      gap: 8px;
+    }
+    .story {
+      position: relative;
+      border-radius: var(--radius-card);
+      overflow: hidden;
+      display: flex; flex-direction: column;
+      color: #fff;
+      transition: transform 0.18s ease;
+      background: var(--color-content-default);
+    }
+    .story.span-3 { grid-column: span 3; grid-row: span 2; }
+    .story.span-2 { grid-column: span 2; }
+    .story.span-3-thin { grid-column: span 3; }
+    .story.alt { background: var(--color-background-subtle); color: var(--color-content-default); }
+    .story.brand { background: var(--color-primary); color: #fff; }
+    .story:hover { transform: translateY(-2px); }
+    .story .bg {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%; object-fit: cover;
+      z-index: 0;
+      will-change: transform;
+    }
+    .story .scrim {
+      position: absolute; inset: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,0) 30%, rgba(0,0,0,0.7));
+      z-index: 1;
+    }
+    .story .copy {
+      position: relative; z-index: 2;
+      margin-top: auto;
+      padding: 28px;
+      max-width: 100%;
+    }
+    .story .copy .t-eyebrow { color: rgba(255,255,255,0.8); }
+    .story.alt .copy .t-eyebrow { color: var(--color-content-soft); }
+    .story .copy h3 { color: inherit; margin-top: 8px; }
+    .story.alt .copy h3 { color: var(--color-content-default); }
+    .story .link {
+      color: inherit;
+      margin-top: 16px;
+      display: inline-flex; align-items: center; gap: 6px;
+      font-weight: 700; font-size: 14px;
+    }
+    .story .link::after { content: "→"; }
+    .story.alt .link { color: var(--color-primary); }
+    .story.brand .link { color: #fff; }
+    .story.pattern-cell::before {
+      content: ""; position: absolute; inset: 0;
+      background:
+        radial-gradient(circle at 30% 30%, rgba(59,99,251,0.18), transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(235,16,0,0.12), transparent 40%);
+      z-index: 0;
+    }
+    @media (max-width: 1023px) {
+      .stories-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: minmax(240px, auto); }
+      .story.span-3, .story.span-2, .story.span-3-thin { grid-column: span 1; grid-row: span 1; }
+    }
+
+    /* Solutions — full-width grid with 6 cards */
+    .solutions {
+      background: var(--color-background-default);
+      padding: var(--section-y-desktop) 0;
+    }
+    .solutions-inner { max-width: var(--container-max); margin: 0 auto; padding: 0 var(--grid-margin); }
+    .solutions-header {
+      display: grid; grid-template-columns: 7fr 5fr;
+      gap: 64px; align-items: end;
+      margin-bottom: 48px;
+    }
+    .solutions-header h2 { max-width: 18ch; }
+    .solutions-header .dek { color: var(--color-content-soft); max-width: 56ch; }
+    .solutions-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 8px;
+    }
+    .solution-card {
+      grid-column: span 2;
+      aspect-ratio: 4 / 3;
+      border-radius: var(--radius-card);
+      overflow: hidden; position: relative;
+      background: var(--color-background-strong);
+      display: flex; flex-direction: column;
+      color: var(--color-content-default);
+      transition: transform 0.18s ease;
+    }
+    .solution-card.large { grid-column: span 4; aspect-ratio: 3 / 2; color: #fff; }
+    .solution-card .bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
+    .solution-card .scrim {
+      position: absolute; inset: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,0) 30%, rgba(0,0,0,0.7));
+      z-index: 1;
+    }
+    .solution-card.alt { background: var(--color-background-subtle); }
+    .solution-card.alt .scrim { display: none; }
+    .solution-card.alt .pattern {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(circle at 30% 30%, rgba(59,99,251,0.15), transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(235,16,0,0.1), transparent 40%);
+    }
+    .solution-card.dark { background: var(--color-content-default); color: #fff; }
+    .solution-card .copy {
+      position: relative; z-index: 2;
+      margin-top: auto; padding: 28px;
+    }
+    .solution-card .copy .t-eyebrow { color: var(--color-content-soft); }
+    .solution-card.large .copy .t-eyebrow,
+    .solution-card.dark .copy .t-eyebrow { color: rgba(255,255,255,0.85); }
+    .solution-card .copy h3 { color: inherit; margin-top: 8px; }
+    .solution-card .copy .link {
+      color: var(--color-primary);
+      margin-top: 14px;
+      display: inline-flex; align-items: center; gap: 6px;
+      font-weight: 700; font-size: 14px;
+    }
+    .solution-card .copy .link::after { content: "→"; }
+    .solution-card.large .copy .link, .solution-card.dark .copy .link { color: #fff; }
+    .solution-card:hover { transform: translateY(-2px); }
+    @media (max-width: 1023px) {
+      .solutions-header { grid-template-columns: 1fr; gap: 16px; }
+      .solutions-grid { grid-template-columns: repeat(2, 1fr); }
+      .solution-card, .solution-card.large { grid-column: span 1; aspect-ratio: 4 / 3; }
+    }
+
+    /* Customer marquee */
+    .customers {
+      background: var(--color-background-default);
+      padding: var(--section-y-desktop) 0;
+      border-top: 1px solid var(--color-divider);
+    }
+    .customers-inner {
+      max-width: 1280px; margin: 0 auto; padding: 0 var(--grid-margin);
+      text-align: center;
+    }
+    .customers .read-story-link {
+      display: inline-flex; align-items: center; gap: 6px;
+      color: var(--color-primary);
+      font-weight: 700; font-size: 14px;
+      margin-bottom: 16px;
+    }
+    .customers .read-story-link::after { content: "→"; }
+    .customers h2 { max-width: 22ch; margin: 0 auto 56px; }
+    .customer-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 8px;
+    }
+    .customer-tile {
+      aspect-ratio: 4 / 3;
+      border-radius: var(--radius-card);
+      background: var(--color-background-subtle);
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-display); font-weight: 900; font-size: 18px;
+      color: var(--color-content-default);
+      letter-spacing: -0.01em;
+      padding: 16px; text-align: center; line-height: 1.0;
+      transition: background 0.15s ease;
+    }
+    .customer-tile[data-placeholder="logo"] {
+      outline: 1px dashed rgba(0,0,0,0.12);
+      outline-offset: -8px;
+    }
+    .customer-tile:hover { background: var(--color-background-strong); }
+    @media (max-width: 1023px) { .customer-grid { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 640px) { .customer-grid { grid-template-columns: repeat(2, 1fr); } }
+
+    /* Closing CTA */
+    .closing-cta {
+      background: var(--color-content-default);
+      color: #fff;
+      padding: var(--section-y-desktop) 0;
+      border-radius: var(--radius-hero) var(--radius-hero) 0 0;
+      margin-top: 48px;
+    }
+    .closing-cta-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 var(--grid-margin);
+      text-align: center;
+      display: flex; flex-direction: column; align-items: center; gap: 32px;
+    }
+    .closing-cta h2 { max-width: 22ch; color: #fff; }
+    .closing-cta .ctas { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+    .closing-cta .ds-btn-primary { background: #fff; border-color: #fff; color: var(--color-content-default); }
+    .closing-cta .ds-btn-primary:hover { background: rgba(255,255,255,0.9); }
+
+    /* Footer */
+    .footer { background: var(--color-content-default); color: rgba(255,255,255,0.72); padding: 64px 0 24px; }
+    .footer-inner { max-width: var(--container-max); margin: 0 auto; padding: 0 var(--grid-margin); }
+    .footer-grid { display: grid; grid-template-columns: 2fr repeat(5, 1fr); gap: 48px; padding-bottom: 48px; }
+    .footer-col h4 { font-family: var(--font-body); font-size: 13px; font-weight: 700; color: #fff; margin-bottom: 16px; letter-spacing: 0.04em; text-transform: uppercase; }
+    .footer-col ul { display: flex; flex-direction: column; gap: 8px; }
+    .footer-col a { font-size: 14px; color: rgba(255,255,255,0.72); }
+    .footer-col a:hover { color: #fff; }
+    .footer-brand .lockup { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+    .footer-brand .lockup svg { width: 32px; height: 28px; fill: var(--color-adobe-red); }
+    .footer-brand .lockup span { font-family: var(--font-display); font-weight: 900; font-size: 20px; color: #fff; letter-spacing: -0.02em; }
+    .footer-brand p { font-size: 13px; max-width: 32ch; line-height: 1.5; }
+    .footer-bar {
+      display: flex; align-items: center; justify-content: space-between;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.12);
+      font-size: 12px;
+      gap: 16px; flex-wrap: wrap;
+    }
+    .footer-bar .links { display: flex; gap: 16px; flex-wrap: wrap; }
+    .footer-bar .region {
+      padding: 6px 12px;
+      border: 1px solid rgba(255,255,255,0.16);
+      border-radius: var(--radius-pill);
+      background: transparent;
+      color: rgba(255,255,255,0.72);
+      font-size: 12px;
+    }
+    @media (max-width: 1023px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 640px) { .footer-grid { grid-template-columns: 1fr; gap: 24px; } }
+
+    @media (prefers-reduced-motion: reduce) {
+      .hero-pin-spacer { height: auto; }
+      .hero { position: relative; height: auto; padding-bottom: 64px; }
+      .hero-text { position: relative; top: 0; padding: 80px 24px 24px; }
+      .hero-mosaic-wrap { position: relative; top: 0; transform: none !important; padding: 0 24px 32px; }
+      .mosaic-col { transform: none !important; }
+      .mosaic-card { opacity: 1 !important; clip-path: none !important; }
+      [data-ta-group] [data-ta-line] { transform: none !important; opacity: 1 !important; }
+    }
+  </style>
+</head>
+<body data-page="home">
+
+<nav class="gnav" id="gnav" data-section="global-nav" data-purpose="nav">
+  <div class="gnav-inner">
+    <a href="/" class="gnav-logo" aria-label="Adobe">
+      <svg viewBox="0 0 240 234" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M152 0h88v234L152 0zM88 0H0v234L88 0zm32 86 56 132h-37l-17-43H81l37-89z"/></svg>
+    </a>
+    <ul class="gnav-list">
+      <li><a class="gnav-link" href="#products">Products</a></li>
+      <li><a class="gnav-link" href="#solutions">Solutions</a></li>
+      <li><a class="gnav-link" href="#industries">Industries</a></li>
+      <li><a class="gnav-link" href="#resources">Resources</a></li>
+      <li><a class="gnav-link" href="#learn">Learn &amp; support</a></li>
+    </ul>
+    <div class="gnav-spacer"></div>
+    <div class="gnav-actions">
+      <button class="gnav-signin">Sign in</button>
+      <button class="gnav-cta">Contact us</button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO — Semrush announcement (live H1) -->
+<div class="hero-pin-spacer" data-section="hero-mosaic" data-purpose="hero">
+  <section class="hero" id="hero">
+    <div class="hero-text" id="heroText" data-ta-group>
+      <span class="t-eyebrow" data-ta-unit>News from Adobe</span>
+      <h1 class="t-super" data-ta>Adobe completes the<br>acquisition of Semrush.</h1>
+      <p class="t-body-l lead" data-ta>
+        Access the world's most powerful data for AI search optimization.
+      </p>
+      <div class="hero-ctas" data-ta-unit>
+        <a class="ds-btn ds-btn-primary" href="https://business.adobe.com/products/semrush.html">Learn about the product</a>
+        <a class="ds-btn ds-btn-secondary" href="http://news.adobe.com/news/2026/04/adobe-completes-semrush-acquisition">Read the announcement</a>
+      </div>
+    </div>
+
+    <div class="hero-mosaic-wrap" id="heroMosaicWrap" aria-hidden="true">
+      <div class="hero-mosaic" id="heroMosaic">
+        <div class="mosaic-col" data-col="0">
+          <div class="mosaic-card" data-cell="0,0"><img src="assets/tiles/grid_firefly_desktop.png" alt=""></div>
+          <div class="mosaic-card label" data-cell="0,1" style="background: linear-gradient(135deg, #ff5e6c, #d63a4d);">
+            <img class="icon" src="assets/icons/B_app_AdobeFirefly.svg" alt=""><span class="name">Firefly</span>
+          </div>
+          <div class="mosaic-card" data-cell="0,2"><img src="assets/tiles/grid_creative-cloud_desktop.png" alt=""></div>
+        </div>
+        <div class="mosaic-col" data-col="1">
+          <div class="mosaic-card label" data-cell="1,0" style="background: linear-gradient(135deg, #001eff, #0c3df8);">
+            <img class="icon" src="assets/icons/B_app_PremierePro.svg" alt=""><span class="name">Premiere</span>
+          </div>
+          <div class="mosaic-card" data-cell="1,1"><img src="assets/tiles/grid_premiere_desktop.png" alt=""></div>
+          <div class="mosaic-card label" data-cell="1,2" style="background: linear-gradient(135deg, #001b39, #0c2c5e);">
+            <img class="icon" src="assets/icons/B_app_Photoshop.svg" alt=""><span class="name">Photoshop</span>
+          </div>
+        </div>
+        <div class="mosaic-col" data-col="2">
+          <div class="mosaic-card" data-cell="2,0"><img src="assets/tiles/grid_photoshop_desktop.png" alt=""></div>
+          <div class="mosaic-card brand" data-cell="2,1"><span class="small">Adobe + Semrush</span><span class="name">AI Search<br>Optimization</span></div>
+          <div class="mosaic-card" data-cell="2,2"><img src="assets/tiles/grid_acrobat_desktop.png" alt=""></div>
+        </div>
+        <div class="mosaic-col" data-col="3">
+          <div class="mosaic-card label" data-cell="3,0" style="background: linear-gradient(135deg, #ff5e00, #c4271a);">
+            <img class="icon" src="assets/icons/B_app_AdobeAcrobatPDF.svg" alt=""><span class="name">Acrobat</span>
+          </div>
+          <div class="mosaic-card" data-cell="3,1"><img src="assets/tiles/grid_gen-studio_desktop.png" alt=""></div>
+          <div class="mosaic-card label" data-cell="3,2" style="background: linear-gradient(135deg, #f97316, #c2410c);">
+            <img class="icon" src="assets/icons/B_app_Illustrator.svg" alt=""><span class="name">Illustrator</span>
+          </div>
+        </div>
+        <div class="mosaic-col" data-col="4">
+          <div class="mosaic-card" data-cell="4,0"><img src="assets/tiles/grid_illustrator_desktop.png" alt=""></div>
+          <div class="mosaic-card label" data-cell="4,1" style="background: linear-gradient(135deg, #009ed8, #0066b8);">
+            <img class="icon" src="assets/icons/B_app_ExperienceCloud.svg" alt=""><span class="name">GenStudio</span>
+          </div>
+          <div class="mosaic-card" data-cell="4,2"><img src="assets/tiles/grid_business-products_desktop.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- SUMMIT 2026 MARQUEE — sourced from live (idx 2) -->
+<section class="summit-marquee" data-section="summit-marquee" data-purpose="announce">
+  <div class="summit-marquee-inner">
+    <div class="left">
+      <span class="label">Adobe Summit 2026</span>
+      <strong>See the future of marketing, creativity and AI.</strong>
+    </div>
+    <a class="cta" href="#summit">Register now</a>
+  </div>
+</section>
+
+<!-- EDITORIAL SECTION (parallax behind hero) -->
+<div class="editorial-section">
+  <div class="editorial-parallax" id="editorialParallax">
+
+    <!-- PORTFOLIO ANCHOR + TAB STRIP -->
+    <section class="portfolio-anchor" data-section="portfolio-anchor" data-purpose="nav-anchor" id="products">
+      <div class="portfolio-anchor-inner">
+        <div data-ta-group>
+          <span class="t-eyebrow" data-ta-unit>The portfolio</span>
+          <h2 class="t-title-1" data-ta>Explore all Adobe<br>for Business products.</h2>
+        </div>
+        <nav class="anchor-tabs" aria-label="Product domains">
+          <a class="anchor-tab active" href="#ai-agents">AI &amp; agents</a>
+          <a class="anchor-tab" href="#content-workflows">Content &amp; workflows</a>
+          <a class="anchor-tab" href="#creativity-design">Creativity &amp; design</a>
+          <a class="anchor-tab" href="#data-analytics">Data &amp; analytics</a>
+          <a class="anchor-tab" href="#campaigns">Campaigns</a>
+          <a class="anchor-tab" href="#documents">Documents</a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- AI at Adobe -->
+    <section class="domain-cluster" data-section="domain-cluster" data-purpose="product-cluster" data-domain="ai-agents" id="ai-agents">
+      <div class="cluster-inner">
+        <header class="cluster-header" data-ta-group>
+          <div class="left">
+            <span class="t-eyebrow" data-ta-unit>AI &amp; agents</span>
+            <h3 class="t-title-2" data-ta>AI at Adobe.</h3>
+          </div>
+          <p class="t-body-l dek" data-ta>
+            Give your teams the productivity tools and always-on insights to deliver true personalization at scale with Adobe's AI solutions.
+          </p>
+        </header>
+        <div class="cluster-grid">
+          <a class="product-card" href="/products/experience-platform/agent-orchestrator">
+            <img class="icon" src="assets/icons/B_app_ExperiencePlatform.svg" alt="">
+            <div class="body">
+              <h4 class="t-title-4">Adobe Experience Platform Agent Orchestrator</h4>
+              <p class="desc">Compose and govern AI agents across the experience stack.</p>
+            </div>
+            <span class="link">Learn more</span>
+          </a>
+          <a class="product-card" href="/products/llm-optimizer">
+            <img class="icon" src="assets/icons/B_app_ExperienceCloud.svg" alt="">
+            <div class="body">
+              <h4 class="t-title-4">Adobe LLM Optimizer</h4>
+              <p class="desc">Make sure your brand surfaces accurately in answers from major LLMs.</p>
+            </div>
+            <span class="link">Learn more</span>
+          </a>
+          <a class="product-card" href="/products/brand-concierge">
+            <img class="icon" src="assets/icons/B_app_AdobeFirefly.svg" alt="">
+            <div class="body">
+              <h4 class="t-title-4">Adobe Brand Concierge</h4>
+              <p class="desc">A conversational front door for every customer journey.</p>
+            </div>
+            <span class="link">Learn more</span>
+          </a>
+          <a class="product-card" href="/products/agents">
+            <img class="icon" src="assets/icons/B_app_ExperienceCloud.svg" alt="">
+            <div class="body">
+              <h4 class="t-title-4">All other agents</h4>
+              <p class="desc">The full catalog of Adobe agents — content, journey, brand, analytics, and more.</p>
+            </div>
+            <span class="link">See all products</span>
+          </a>
+        </div>
+        <div class="cluster-footer">
+          <a class="ds-btn-link" href="#ai-explore">Explore products</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI-powered content management -->
+    <section class="domain-cluster" data-section="domain-cluster" data-purpose="product-cluster" data-domain="content-workflows" id="content-workflows">
+      <div class="cluster-inner">
+        <header class="cluster-header" data-ta-group>
+          <div class="left">
+            <span class="t-eyebrow" data-ta-unit>Content &amp; workflows</span>
+            <h3 class="t-title-2" data-ta>AI-powered content management and end-to-end workflows.</h3>
+          </div>
+          <p class="t-body-l dek" data-ta>
+            Streamline collaboration and meet the ever-growing demand for content. Adobe offers centralized management, simplified cross-team workflows, scalable content, composable commerce, and powerful personalization.
+          </p>
+        </header>
+        <div class="cluster-grid five">
+          <a class="product-card" href="/products/genstudio/performance-marketing">
+            <img class="icon" src="assets/icons/B_app_ExperienceCloud.svg" alt="">
+            <div class="body"><h4 class="t-title-4">Adobe GenStudio for Performance Marketing</h4></div>
+            <span class="link">Learn more</span>
+          </a>
+          <a class="product-card" href="/products/experience-manager/sites/aem-sites">
+            <img class="icon" src="assets/icons/B_app_ExperienceCloud.svg" alt="">
+            <div class="body"><h4 class="t-title-4">Adobe Experience Manager Sites</h4></div>
+            <span class="link">Learn more</span>
+          </a>
+          <a class="product-card" href="/products/experience-manager/assets">
+            <img class="icon" src="assets/icons/B_app_ExperienceCloud.svg" alt="">
+            <div class="body"><h4 class="t-title-4">Adobe Experience Manager Assets</h4></div>
+            <span class="link">Learn more</span>
+          </a>
+          <a class="product-card" href="/products/commerce">
+            <img class="icon" src="assets/icons/B_app_ExperienceCloud.svg" alt="">
+            <div class="body"><h4 class="t-title-4">Adobe Commerce</h4></div>
+            <span class="link">Learn more</span>
+          </a>
+          <a class="product-card" href="/products/workfront">
+            <img class="icon" src="assets/icons/B_app_ExperienceCloud.svg" alt="">
+            <div class="body"><h4 class="t-title-4">Adobe Workfront</h4></div>
+            <span class="link">Learn more</span>
+          </a>
+        </div>
+        <div class="cluster-footer">
+          <a class="ds-btn-link" href="#content-explore">Explore products</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Unleash creativity at scale -->
+    <section class="domain-cluster" data-section="domain-cluster" data-purpose="product-cluster" data-domain="creativity-design" id="creativity-design">
+      <div class="cluster-inner">
+        <header class="cluster-header" data-ta-group>
+          <div class="left">
+            <span class="t-eyebrow" data-ta-unit>Creativity &amp; design</span>
+            <h3 class="t-title-2" data-ta>Unleash creativity at scale.</h3>
+          </div>
+          <p class="t-body-l dek" data-ta>
+            Adobe's creative solutions for enterprises bring together the most comprehensive creative technology with the power of generative AI to scale creative content production, maintain brand consistency, and drive business growth.
+          </p>
+        </header>
+        <div class="cluster-grid">
+          <a class="product-card" href="/products/creativecloud-business">
+            <img class="icon" src="assets/icons/B_app_CreativeCloud.svg" alt="">
+            <div class="body"><h4 class="t-title-4">Adobe Creative Cloud for Enterprise</h4></div>
+            <span class="link">Learn more</span>
+          </a>
+          <a class="product-card" href="/products/express-business">
+            <img class="icon" src="assets/icons/B_app_CreativeCloud.svg" alt="">
+            <div class="body"><h4 class="t-title-4">Adobe Express</h4></div>
+            <span class="link">Learn more</span>
+          </a>
+          <a class="product-card" href="/products/firefly-business">
+            <img class="icon" src="assets/icons/B_app_AdobeFirefly.svg" alt="">
+            <div class="body"><h4 class="t-title-4">Adobe Firefly</h4></div>
+            <span class="link">Learn more</span>
+          </a>
+          <a class="product-card" href="/products/frameio-business">
+            <img class="icon" src="assets/icons/B_app_PremierePro.svg" alt="">
+            <div class="body"><h4 class="t-title-4">Adobe Frame.io</h4></div>
+            <span class="link">Learn more</span>
+          </a>
+        </div>
+        <div class="cluster-footer">
+          <a class="ds-btn-link" href="#creativity-explore">Explore products</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Data and insights -->
+    <section class="domain-cluster" data-section="domain-cluster" data-purpose="product-cluster" data-domain="data-analytics" id="data-analytics">
+      <div class="cluster-inner">
+        <header class="cluster-header" data-ta-group>
+          <div class="left">
+            <span class="t-eyebrow" data-ta-unit>Data &amp; analytics</span>
+            <h3 class="t-title-2" data-ta>Data and insights for a competitive edge.</h3>
+          </div>
+          <p class="t-body-l dek" data-ta>
+            Connect the entire data-to-insights-to-action workflow. Adobe centralizes data collection, processing, analysis, B2C and B2B segmentation, and reporting — for better business decisions and customer experiences.
+          </p>
+        </header>
+        <div class="cluster-grid">
+          <a class="product-card" href="/products/adobe-analytics">
+            <img class="icon" src="assets/icons/B_app_ExperienceCloud.svg" alt="">
+            <div class="body"><h4 class="t-title-4">Adobe Analytics</h4></div>
+            <span class="link">Learn more</span>
+          </a>
+          <a class="product-card" href="/products/adobe-analytics/customer-journey-analytics">
+            <img class="icon" src="assets/icons/B_app_ExperienceCloud.svg" alt="">
+            <div class="body"><h4 class="t-title-4">Customer Journey Analytics</h4></div>
+            <span class="link">Learn more</span>
+          </a>
+          <a class="product-card" href="/products/real-time-customer-data-platform/rtcdp">
+            <img class="icon" src="assets/icons/B_app_ExperiencePlatform.svg" alt="">
+            <div class="body"><h4 class="t-title-4">Adobe Real-Time CDP</h4></div>
+            <span class="link">Learn more</span>
+          </a>
+          <a class="product-card" href="/products/mix-modeler">
+            <img class="icon" src="assets/icons/B_app_ExperienceCloud.svg" alt="">
+            <div class="body"><h4 class="t-title-4">Adobe Mix Modeler</h4></div>
+            <span class="link">Learn more</span>
+          </a>
+        </div>
+        <div class="cluster-footer">
+          <a class="ds-btn-link" href="#data-explore">Explore products</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Advanced marketing automation -->
+    <section class="domain-cluster" data-section="domain-cluster" data-purpose="product-cluster" data-domain="campaigns" id="campaigns">
+      <div class="cluster-inner">
+        <header class="cluster-header" data-ta-group>
+          <div class="left">
+            <span class="t-eyebrow" data-ta-unit>Campaigns</span>
+            <h3 class="t-title-2" data-ta>Advanced marketing automation, management, and insights.</h3>
+          </div>
+          <p class="t-body-l dek" data-ta>
+            Deliver real-time, personalized, multi-channel journeys for both B2B and B2C customers with collaborative tools that let sales and marketing teams work in sync.
+          </p>
+        </header>
+        <div class="cluster-grid three">
+          <a class="product-card" href="/products/journey-optimizer">
+            <img class="icon" src="assets/icons/B_app_ExperienceCloud.svg" alt="">
+            <div class="body"><h4 class="t-title-4">Adobe Journey Optimizer</h4></div>
+            <span class="link">Learn more</span>
+          </a>
+          <a class="product-card" href="/products/journey-optimizer-b2b-edition">
+            <img class="icon" src="assets/icons/B_app_ExperienceCloud.svg" alt="">
+            <div class="body"><h4 class="t-title-4">Adobe Journey Optimizer B2B Edition</h4></div>
+            <span class="link">Learn more</span>
+          </a>
+          <a class="product-card" href="/products/marketo">
+            <img class="icon" src="assets/icons/B_app_ExperienceCloud.svg" alt="">
+            <div class="body"><h4 class="t-title-4">Adobe Marketo Engage</h4></div>
+            <span class="link">Learn more</span>
+          </a>
+        </div>
+        <div class="cluster-footer">
+          <a class="ds-btn-link" href="#campaigns-explore">Explore products</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Documents -->
+    <section class="domain-cluster" data-section="domain-cluster" data-purpose="product-cluster" data-domain="documents" id="documents">
+      <div class="cluster-inner">
+        <header class="cluster-header" data-ta-group>
+          <div class="left">
+            <span class="t-eyebrow" data-ta-unit>Documents</span>
+            <h3 class="t-title-2" data-ta>Accelerated document workflows that deliver more impact.</h3>
+          </div>
+          <p class="t-body-l dek" data-ta>
+            Organize documents into a connected, insight-rich hub. Adobe Acrobat Studio combines trusted PDF tools with AI-powered insights, secure knowledge spaces, and standout content creation.
+          </p>
+        </header>
+        <div class="cluster-grid two">
+          <a class="product-card" href="/products/acrobat-studio">
+            <img class="icon" src="assets/icons/B_app_AdobeAcrobatPDF.svg" alt="">
+            <div class="body"><h4 class="t-title-4">Adobe Acrobat Studio</h4></div>
+            <span class="link">Learn more</span>
+          </a>
+          <a class="product-card" href="/products/acrobat-sign">
+            <img class="icon" src="assets/icons/B_app_AdobeAcrobatPDF.svg" alt="">
+            <div class="body"><h4 class="t-title-4">Adobe Acrobat Sign</h4></div>
+            <span class="link">Learn more</span>
+          </a>
+        </div>
+        <div class="cluster-footer">
+          <a class="ds-btn-link" href="#documents-explore">Explore products</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDITORIAL STORIES BAND — From AI frenzy / It starts with Adobe / Summit 2026 / AEM agents / The future of marketing / Adobe + NFL -->
+    <section class="editorial-stories" data-section="editorial-stories" data-purpose="editorial">
+      <div class="editorial-stories-inner">
+        <header class="editorial-stories-header" data-ta-group>
+          <span class="t-eyebrow" data-ta-unit>Featured</span>
+          <h2 class="t-title-2" data-ta>Stories, briefs, and what's next.</h2>
+        </header>
+        <div class="stories-grid">
+          <a class="story span-3" href="#story-roi">
+            <img class="bg" src="assets/editorial/bento-img-1.png" alt="">
+            <div class="scrim"></div>
+            <div class="copy">
+              <span class="t-eyebrow">Brief</span>
+              <h3 class="t-title-2">From AI frenzy to marketing ROI.</h3>
+              <span class="link">Explore products</span>
+            </div>
+          </a>
+          <a class="story span-3 alt" href="#story-starts-with-adobe">
+            <div class="copy" style="position: relative; z-index: 2;">
+              <span class="t-eyebrow">Adobe for Business</span>
+              <h3 class="t-title-2">It starts with Adobe</h3>
+              <span class="link">Explore products</span>
+            </div>
+            <div style="position:absolute; inset:0; background:
+              radial-gradient(circle at 25% 30%, rgba(59,99,251,0.18), transparent 45%),
+              radial-gradient(circle at 80% 80%, rgba(235,16,0,0.10), transparent 45%);"></div>
+          </a>
+          <a class="story span-2 brand" href="#summit-2026">
+            <div class="copy">
+              <span class="t-eyebrow">Adobe Summit 2026</span>
+              <h3 class="t-title-3">See the future of marketing, creativity and AI.</h3>
+              <span class="link">Register now</span>
+            </div>
+          </a>
+          <a class="story span-2" href="#aem-agents">
+            <img class="bg" src="assets/editorial/bento-img-2.png" alt="">
+            <div class="scrim"></div>
+            <div class="copy">
+              <span class="t-eyebrow">Product update</span>
+              <h3 class="t-title-3">Adobe Experience Manager agents.</h3>
+              <span class="link">Learn more</span>
+            </div>
+          </a>
+          <a class="story span-2 alt pattern-cell" href="#future-of-marketing">
+            <div class="copy" style="position:relative; z-index:2;">
+              <span class="t-eyebrow">Series</span>
+              <h3 class="t-title-3">The future of marketing.</h3>
+              <span class="link">Read the series</span>
+            </div>
+          </a>
+          <a class="story span-3-thin" style="background: linear-gradient(135deg, #001b39, #0c2c5e); color: #fff;" href="#adobe-nfl">
+            <div class="copy">
+              <span class="t-eyebrow">Customer story</span>
+              <h3 class="t-title-3">Adobe + NFL.</h3>
+              <span class="link">Read the story</span>
+            </div>
+          </a>
+          <a class="story span-3-thin alt pattern-cell" href="#adobe-portfolio">
+            <div class="copy" style="position:relative; z-index:2;">
+              <span class="t-eyebrow">Portfolio</span>
+              <h3 class="t-title-3">Explore all Adobe for Business products.</h3>
+              <span class="link">See all products</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOLUTIONS — full 6 cards (matches live) -->
+    <section class="solutions" data-section="solutions-band" data-purpose="solutions" id="solutions">
+      <div class="solutions-inner">
+        <header class="solutions-header" data-ta-group>
+          <div>
+            <span class="t-eyebrow" data-ta-unit>Solutions</span>
+            <h2 class="t-title-1" data-ta style="margin-top: 12px;">Business solutions from Adobe — the customer experience orchestration leader.</h2>
+          </div>
+          <p class="t-body-l dek" data-ta>
+            Each solution combines products, expertise, and a path. From personalization to document productivity, this is how leading enterprises ship.
+          </p>
+        </header>
+        <div class="solutions-grid">
+          <a class="solution-card large" href="#solution-personalization">
+            <img class="bg" src="assets/editorial/bento-img-1.png" alt="">
+            <div class="scrim"></div>
+            <div class="copy">
+              <span class="t-eyebrow">Solution 01</span>
+              <h3 class="t-title-2">Personalization at scale.</h3>
+              <span class="link">Read the brief</span>
+            </div>
+          </a>
+          <a class="solution-card alt" href="#solution-cx">
+            <div class="pattern"></div>
+            <div class="copy" style="position:relative; z-index:2;">
+              <span class="t-eyebrow">Solution 02</span>
+              <h3 class="t-title-3">Unified customer experience.</h3>
+              <span class="link">Read the brief</span>
+            </div>
+          </a>
+        </div>
+        <div class="solutions-grid" style="margin-top: 8px;">
+          <a class="solution-card" href="#solution-content-supply">
+            <img class="bg" src="assets/editorial/bento-img-2.png" alt="">
+            <div class="scrim"></div>
+            <div class="copy">
+              <span class="t-eyebrow">Solution 03</span>
+              <h3 class="t-title-3">Content supply chain.</h3>
+              <span class="link">Read the brief</span>
+            </div>
+          </a>
+          <a class="solution-card alt" href="#solution-creative">
+            <div class="pattern"></div>
+            <div class="copy" style="position:relative; z-index:2;">
+              <span class="t-eyebrow">Solution 04</span>
+              <h3 class="t-title-3">Enterprise creative and production solutions.</h3>
+              <span class="link">Read the brief</span>
+            </div>
+          </a>
+          <a class="solution-card dark" href="#solution-b2b">
+            <div class="copy">
+              <span class="t-eyebrow">Solution 05</span>
+              <h3 class="t-title-3">B2B go-to-market orchestration.</h3>
+              <span class="link">Read the brief</span>
+            </div>
+          </a>
+        </div>
+        <div class="solutions-grid" style="margin-top: 8px; grid-template-columns: 1fr;">
+          <a class="solution-card alt" style="grid-column: 1 / -1; aspect-ratio: 6 / 1;" href="#solution-document-productivity">
+            <div class="pattern"></div>
+            <div class="copy" style="position:relative; z-index:2; padding: 32px;">
+              <span class="t-eyebrow">Solution 06</span>
+              <h3 class="t-title-3">Document productivity.</h3>
+              <span class="link">Read the brief</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CUSTOMER MARQUEE -->
+    <section class="customers" data-section="customer-marquee" data-purpose="proof">
+      <div class="customers-inner" data-ta-group>
+        <a class="read-story-link" href="#read-story" data-ta-unit>Read story</a>
+        <h2 class="t-title-2" data-ta style="margin-top: 4px;">Adobe is transforming the world's biggest brands.</h2>
+        <div class="customer-grid" data-ta-unit>
+          <a class="customer-tile" href="#case-coca-cola" data-placeholder="logo" aria-label="Coca-Cola">Coca-Cola</a>
+          <a class="customer-tile" href="#case-qualcomm" data-placeholder="logo" aria-label="Qualcomm">Qualcomm</a>
+          <a class="customer-tile" href="#case-premier-league" data-placeholder="logo" aria-label="Premier League">Premier<br>League</a>
+          <a class="customer-tile" href="#case-prudential" data-placeholder="logo" aria-label="Prudential">Prudential</a>
+          <a class="customer-tile" href="#case-cisco" data-placeholder="logo" aria-label="Cisco">Cisco</a>
+          <a class="customer-tile" href="#case-home-depot" data-placeholder="logo" aria-label="The Home Depot">The Home<br>Depot</a>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /editorial-parallax -->
+</div><!-- /editorial-section -->
+
+<!-- CLOSING CTA -->
+<section class="closing-cta" data-section="closing-cta" data-purpose="conversion" id="contact">
+  <div class="closing-cta-inner" data-ta-group>
+    <span class="t-eyebrow" data-ta-unit style="color: rgba(255,255,255,0.6);">Get in touch</span>
+    <h2 class="t-title-1" data-ta>Let's talk about what Adobe for Business can do for you.</h2>
+    <div class="ctas" data-ta-unit>
+      <a class="ds-btn ds-btn-primary" href="#contact-form">Get started</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" data-section="global-footer" data-purpose="sitemap">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="lockup">
+          <svg viewBox="0 0 240 234" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M152 0h88v234L152 0zM88 0H0v234L88 0zm32 86 56 132h-37l-17-43H81l37-89z"/></svg>
+          <span>Adobe for Business</span>
+        </div>
+        <p>Adobe is the customer experience orchestration leader, with a portfolio of products serving every part of the modern enterprise.</p>
+      </div>
+      <div class="footer-col"><h4>Products</h4><ul>
+        <li><a href="#">Experience Cloud</a></li><li><a href="#">Creative Cloud</a></li><li><a href="#">Document Cloud</a></li><li><a href="#">Firefly</a></li><li><a href="#">GenStudio</a></li><li><a href="#">Marketo</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Solutions</h4><ul>
+        <li><a href="#">Personalization at scale</a></li><li><a href="#">Unified customer experience</a></li><li><a href="#">Content supply chain</a></li><li><a href="#">Enterprise creative</a></li><li><a href="#">B2B go-to-market</a></li><li><a href="#">Document productivity</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Industries</h4><ul>
+        <li><a href="#">Financial services</a></li><li><a href="#">Retail</a></li><li><a href="#">Travel &amp; hospitality</a></li><li><a href="#">Healthcare</a></li><li><a href="#">Public sector</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Resources</h4><ul>
+        <li><a href="#">Customer stories</a></li><li><a href="#">Adobe Summit</a></li><li><a href="#">Blog</a></li><li><a href="#">Events</a></li><li><a href="#">Reports</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Company</h4><ul>
+        <li><a href="#">About Adobe</a></li><li><a href="#">Contact us</a></li><li><a href="#">Careers</a></li><li><a href="#">Investors</a></li><li><a href="#">Newsroom</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bar">
+      <div class="links">
+        <a href="#">Privacy</a><a href="#">Terms of use</a><a href="#">Cookie preferences</a><a href="#">Do not sell or share my personal information</a><a href="#">AdChoices</a>
+      </div>
+      <button class="region">United States · English ▾</button>
+    </div>
+  </div>
+</footer>
+
+<!-- Scroll-driven motion (vanilla JS port of references/hub) -->
+<script>
+(function () {
+  'use strict';
+  var prefersReducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (prefersReducedMotion) return;
+
+  function clamp01(v) { return v < 0 ? 0 : (v > 1 ? 1 : v); }
+
+  var pinSpacer = document.querySelector('.hero-pin-spacer');
+  var heroText = document.getElementById('heroText');
+  var mosaicWrap = document.getElementById('heroMosaicWrap');
+  var cols = Array.from(document.querySelectorAll('.mosaic-col'));
+  var allCards = Array.from(document.querySelectorAll('.mosaic-card'));
+  var editorialParallax = document.getElementById('editorialParallax');
+  var gnav = document.getElementById('gnav');
+
+  var vw, vh, pinTop, pinHeight;
+  var xFrom = [], yFrom = [], cardYFrom = [];
+  var INITIAL_GAP = 97, FINAL_GAP = 8, CARD_Y_GAP_INITIAL = 100;
+
+  function measure() {
+    vw = window.innerWidth;
+    vh = window.innerHeight;
+    var rect = pinSpacer.getBoundingClientRect();
+    pinTop = rect.top + (window.scrollY || 0);
+    pinHeight = pinSpacer.offsetHeight;
+    xFrom = [-178, -89, 0, 90, 179].map(function (v) { return v / 1440 * vw; });
+    yFrom = [-307, -124, 0, -100, -290].map(function (v) { return v / 1024 * vh; });
+    var spreadGap = CARD_Y_GAP_INITIAL / 1440 * vw;
+    cardYFrom = [0, spreadGap - FINAL_GAP, (spreadGap - FINAL_GAP) * 2];
+  }
+
+  function applySpread() {
+    cols.forEach(function (col, i) {
+      col.style.transform = 'translate3d(' + xFrom[i] + 'px, ' + yFrom[i] + 'px, 0)';
+      var cards = col.querySelectorAll('.mosaic-card');
+      cards.forEach(function (c, ci) {
+        c.style.transform = 'translate3d(0, ' + cardYFrom[ci] + 'px, 0)';
+      });
+    });
+    mosaicWrap.style.transform = 'translate3d(0, 0, 0)';
+    heroText.style.transform = 'translate3d(0, 0, 0)';
+    heroText.style.opacity = '1';
+  }
+
+  function ringReveal() {
+    var rings = [[], [], []];
+    cols.forEach(function (col, colIdx) {
+      col.querySelectorAll('.mosaic-card').forEach(function (card, rowIdx) {
+        var ring = Math.max(Math.abs(colIdx - 2), rowIdx);
+        rings[Math.min(ring, 2)].push(card);
+      });
+    });
+    [0, 1, 2].forEach(function (ringIdx) {
+      rings[ringIdx].forEach(function (card) {
+        card.style.setProperty('--reveal-delay', (0.1 + ringIdx * 0.1) + 's');
+      });
+    });
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        allCards.forEach(function (c) { c.classList.add('in'); });
+      });
+    });
+  }
+
+  function computeProgress() {
+    var y = window.scrollY || 0;
+    var range = pinHeight - vh;
+    if (range <= 0) return 0;
+    return clamp01((y - pinTop) / range);
+  }
+
+  function applyScroll() {
+    var t = computeProgress();
+    cols.forEach(function (col, i) {
+      var x = xFrom[i] * (1 - t);
+      var y = yFrom[i] * (1 - t);
+      col.style.transform = 'translate3d(' + x + 'px, ' + y + 'px, 0)';
+      var cards = col.querySelectorAll('.mosaic-card');
+      cards.forEach(function (c, ci) {
+        var cy = cardYFrom[ci] * (1 - t);
+        c.style.transform = 'translate3d(0, ' + cy + 'px, 0)';
+      });
+    });
+    var wrapY = -62 * vh / 100 * t;
+    mosaicWrap.style.transform = 'translate3d(0, ' + wrapY + 'px, 0)';
+    var textT = clamp01(t / 0.45);
+    heroText.style.transform = 'translate3d(0, ' + (-80 * textT) + 'px, 0)';
+    heroText.style.opacity = 1 - textT;
+    gnav.classList.toggle('scrolled', (window.scrollY || 0) > 40);
+    if (editorialParallax) {
+      var er = editorialParallax.getBoundingClientRect();
+      var ep = clamp01((vh - er.top) / (vh + er.height));
+      var par = (ep - 0.5) * 60;
+      editorialParallax.style.transform = 'translate3d(0, ' + par + 'px, 0)';
+    }
+  }
+
+  /* TEXT-ANIMATE */
+  function measureLines(el, text) {
+    var cs = getComputedStyle(el);
+    var words = text.trim().split(/\s+/);
+    if (!words.length) return [];
+    var tmp = document.createElement('div');
+    tmp.setAttribute('aria-hidden', 'true');
+    tmp.style.cssText = ['position:absolute','visibility:hidden','pointer-events:none','top:0','left:0',
+      'width:' + el.offsetWidth + 'px',
+      'font-family:' + cs.fontFamily, 'font-size:' + cs.fontSize, 'font-weight:' + cs.fontWeight,
+      'line-height:' + cs.lineHeight, 'letter-spacing:' + cs.letterSpacing, 'white-space:' + cs.whiteSpace].join(';');
+    tmp.innerHTML = words.map(function (w) { return '<span style="display:inline">' + w.replace(/</g,'&lt;') + '</span>'; }).join(' ');
+    document.body.appendChild(tmp);
+    var spans = tmp.querySelectorAll('span');
+    var lines = [], cur = [], lastTop = null;
+    spans.forEach(function (sp, i) {
+      var top = Math.round(sp.getBoundingClientRect().top);
+      if (lastTop === null) lastTop = top;
+      if (top !== lastTop) { lines.push(cur.join(' ')); cur = []; lastTop = top; }
+      cur.push(words[i]);
+    });
+    if (cur.length) lines.push(cur.join(' '));
+    document.body.removeChild(tmp);
+    return lines.filter(Boolean);
+  }
+  function wrapLines(el) {
+    if (el.querySelector('.ta-line-inner')) return Array.from(el.querySelectorAll('.ta-line-inner'));
+    var segments = el.innerHTML.split(/<br\s*\/?>/gi);
+    var allLines = [];
+    segments.forEach(function (seg) {
+      var plain = seg.replace(/<[^>]+>/g, '').trim();
+      if (!plain) return;
+      allLines = allLines.concat(measureLines(el, plain));
+    });
+    if (!allLines.length) return [];
+    el.innerHTML = allLines.map(function (line) {
+      return '<span class="ta-line"><span class="ta-line-inner">' + line + '</span></span>';
+    }).join('');
+    return Array.from(el.querySelectorAll('.ta-line-inner'));
+  }
+
+  var taGroups = [];
+  function buildTAGroups() {
+    var BASE = vh * 0.065;
+    Array.from(document.querySelectorAll('[data-ta-group]')).forEach(function (group) {
+      var nodes = Array.from(group.querySelectorAll('[data-ta], [data-ta-unit]'));
+      if (!nodes.length) return;
+      var items = [];
+      nodes.forEach(function (n) {
+        if (n.hasAttribute('data-ta-unit')) items.push(n);
+        else items = items.concat(wrapLines(n));
+      });
+      items.forEach(function (it, i) {
+        it.style.transform = 'translate3d(0, ' + ((i + 1) * BASE) + 'px, 0)';
+        it.style.opacity = '0';
+        it.style.willChange = 'transform, opacity';
+      });
+      taGroups.push({ group: group, items: items, base: BASE });
+    });
+  }
+  function applyTextAnimate() {
+    taGroups.forEach(function (g) {
+      var r = g.group.getBoundingClientRect();
+      var start = vh * 0.9, end = vh * 0.4;
+      var t = clamp01((start - r.top) / (start - end));
+      var e = 1 - (1 - t) * (1 - t);
+      g.items.forEach(function (it, i) {
+        var startY = (i + 1) * g.base;
+        it.style.transform = 'translate3d(0, ' + (startY * (1 - e)) + 'px, 0)';
+        it.style.opacity = e;
+      });
+    });
+  }
+
+  var ticking = false;
+  function tick() {
+    applyScroll();
+    applyTextAnimate();
+  }
+  function onScroll() {
+    if (!ticking) {
+      requestAnimationFrame(function () { tick(); ticking = false; });
+      ticking = true;
+    }
+  }
+
+  function boot() {
+    measure();
+    applySpread();
+    buildTAGroups();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', function () { measure(); applySpread(); tick(); }, { passive: true });
+    tick();
+    requestAnimationFrame(ringReveal);
+  }
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot);
+  else boot();
+})();
+</script>
+
+</body>
+</html>

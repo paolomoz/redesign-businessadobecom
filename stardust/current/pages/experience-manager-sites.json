@@ -1,0 +1,1167 @@
+{
+  "_provenance": {
+    "url": "https://business.adobe.com/products/experience-manager/sites/aem-sites",
+    "slug": "experience-manager-sites",
+    "extractedAt": "2026-05-07T12:20:13.202Z",
+    "waitMs": 3556,
+    "waitMode": "medium",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    }
+  },
+  "title": "Adobe Experience Manager Sites | Enterprise Content Management",
+  "meta": {
+    "description": "Create and manage high-performance websites with Adobe Experience Manager Sites, an enterprise CMS with AI, headless capabilities, and built-in optimization.",
+    "ogTitle": "Adobe Experience Manager Sites | Enterprise Content Management",
+    "ogDescription": "Create and manage high-performance websites with Adobe Experience Manager Sites, an enterprise CMS with AI, headless capabilities, and built-in optimization.",
+    "ogImage": "https://business.adobe.com/products/experience-manager/media_15d78b786972610414ae80d55550c6be94b7438c4.png?width=1200&format=pjpg&optimize=medium",
+    "themeColor": null
+  },
+  "outline": [
+    {
+      "level": 1,
+      "text": "ADOBE EXPERIENCE MANAGER SITES"
+    },
+    {
+      "level": 2,
+      "text": "An agentic CMS to structure and scale modern experiences."
+    },
+    {
+      "level": 2,
+      "text": "Explore the features and capabilities of Adobe Experience Manager Sites."
+    },
+    {
+      "level": 3,
+      "text": "Accelerate content creation with agentic capabilities."
+    },
+    {
+      "level": 3,
+      "text": "Increase site discoverability, performance, and conversion."
+    },
+    {
+      "level": 3,
+      "text": "Accelerate web development."
+    },
+    {
+      "level": 3,
+      "text": "Create pages that excite your customers, wherever they are."
+    },
+    {
+      "level": 3,
+      "text": "Flexibility to work with all your technology."
+    },
+    {
+      "level": 2,
+      "text": "Adobe Experience Manager Sites use cases."
+    },
+    {
+      "level": 3,
+      "text": "Accelerate website production."
+    },
+    {
+      "level": 3,
+      "text": "Scale experiences across brands and regions."
+    },
+    {
+      "level": 3,
+      "text": "Deliver high-performance experiences by default."
+    },
+    {
+      "level": 2,
+      "text": "Forrester names Adobe a Leader in CMS."
+    },
+    {
+      "level": 2,
+      "text": "Helping global brands drive business impact with personalization."
+    },
+    {
+      "level": 2,
+      "text": "Learn more about Experience Manager Sites."
+    },
+    {
+      "level": 2,
+      "text": "Unlock more with Adobe integrations."
+    },
+    {
+      "level": 3,
+      "text": "Experience Manager Sites + Adobe Experience Manager Assets"
+    },
+    {
+      "level": 3,
+      "text": "Experience Manager Sites + Adobe Commerce"
+    },
+    {
+      "level": 3,
+      "text": "Experience Manager Sites + Adobe Analytics"
+    },
+    {
+      "level": 2,
+      "text": "FAQs"
+    },
+    {
+      "level": 3,
+      "text": "What is content personalization?"
+    },
+    {
+      "level": 3,
+      "text": "What does Adobe Experience Manager Content Services do?"
+    },
+    {
+      "level": 3,
+      "text": "What is a headless CMS?"
+    },
+    {
+      "level": 3,
+      "text": "What does Adobe Experience Manager Sites Content as a Service include?"
+    },
+    {
+      "level": 3,
+      "text": "What is a Customer Experience (CX)?"
+    },
+    {
+      "level": 3,
+      "text": "What makes AEM Sites a truly scalable CMS for enterprises?"
+    },
+    {
+      "level": 2,
+      "text": "Let us show you the full power of Adobe Experience Manager Sites."
+    },
+    {
+      "level": 3,
+      "text": "ADOBE EXPERIENCE MANAGER SITES"
+    },
+    {
+      "level": 3,
+      "text": "ADOBE EXPERIENCE MANAGER SITES"
+    },
+    {
+      "level": 3,
+      "text": "An agentic CMS to structure and scale modern experiences."
+    },
+    {
+      "level": 3,
+      "text": "An agentic CMS to structure and scale modern experiences."
+    },
+    {
+      "level": 3,
+      "text": "Watch overview"
+    },
+    {
+      "level": 3,
+      "text": "Watch overview"
+    },
+    {
+      "level": 3,
+      "text": "Book a demo"
+    },
+    {
+      "level": 3,
+      "text": "Book a demo"
+    },
+    {
+      "level": 3,
+      "text": "Discover Agents in Adobe Experience Manager."
+    },
+    {
+      "level": 3,
+      "text": "Discover Agents in Adobe Experience Manager."
+    },
+    {
+      "level": 3,
+      "text": "Learn more"
+    },
+    {
+      "level": 3,
+      "text": "Learn more"
+    },
+    {
+      "level": 3,
+      "text": "Open"
+    },
+    {
+      "level": 3,
+      "text": "Open"
+    },
+    {
+      "level": 3,
+      "text": "Edit"
+    },
+    {
+      "level": 3,
+      "text": "Edit"
+    },
+    {
+      "level": 3,
+      "text": "Explore the features and capabilities of Adobe Experience Manager Sites."
+    },
+    {
+      "level": 3,
+      "text": "Explore the features and capabilities of Adobe Experience Manager Sites."
+    },
+    {
+      "level": 3,
+      "text": "Accelerate content creation with agentic capabilities"
+    },
+    {
+      "level": 3,
+      "text": "Accelerate content creation with agentic capabilities"
+    },
+    {
+      "level": 3,
+      "text": "Learn about content creation"
+    },
+    {
+      "level": 3,
+      "text": "Learn about content creation"
+    },
+    {
+      "level": 3,
+      "text": "Increase site discoverability, performance, and conversion."
+    },
+    {
+      "level": 3,
+      "text": "Increase site discoverability, performance, and conversion."
+    },
+    {
+      "level": 3,
+      "text": "scalable CMS"
+    },
+    {
+      "level": 3,
+      "text": "scalable CMS"
+    },
+    {
+      "level": 3,
+      "text": "Learn about site performance"
+    },
+    {
+      "level": 3,
+      "text": "Learn about site performance"
+    },
+    {
+      "level": 3,
+      "text": "Accelerate web development."
+    },
+    {
+      "level": 3,
+      "text": "Accelerate web development."
+    },
+    {
+      "level": 3,
+      "text": "Learn about rapid development"
+    },
+    {
+      "level": 3,
+      "text": "Learn about rapid development"
+    },
+    {
+      "level": 3,
+      "text": "Create pages that excite your customers, wherever they are."
+    },
+    {
+      "level": 3,
+      "text": "Create pages that excite your customers, wherever they are."
+    },
+    {
+      "level": 3,
+      "text": "reusable content components"
+    },
+    {
+      "level": 3,
+      "text": "reusable content components"
+    },
+    {
+      "level": 3,
+      "text": "translation workflows"
+    },
+    {
+      "level": 3,
+      "text": "translation workflows"
+    },
+    {
+      "level": 3,
+      "text": "Learn about omnichannel experiences"
+    },
+    {
+      "level": 3,
+      "text": "Learn about omnichannel experiences"
+    },
+    {
+      "level": 3,
+      "text": "Flexibility to work with all your technology."
+    },
+    {
+      "level": 3,
+      "text": "Flexibility to work with all your technology."
+    },
+    {
+      "level": 3,
+      "text": "reusable fragments"
+    },
+    {
+      "level": 3,
+      "text": "reusable fragments"
+    },
+    {
+      "level": 3,
+      "text": "Learn about headless CMS"
+    },
+    {
+      "level": 3,
+      "text": "Learn about headless CMS"
+    },
+    {
+      "level": 3,
+      "text": "Adobe Experience Manager Sites use cases."
+    },
+    {
+      "level": 3,
+      "text": "Adobe Experience Manager Sites use cases."
+    },
+    {
+      "level": 3,
+      "text": "Accelerate website production."
+    },
+    {
+      "level": 3,
+      "text": "Accelerate website production."
+    },
+    {
+      "level": 3,
+      "text": "Scale experiences across brands and regions."
+    },
+    {
+      "level": 3,
+      "text": "Scale experiences across brands and regions."
+    },
+    {
+      "level": 3,
+      "text": "Deliver high-performance experiences by default."
+    },
+    {
+      "level": 3,
+      "text": "Deliver high-performance experiences by default."
+    },
+    {
+      "level": 3,
+      "text": "Forrester names Adobe a Leader in CMS."
+    },
+    {
+      "level": 3,
+      "text": "Forrester names Adobe a Leader in CMS."
+    },
+    {
+      "level": 3,
+      "text": "Read report"
+    },
+    {
+      "level": 3,
+      "text": "Read report"
+    },
+    {
+      "level": 3,
+      "text": "Helping global brands drive business impact with personalization."
+    },
+    {
+      "level": 3,
+      "text": "Helping global brands drive business impact with personalization."
+    },
+    {
+      "level": 3,
+      "text": "96 times faster."
+    },
+    {
+      "level": 3,
+      "text": "96 times faster."
+    },
+    {
+      "level": 3,
+      "text": "400%."
+    },
+    {
+      "level": 3,
+      "text": "400%."
+    },
+    {
+      "level": 3,
+      "text": "in only 8 weeks."
+    },
+    {
+      "level": 3,
+      "text": "in only 8 weeks."
+    },
+    {
+      "level": 3,
+      "text": "Read more stories"
+    },
+    {
+      "level": 3,
+      "text": "Read more stories"
+    },
+    {
+      "level": 3,
+      "text": "Learn more about Experience Manager Sites."
+    },
+    {
+      "level": 3,
+      "text": "Learn more about Experience Manager Sites."
+    },
+    {
+      "level": 3,
+      "text": "See all Experience Manager Sites resources"
+    },
+    {
+      "level": 3,
+      "text": "See all Experience Manager Sites resources"
+    },
+    {
+      "level": 3,
+      "text": "Unlock more with Adobe integrations."
+    },
+    {
+      "level": 3,
+      "text": "Unlock more with Adobe integrations."
+    },
+    {
+      "level": 3,
+      "text": "Experience Manager Sites + Adobe Experience Manager Assets"
+    },
+    {
+      "level": 3,
+      "text": "Experience Manager Sites + Adobe Experience Manager Assets"
+    },
+    {
+      "level": 3,
+      "text": "Experience Manager Sites + Adobe Commerce"
+    },
+    {
+      "level": 3,
+      "text": "Experience Manager Sites + Adobe Commerce"
+    },
+    {
+      "level": 3,
+      "text": "Experience Manager Sites + Adobe Analytics"
+    },
+    {
+      "level": 3,
+      "text": "Experience Manager Sites + Adobe Analytics"
+    },
+    {
+      "level": 3,
+      "text": "FAQs"
+    },
+    {
+      "level": 3,
+      "text": "FAQs"
+    },
+    {
+      "level": 3,
+      "text": "What is content personalization?"
+    },
+    {
+      "level": 3,
+      "text": "What is content personalization?"
+    },
+    {
+      "level": 3,
+      "text": "Content Personalization"
+    },
+    {
+      "level": 3,
+      "text": "Content Personalization"
+    },
+    {
+      "level": 3,
+      "text": "What does Adobe Experience Manager Content Services do?"
+    },
+    {
+      "level": 3,
+      "text": "What does Adobe Experience Manager Content Services do?"
+    },
+    {
+      "level": 3,
+      "text": "Adobe Experience Manager Content Services"
+    },
+    {
+      "level": 3,
+      "text": "Adobe Experience Manager Content Services"
+    },
+    {
+      "level": 3,
+      "text": "What is a headless CMS?"
+    },
+    {
+      "level": 3,
+      "text": "What is a headless CMS?"
+    },
+    {
+      "level": 3,
+      "text": "headless CMS"
+    },
+    {
+      "level": 3,
+      "text": "headless CMS"
+    },
+    {
+      "level": 3,
+      "text": "What does Adobe Experience Manager Sites Content as a Service include?"
+    },
+    {
+      "level": 3,
+      "text": "What does Adobe Experience Manager Sites Content as a Service include?"
+    },
+    {
+      "level": 3,
+      "text": "Content as a Service"
+    },
+    {
+      "level": 3,
+      "text": "Content as a Service"
+    },
+    {
+      "level": 3,
+      "text": "What is a Customer Experience (CX)?"
+    },
+    {
+      "level": 3,
+      "text": "What is a Customer Experience (CX)?"
+    },
+    {
+      "level": 3,
+      "text": "Customer experience (CX)"
+    },
+    {
+      "level": 3,
+      "text": "Customer experience (CX)"
+    },
+    {
+      "level": 3,
+      "text": "What makes AEM Sites a truly scalable CMS for enterprises?"
+    },
+    {
+      "level": 3,
+      "text": "What makes AEM Sites a truly scalable CMS for enterprises?"
+    },
+    {
+      "level": 3,
+      "text": "Let us show you the full power of Adobe Experience Manager Sites."
+    },
+    {
+      "level": 3,
+      "text": "Let us show you the full power of Adobe Experience Manager Sites."
+    },
+    {
+      "level": 3,
+      "text": "Adobe family of companies"
+    },
+    {
+      "level": 3,
+      "text": "Adobe family of companies"
+    },
+    {
+      "level": 3,
+      "text": "personalized"
+    },
+    {
+      "level": 3,
+      "text": "personalized"
+    },
+    {
+      "level": 3,
+      "text": "Privacy Policy"
+    },
+    {
+      "level": 3,
+      "text": "Privacy Policy"
+    },
+    {
+      "level": 3,
+      "text": "opt-out"
+    },
+    {
+      "level": 3,
+      "text": "opt-out"
+    },
+    {
+      "level": 3,
+      "text": "Adobe Family of Companies"
+    },
+    {
+      "level": 3,
+      "text": "Adobe Family of Companies"
+    },
+    {
+      "level": 3,
+      "text": "Let’s talk about what Adobe Experience Manager Sites can do for your business."
+    },
+    {
+      "level": 3,
+      "text": "Let’s talk about what Adobe Experience Manager Sites can do for your business."
+    },
+    {
+      "level": 3,
+      "text": "Get started"
+    },
+    {
+      "level": 3,
+      "text": "Get started"
+    }
+  ],
+  "sections": [
+    {
+      "index": 0,
+      "tag": "div",
+      "className": "section",
+      "height": 700,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "ADOBE EXPERIENCE MANAGER SITES\nAn agentic CMS to structure and scale modern experiences.\n\nCreate and deliver high-performance experiences faster — built for agility and optimized for AI-driven discovery.\n\nWatch overview\nBook a demo"
+    },
+    {
+      "index": 1,
+      "tag": "div",
+      "className": "section",
+      "height": 0,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": ""
+    },
+    {
+      "index": 2,
+      "tag": "div",
+      "className": "section",
+      "height": 112,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "Explore the features and capabilities of Adobe Experience Manager Sites.\n\nDigital experience has evolved — your CMS should too. Experience Manager Sites addresses the core challenges of managing your digital properties, leveraging powerful agentic execution to help teams create, update, and activate experiences more efficiently. The result: structured, high-performing pages designed for both human engagement and AI visibility."
+    },
+    {
+      "index": 3,
+      "tag": "div",
+      "className": "section",
+      "height": 261,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "Content creation\nPerformance & experimentation\nRapid development\nOmnichannel experiences\nHeadless CMS\nactive tab\n1\nid\nfeatures"
+    },
+    {
+      "index": 4,
+      "tag": "div",
+      "className": "section",
+      "height": 1165,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "Accelerate content creation with agentic capabilities.\n\nGive marketers the ability to quickly create, update, and scale digital experiences faster with flexible authoring tools and built-in agentic support.\n\nModernize legacy content and use agentic workflows to automate updates, enforce governance and streamline optimization across sites.\nUse flexible authoring to create and publish content directly from Microsoft Word or Google Docs, or use a visual editor for real-time, in-context page editing.\nInstantly create on-brand copy and image variations, test performance, and personalize content usi"
+    },
+    {
+      "index": 5,
+      "tag": "div",
+      "className": "section",
+      "height": 1191,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "Increase site discoverability, performance, and conversion.\n\nImprove load times and responsiveness to boost search rankings, traffic, and conversion. Experience Manager Sites is the only scalable CMS on the market with the out-of-the-box capabilities to achieve maximum performance.\n\nDramatically improve Core Web Vitals and Google Lighthouse scores.\nModernize experiences by creating structured content that is optimized for both search engines and LLMs.\nDeliver pages quickly to reduce bounce rates and keep your customers engaged.\nIdentify the content and pages driving the most impact with built-"
+    },
+    {
+      "index": 6,
+      "tag": "div",
+      "className": "section",
+      "height": 1191,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "Accelerate web development.\n\nFast-track website development by enabling authoring, design, and coding to happen in parallel. Experience Manager Sites is compatible with JavaScript and CSS and lets developers use a build-less approach with built-in features for strong performance with minimal manual management.\n\nLeverage pre-optimized boilerplate code for the best starting point.\nMaintain fast page load times with degradation auto-reporting.\nMigrate any CMS to Experience Manager Sites in days — converting pages to clean semantic HTML with fast core web vitals and structured content, no rebuild "
+    },
+    {
+      "index": 7,
+      "tag": "div",
+      "className": "section",
+      "height": 1109,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "Create pages that excite your customers, wherever they are.\n\nCreate, manage, and deliver engaging content across your digital properties with easy-to-use tools.\n\nCollaborate globally with consistent design systems, reusable content components, direct access to governed assets, and translation workflows.\nUse responsive design tools to create consistent experiences throughout web, mobile, and app journeys.\n\nLearn about omnichannel experiences\n\ntab\nfeatures, 4\nstyle\nm spacing"
+    },
+    {
+      "index": 8,
+      "tag": "div",
+      "className": "section",
+      "height": 1137,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "Flexibility to work with all your technology.\n\nCreate and manage content as reusable fragments that can be delivered to any front-end with out-of-the-box authoring options for headless and headful delivery.\n\nWork with intuitive and comprehensive APIs.\nGet a broad catalog of ready-made extensions or build your own integrations with our third-party extensibility framework.\nScale content operations effortlessly across teams and geographies with centralized content governance and flexible publishing workflows.\n\nLearn about headless CMS\n\ntab\nfeatures, 5\nstyle\nm spacing"
+    },
+    {
+      "index": 9,
+      "tag": "div",
+      "className": "section",
+      "height": 35,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "Adobe Experience Manager Sites use cases."
+    },
+    {
+      "index": 10,
+      "tag": "div",
+      "className": "section",
+      "height": 835,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "Accelerate website production.\n\nEmpower any team to build and publish high-quality websites with easy-to-use tools and AI.\n\nScale experiences across brands and regions.\n\nExpand web experiences across brands, regions, and languages using a shared foundation that balances consistency and local flexibility.\n\nstyle\ntwo-up, s-spacing"
+    },
+    {
+      "index": 11,
+      "tag": "div",
+      "className": "section",
+      "height": 445,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "Deliver high-performance experiences by default.\n\nDeliver fast, reliable web experiences without requiring ongoing manual optimization.\n\nstyle\ns-spacing"
+    },
+    {
+      "index": 12,
+      "tag": "div",
+      "className": "section",
+      "height": 54,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "style\ns-spacing"
+    },
+    {
+      "index": 13,
+      "tag": "div",
+      "className": "section",
+      "height": 911,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "#000000\nForrester names Adobe a Leader in CMS.\n\nRead report"
+    },
+    {
+      "index": 14,
+      "tag": "div",
+      "className": "section",
+      "height": 112,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "Helping global brands drive business impact with personalization.\nBackground\n#FFFFFF"
+    },
+    {
+      "index": 15,
+      "tag": "div",
+      "className": "section",
+      "height": 272,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "Created pages 96 times faster.\n\nImproved page load time by 400%.\n\nBuilt and launched a new site in only 8 weeks.\nstyle\nThree up, l-spacing\nBackground\n#FFFFFF"
+    },
+    {
+      "index": 16,
+      "tag": "div",
+      "className": "section",
+      "height": 81,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "Read more stories\nBackground\n#FFFFFF"
+    },
+    {
+      "index": 17,
+      "tag": "div",
+      "className": "section",
+      "height": 35,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "Learn more about Experience Manager Sites."
+    },
+    {
+      "index": 18,
+      "tag": "div",
+      "className": "section",
+      "height": 0,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": ""
+    },
+    {
+      "index": 19,
+      "tag": "div",
+      "className": "section",
+      "height": 135,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "#D4F4F7\nUnlock more with Adobe integrations.\n\nConnect Adobe products to create experiences that are right on time and just right for your customers."
+    },
+    {
+      "index": 20,
+      "tag": "div",
+      "className": "section",
+      "height": 1778,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "Experience Manager Sites + Adobe Experience Manager Assets\n\nUpdate assets and digital content everywhere automatically, saving time for developers and marketers.\n\nLearn more\n\nExperience Manager Sites + Adobe Commerce\n\nCreate immersive shopping experiences by enriching product pages with content, and manage both content and commerce with a single integrated system.\n\nLearn more\n\nExperience Manager Sites + Adobe Analytics\n\nFuel content with real-time, omnichannel insights for better optimization and to make each customer interaction relevant.\n\nLearn more\n\nstyle\nthree up, xl-spacing\nbackground\n#D4"
+    },
+    {
+      "index": 21,
+      "tag": "div",
+      "className": "section",
+      "height": 989,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "FAQs\nWhat is content personalization?\nContent Personalization is a marketing strategy that uses data about consumers to individualize their experiences when they interact with brands. It helps brands meet their customers' needs and drives engagement and sales.\nWhat does Adobe Experience Manager Content Services do?\nAdobe Experience Manager Content Services leverages traditional Experience Manager Pages to compose headless REST API endpoints and Experience Manager Components to define or reference the content to expose on these endpoints. Experience Manager Content Services allows the same cont"
+    },
+    {
+      "index": 22,
+      "tag": "div",
+      "className": "section",
+      "height": 193,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "Let us show you the full power of Adobe Experience Manager Sites.\nanchor\nlet-us-show-you-the-full-power-of-adobe-experience-manager-sites\nMarketo Configurator Thursday, March 13, 2025 at 14:17\nSuccess content\nThank you for your interest in Adobe Experience Manager Sites. Your request has been submitted to an Adobe representative who will contact you shortly."
+    },
+    {
+      "index": 23,
+      "tag": "div",
+      "className": "section",
+      "height": 7265,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "style\nl spacing\ntitle\nImprove content velocity with Adobe Experience Manager Sites\nCardDescription\nWith marketing-friendly templates and AI-enhanced scalability, Experience Manager Sites helps create personalized experiences without the heavy lifting.\ncardDate\n2026-01-28\ncardImage\nprimaryTag\ncaas:content-type/product-page\nTags\ncaas:content-type/product-page,caas:products/adobe-experience-manager-sites\nADOBE EXPERIENCE MANAGER SITES\nADOBE EXPERIENCE MANAGER SITES\nAn agentic CMS to structure and scale modern experiences.\nAn agentic CMS to structure and scale modern experiences.\nWatch overview\nWa"
+    }
+  ],
+  "ctas": [
+    {
+      "text": "Watch overview",
+      "href": "https://business.adobe.com/products/experience-manager/sites.html#watch",
+      "role": "a"
+    },
+    {
+      "text": "Book a demo",
+      "href": "/request-consultation.html?mktfrm_poi=experiencemanagersites",
+      "role": "a"
+    }
+  ],
+  "links": {
+    "internal": [
+      "/de/products/experience-manager/sites.html",
+      "/",
+      "/products",
+      "/products/experience-manager/adobe-experience-manager",
+      "/products/experience-manager/sites.html",
+      "/request-consultation.html",
+      "/fragments/products/experience-manager/aem-agents-announcement-2025-product-pages",
+      "/products/experience-manager/sites/content-creation.html",
+      "/products/experience-manager/sites/ai-scalability.html",
+      "/products/experience-manager/sites/site-performance.html",
+      "/products/experience-manager/sites/rapid-development.html",
+      "/products/experience-manager/sites/components.html",
+      "/products/experience-manager/sites/content-translation-management.html",
+      "/products/experience-manager/sites/omnichannel-experiences.html",
+      "/products/experience-manager/sites/content-fragments.html",
+      "/products/experience-manager/sites/headless-cms.html",
+      "/products/experience-manager/sites/build-global-site.html",
+      "/products/experience-manager/sites/accelerate-production.html",
+      "/products/experience-manager/sites/optimize-experiences.html",
+      "/resources/reports/forrester-wave-content-management-systems-2025.html",
+      "/customer-success-stories/ibm-2022-case-study.html",
+      "/blog/perspectives/how-hanesbrands-and-adobe-built-one-of-the-fastest-ecommerce-websites-in-the-world",
+      "/customer-success-stories/kyndryl-case-study.html",
+      "/customer-success-stories.html",
+      "/fragments/products/blades/aem-sites/overview-deeper-content",
+      "/products/experience-manager/assets/aem-assets.html",
+      "/solutions/commerce.html",
+      "/products/adobe-analytics.html",
+      "/blog/basics/learn-about-content-personalization",
+      "/blog/basics/a-brief-overview-of-headless-cms",
+      "/products/experience-manager/sites/content-as-a-service.html",
+      "/blog/basics/customer-experience-definition"
+    ],
+    "external": [
+      "https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html",
+      "https://milo.adobe.com/tools/marketo"
+    ]
+  },
+  "colors": [
+    [
+      "color::rgb(44, 44, 44)",
+      740
+    ],
+    [
+      "color::rgb(0, 0, 0)",
+      84
+    ],
+    [
+      "color::rgb(255, 255, 255)",
+      29
+    ],
+    [
+      "color::rgb(39, 77, 234)",
+      26
+    ],
+    [
+      "color::rgb(59, 99, 251)",
+      5
+    ],
+    [
+      "border::rgb(255, 255, 255)",
+      3
+    ],
+    [
+      "bg::rgb(255, 255, 255)",
+      2
+    ],
+    [
+      "bg::rgb(59, 99, 251)",
+      1
+    ],
+    [
+      "bg::rgb(248, 248, 248)",
+      1
+    ],
+    [
+      "bg::rgb(0, 0, 0)",
+      1
+    ],
+    [
+      "bg::rgb(36, 36, 36)",
+      1
+    ]
+  ],
+  "fonts": [
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|400|18px",
+      638
+    ],
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|700|24px",
+      140
+    ],
+    [
+      "serif|400|16px",
+      79
+    ],
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|700|28px",
+      8
+    ],
+    [
+      "-apple-system|400|13.3333px",
+      5
+    ],
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|700|19px",
+      5
+    ],
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|700|18px",
+      3
+    ],
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|400|22px",
+      2
+    ],
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|400|12px",
+      1
+    ],
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|700|12px",
+      1
+    ],
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|700|16px",
+      1
+    ],
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|700|44px",
+      1
+    ],
+    [
+      "||",
+      1
+    ]
+  ],
+  "radii": [
+    [
+      "25px",
+      2
+    ],
+    [
+      "50%",
+      2
+    ]
+  ],
+  "shadows": [],
+  "media": {
+    "images": [
+      {
+        "src": "https://business.adobe.com/products/experience-manager/media_1dcc4de72edce27af1497f24851660bdcdf6f40d3.png?width=750&format=png&optimize=medium",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/products/experience-manager/media_1386b56d4c30a9b84543472b7355e18b8ff0dee18.png?width=750&format=png&optimize=medium",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/federal/assets/svgs/accessibility-pause.svg",
+        "alt": "Pause motion",
+        "width": 40,
+        "height": 40
+      },
+      {
+        "src": "https://business.adobe.com/federal/assets/svgs/accessibility-play.svg",
+        "alt": "Play motion",
+        "width": 40,
+        "height": 40
+      },
+      {
+        "src": "https://business.adobe.com/products/experience-manager/media_1d50cc9bf8969a73cd8f4aa479ef6bcfe0130ae9b.png?width=2000&format=webply&optimize=medium",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/products/experience-manager/media_1420069dc48d37a8755f76d6cb6c73a757a563800.png?width=2000&format=webply&optimize=medium",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/products/experience-manager/media_18fc33975ff202c441a8fa1c2855d90e17debdd06.png?width=2000&format=webply&optimize=medium",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/products/experience-manager/media_1c0244f9a112c689b0c2185054d22463ec7934757.png?width=2000&format=webply&optimize=medium",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/products/experience-manager/media_16bf54ef85c3e8f8dbba00a5f27a97f3b1efa8110.png?width=750&format=png&optimize=medium",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/products/experience-manager/media_1b0913f8cd8c0bee39375d56c3993c0979edda0df.png?width=750&format=png&optimize=medium",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/products/experience-manager/media_1a2b125af11df753a44e43bfb36eef941c6b07fdd.png?width=750&format=png&optimize=medium",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/products/experience-manager/media_16ffa3bed3a56c65bfb15255dcdd6d5bb5eb3d1ce.png?width=750&format=png&optimize=medium",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/products/experience-manager/media_14445d9f578217053c27ce6b91ee6764e8423d925.png?width=750&format=png&optimize=medium",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/assets/icons/products/experience-manager/dotcom-163053-ibm.svg",
+        "alt": "IBM customer story",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/assets/icons/products/experience-manager/dotcom-163053-hanes.svg",
+        "alt": "Hanes customer story",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/assets/icons/products/experience-manager/dotcom-163053-kyndryl.svg",
+        "alt": "Kyndryl customer story",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/products/experience-manager/media_1be3c4d1a60e59f7ee78ff151f1fd2bcee8d3b538.png?width=750&format=png&optimize=medium",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/products/experience-manager/media_1bb37f2607cc909220ba82b0632c57c28a192c46b.png?width=750&format=png&optimize=medium",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/products/experience-manager/media_1f24769512e8d367208557d8c95cd2a826f1fcb11.png?width=750&format=png&optimize=medium",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/products/experience-manager/media_15d78b786972610414ae80d55550c6be94b7438c4.png?width=750&format=png&optimize=medium",
+        "alt": "",
+        "width": 0,
+        "height": 0
+      }
+    ],
+    "svg": 2,
+    "video": 1,
+    "iframe": 0
+  },
+  "forms": [],
+  "systemComponents": {
+    "header": {
+      "tag": "header",
+      "links": [
+        {
+          "text": "Home",
+          "href": "/"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Adobe Experience Manager",
+          "href": "/products/experience-manager/adobe-experience-manager"
+        }
+      ]
+    },
+    "footer": {
+      "tag": "footer",
+      "links": []
+    }
+  }
+}

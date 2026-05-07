@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!--
+_provenance:
+  page: home
+  writtenBy: stardust:prototype
+  writtenAt: 2026-05-07
+  componentOf: stardust/state.json#pages[home]
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>home — before / after</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      background: #0c0c0c;
+      color: #f5f5f5;
+      display: flex; flex-direction: column;
+      overflow: hidden;
+    }
+    .header {
+      flex: 0 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 12px 20px;
+      background: #131313;
+      border-bottom: 1px solid #262626;
+    }
+    .header h1 {
+      margin: 0; font-size: 14px; font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+    .header h1 .slug { color: #8c8c8c; font-weight: 400; }
+    .controls { display: flex; gap: 8px; }
+    .btn {
+      font-size: 12px; font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 6px;
+      border: 1px solid #2c2c2c;
+      background: #1a1a1a;
+      color: #e5e5e5;
+      cursor: pointer;
+      transition: background 0.15s ease, border-color 0.15s ease;
+    }
+    .btn:hover { background: #232323; border-color: #3b63fb; }
+    .btn.primary { background: #3b63fb; border-color: #3b63fb; color: #fff; }
+    .btn.primary:hover { background: #274dea; border-color: #274dea; }
+
+    .panes {
+      flex: 1 1 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: #262626;
+      min-height: 0;
+    }
+    .pane { display: flex; flex-direction: column; background: #fff; min-height: 0; }
+    .pane-label {
+      flex: 0 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 8px 16px;
+      background: #1a1a1a;
+      color: #d8d8d8;
+      font-size: 11px; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      border-bottom: 1px solid #262626;
+    }
+    .pane-label .source {
+      font-weight: 400; color: #8c8c8c; text-transform: none;
+      letter-spacing: 0; font-size: 11px;
+    }
+    .pane iframe, .pane .screenshot-wrap {
+      flex: 1 1 auto;
+      width: 100%;
+      border: 0;
+      background: #fff;
+      min-height: 0;
+    }
+    .screenshot-wrap {
+      overflow: auto;
+      display: flex; align-items: flex-start; justify-content: center;
+    }
+    .screenshot-wrap img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .footer {
+      flex: 0 0 auto;
+      padding: 8px 20px;
+      background: #131313;
+      border-top: 1px solid #262626;
+      font-size: 11px;
+      color: #8c8c8c;
+      display: flex; gap: 24px; flex-wrap: wrap;
+    }
+    .footer .pill {
+      background: #1a1a1a;
+      padding: 2px 10px;
+      border-radius: 999px;
+      color: #d8d8d8;
+    }
+
+    /* Toggle: live URL */
+    .pane[data-mode="live"] iframe,
+    .pane[data-mode="screenshot"] .screenshot-wrap { display: flex; }
+    .pane[data-mode="live"] .screenshot-wrap,
+    .pane[data-mode="screenshot"] iframe { display: none; }
+    .pane[data-mode="screenshot"] iframe.live { display: none; }
+
+    @media (max-width: 900px) {
+      .panes { grid-template-columns: 1fr; grid-template-rows: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <h1>home <span class="slug">— before / after</span></h1>
+  <div class="controls">
+    <button class="btn" id="toggleLive">CURRENT: try live ↻</button>
+    <button class="btn" id="approveBtn">Approve</button>
+    <button class="btn primary" onclick="window.open('home-proposed.html','_blank')">Open proposed ↗</button>
+  </div>
+</header>
+
+<div class="panes">
+  <section class="pane" id="paneCurrent" data-mode="screenshot">
+    <div class="pane-label">
+      <span>CURRENT</span>
+      <span class="source" id="currentSource">screenshot · stardust/current/assets/screenshots/home.png</span>
+    </div>
+    <div class="screenshot-wrap">
+      <img src="../current/assets/screenshots/home.png" alt="Current home page screenshot" loading="eager">
+    </div>
+    <iframe class="live" src="" title="Current (live)"></iframe>
+  </section>
+
+  <section class="pane" id="paneProposed">
+    <div class="pane-label">
+      <span>PROPOSED</span>
+      <span class="source">stardust/prototypes/home-proposed.html</span>
+    </div>
+    <iframe src="home-proposed.html" title="Proposed redesign"></iframe>
+  </section>
+</div>
+
+<footer class="footer">
+  <span class="pill">Direction: brand-faithful + reference-override</span>
+  <span class="pill">Type: Adobe Clean Display 96/80/56/48</span>
+  <span class="pill">Ground: stark white · 16px cards · 32px hero</span>
+  <span class="pill">Renderer: stardust-direct (refs as craft baseline)</span>
+</footer>
+
+<script>
+  // Toggle CURRENT pane between screenshot and live URL
+  (function () {
+    var pane = document.getElementById('paneCurrent');
+    var btn = document.getElementById('toggleLive');
+    var iframe = pane.querySelector('iframe.live');
+    var src = document.getElementById('currentSource');
+    btn.addEventListener('click', function () {
+      var mode = pane.getAttribute('data-mode');
+      if (mode === 'screenshot') {
+        if (!iframe.src) iframe.src = 'https://business.adobe.com/';
+        pane.setAttribute('data-mode', 'live');
+        btn.textContent = 'CURRENT: show screenshot';
+        src.textContent = 'live · https://business.adobe.com/';
+      } else {
+        pane.setAttribute('data-mode', 'screenshot');
+        btn.textContent = 'CURRENT: try live ↻';
+        src.textContent = 'screenshot · stardust/current/assets/screenshots/home.png';
+      }
+    });
+  })();
+
+  // Approve button
+  document.getElementById('approveBtn').addEventListener('click', function () {
+    alert("To approve, say 'approve home' in the chat. The agent will mark home as approved in stardust/state.json.");
+  });
+</script>
+
+</body>
+</html>

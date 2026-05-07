@@ -1,0 +1,56 @@
+{
+  "_provenance": {
+    "source": "stardust/current/_brand-extraction.json",
+    "extractedAt": "2026-05-07",
+    "pages": ["home", "genstudio", "adobe-analytics", "experience-manager-sites", "marketo"]
+  },
+  "colors": {
+    "background": "#ffffff",
+    "surface": "#f5f5f5",
+    "text": "#2c2c2c",
+    "text-strong": "#000000",
+    "primary": "#274dea",
+    "border": "#e1e1e1",
+    "white": "#ffffff"
+  },
+  "typography": {
+    "display": "Adobe Clean, \"Trebuchet MS\", sans-serif",
+    "body": "Adobe Clean, \"Trebuchet MS\", sans-serif",
+    "weights": {
+      "regular": 400,
+      "bold": 700,
+      "black": 900
+    }
+  },
+  "rounded": {
+    "card": "16px",
+    "button": "25px",
+    "chip": "4px",
+    "dot": "50%"
+  },
+  "spacing": {
+    "base": 8,
+    "section-y-desktop": 96,
+    "section-y-tablet": 64,
+    "section-y-mobile": 48
+  },
+  "extensions": {
+    "componentStyle": ["card", "product-tile", "cta-pill", "hero-marquee", "mega-nav", "sticky-cta", "footer"],
+    "motifs": {
+      "radius": "16px (card), 25px (button)",
+      "shadow": "subtle single-layer drop shadow",
+      "borders": "low-contrast neutrals; relies on whitespace"
+    },
+    "voice": {
+      "tone": "authoritative, enterprise, AI-forward",
+      "ctaSamples": ["Learn about the product", "Read the announcement", "Explore products", "Contact us"],
+      "outlineSample": [
+        "AI-powered content management and end-to-end workflows.",
+        "Unleash creativity at scale.",
+        "Data and insights for a competitive edge.",
+        "Advanced marketing automation, management, and insights.",
+        "Accelerated document workflows that deliver more impact."
+      ]
+    }
+  }
+}

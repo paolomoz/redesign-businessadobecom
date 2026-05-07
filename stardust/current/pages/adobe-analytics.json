@@ -1,0 +1,849 @@
+{
+  "_provenance": {
+    "url": "https://business.adobe.com/products/adobe-analytics",
+    "slug": "adobe-analytics",
+    "extractedAt": "2026-05-07T12:20:07.795Z",
+    "waitMs": 3660,
+    "waitMode": "medium",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    }
+  },
+  "title": "Adobe Analytics | Enterprise Digital Experience Analytics",
+  "meta": {
+    "description": "Unify customer data, measure digital marketing performance, and optimize journeys with AI-powered insights that drive smarter decisions on Adobe Analytics.",
+    "ogTitle": "Adobe Analytics | Enterprise Digital Experience Analytics",
+    "ogDescription": "Unify customer data, measure digital marketing performance, and optimize journeys with AI-powered insights that drive smarter decisions on Adobe Analytics.",
+    "ogImage": "https://business.adobe.com/products/media_1bd76cf1a44567141df1b70fb3e9d1f7986b8ad86.png?width=1200&format=pjpg&optimize=medium",
+    "themeColor": null
+  },
+  "outline": [
+    {
+      "level": 4,
+      "text": "something went wrong"
+    },
+    {
+      "level": 1,
+      "text": "ANALYTICS"
+    },
+    {
+      "level": 2,
+      "text": "Intelligence that shapes every customer experience."
+    },
+    {
+      "level": 2,
+      "text": "Companies are reimagining CX analytics with Adobe."
+    },
+    {
+      "level": 2,
+      "text": "Learn more about Adobe’s analytics products."
+    },
+    {
+      "level": 2,
+      "text": "Let us show you how Adobe Analytics powers your CX analytics."
+    },
+    {
+      "level": 2,
+      "text": "Questions? We have answers."
+    },
+    {
+      "level": 3,
+      "text": "How does Adobe Analytics help unify website analytics data across channels?"
+    },
+    {
+      "level": 3,
+      "text": "How does Adobe Analytics help solve data governance and privacy challenges for C-suite tech leaders?"
+    },
+    {
+      "level": 3,
+      "text": "What problems does Adobe Analytics solve for senior analytics and marketing leaders with siloed data systems?"
+    },
+    {
+      "level": 3,
+      "text": "Why should CMOs choose Adobe Analytics for optimizing digital marketing strategy and attribution?"
+    },
+    {
+      "level": 3,
+      "text": "Unified customer analytics across data, content, and journeys."
+    },
+    {
+      "level": 3,
+      "text": "Unified customer analytics across data, content, and journeys."
+    },
+    {
+      "level": 3,
+      "text": "Watch video"
+    },
+    {
+      "level": 3,
+      "text": "Watch video"
+    },
+    {
+      "level": 3,
+      "text": "Book a demo"
+    },
+    {
+      "level": 3,
+      "text": "Book a demo"
+    },
+    {
+      "level": 3,
+      "text": "See the future of marketing, creativity and AI."
+    },
+    {
+      "level": 3,
+      "text": "See the future of marketing, creativity and AI."
+    },
+    {
+      "level": 3,
+      "text": "Register now"
+    },
+    {
+      "level": 3,
+      "text": "Register now"
+    },
+    {
+      "level": 3,
+      "text": "Compare Adobe’s analytics solutions."
+    },
+    {
+      "level": 3,
+      "text": "Compare Adobe’s analytics solutions."
+    },
+    {
+      "level": 3,
+      "text": "Customer Journey Analytics"
+    },
+    {
+      "level": 3,
+      "text": "Customer Journey Analytics"
+    },
+    {
+      "level": 3,
+      "text": "Learn more"
+    },
+    {
+      "level": 3,
+      "text": "Learn more"
+    },
+    {
+      "level": 3,
+      "text": "Customer Journey Analytics B2B Edition"
+    },
+    {
+      "level": 3,
+      "text": "Customer Journey Analytics B2B Edition"
+    },
+    {
+      "level": 3,
+      "text": "Product Analytics"
+    },
+    {
+      "level": 3,
+      "text": "Product Analytics"
+    },
+    {
+      "level": 3,
+      "text": "Content Analytics"
+    },
+    {
+      "level": 3,
+      "text": "Content Analytics"
+    },
+    {
+      "level": 3,
+      "text": "Digital Analytics"
+    },
+    {
+      "level": 3,
+      "text": "Digital Analytics"
+    },
+    {
+      "level": 3,
+      "text": "Read now"
+    },
+    {
+      "level": 3,
+      "text": "Read now"
+    },
+    {
+      "level": 3,
+      "text": "Analytics solutions driving results for the world’s biggest companies."
+    },
+    {
+      "level": 3,
+      "text": "Analytics solutions driving results for the world’s biggest companies."
+    },
+    {
+      "level": 3,
+      "text": "Alt: The Home Depot customer story"
+    },
+    {
+      "level": 3,
+      "text": "Alt: The Home Depot customer story"
+    },
+    {
+      "level": 3,
+      "text": "Alt: Otto customer story"
+    },
+    {
+      "level": 3,
+      "text": "Alt: Otto customer story"
+    },
+    {
+      "level": 3,
+      "text": "Alt: TSB customer story"
+    },
+    {
+      "level": 3,
+      "text": "Alt: TSB customer story"
+    },
+    {
+      "level": 3,
+      "text": "Alt: EY customer story"
+    },
+    {
+      "level": 3,
+      "text": "Alt: EY customer story"
+    },
+    {
+      "level": 3,
+      "text": "Karen Hopkins, Global CMO"
+    },
+    {
+      "level": 3,
+      "text": "Karen Hopkins, Global CMO"
+    },
+    {
+      "level": 3,
+      "text": "EY"
+    },
+    {
+      "level": 3,
+      "text": "EY"
+    },
+    {
+      "level": 3,
+      "text": "Read the EY story"
+    },
+    {
+      "level": 3,
+      "text": "Read the EY story"
+    },
+    {
+      "level": 3,
+      "text": "Learn more about Adobe’s analytics solutions."
+    },
+    {
+      "level": 3,
+      "text": "Learn more about Adobe’s analytics solutions."
+    },
+    {
+      "level": 3,
+      "text": "See all Analytics resources"
+    },
+    {
+      "level": 3,
+      "text": "See all Analytics resources"
+    },
+    {
+      "level": 3,
+      "text": "Let us show you the full power of Adobe’s analytics solutions."
+    },
+    {
+      "level": 3,
+      "text": "Let us show you the full power of Adobe’s analytics solutions."
+    },
+    {
+      "level": 3,
+      "text": "Adobe family of companies"
+    },
+    {
+      "level": 3,
+      "text": "Adobe family of companies"
+    },
+    {
+      "level": 3,
+      "text": "personalized"
+    },
+    {
+      "level": 3,
+      "text": "personalized"
+    },
+    {
+      "level": 3,
+      "text": "Privacy Policy"
+    },
+    {
+      "level": 3,
+      "text": "Privacy Policy"
+    },
+    {
+      "level": 3,
+      "text": "opt-out"
+    },
+    {
+      "level": 3,
+      "text": "opt-out"
+    },
+    {
+      "level": 3,
+      "text": "Adobe Family of Companies"
+    },
+    {
+      "level": 3,
+      "text": "Adobe Family of Companies"
+    },
+    {
+      "level": 3,
+      "text": "Questions? We have answers."
+    },
+    {
+      "level": 3,
+      "text": "Questions? We have answers."
+    },
+    {
+      "level": 3,
+      "text": "How does Adobe Analytics help unify website analytics data across channels?"
+    },
+    {
+      "level": 3,
+      "text": "How does Adobe Analytics help unify website analytics data across channels?"
+    },
+    {
+      "level": 3,
+      "text": "customer journeys"
+    },
+    {
+      "level": 3,
+      "text": "customer journeys"
+    },
+    {
+      "level": 3,
+      "text": "How does Adobe Analytics help solve data governance and privacy challenges for C-level tech leaders?"
+    },
+    {
+      "level": 3,
+      "text": "How does Adobe Analytics help solve data governance and privacy challenges for C-level tech leaders?"
+    },
+    {
+      "level": 3,
+      "text": "data governance"
+    },
+    {
+      "level": 3,
+      "text": "data governance"
+    },
+    {
+      "level": 3,
+      "text": "What problems does Adobe Analytics solve for senior analytics and marketing leaders with siloed data systems?"
+    },
+    {
+      "level": 3,
+      "text": "What problems does Adobe Analytics solve for senior analytics and marketing leaders with siloed data systems?"
+    },
+    {
+      "level": 3,
+      "text": "AI-powered tools"
+    },
+    {
+      "level": 3,
+      "text": "AI-powered tools"
+    },
+    {
+      "level": 3,
+      "text": "Why should CMOs choose Adobe Analytics for optimizing digital marketing strategy and attribution?"
+    },
+    {
+      "level": 3,
+      "text": "Why should CMOs choose Adobe Analytics for optimizing digital marketing strategy and attribution?"
+    },
+    {
+      "level": 3,
+      "text": "informed decisions"
+    },
+    {
+      "level": 3,
+      "text": "informed decisions"
+    },
+    {
+      "level": 3,
+      "text": "Let's talk about what Adobe Analytics can do for your business."
+    },
+    {
+      "level": 3,
+      "text": "Let's talk about what Adobe Analytics can do for your business."
+    },
+    {
+      "level": 3,
+      "text": "Get started"
+    },
+    {
+      "level": 3,
+      "text": "Get started"
+    }
+  ],
+  "sections": [
+    {
+      "index": 0,
+      "tag": "section",
+      "className": "feds-navItem feds-navItem--section feds-navItem--megaMenu",
+      "height": 63,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(41, 41, 41)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "Main Menu"
+    },
+    {
+      "index": 1,
+      "tag": "div",
+      "className": "section",
+      "height": 560,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "ANALYTICS\nIntelligence that shapes every customer experience.\n\nAdobe CX Analytics brings together trusted data architecture, consistent and persistent identity, democratized AI insights, and data-driven activation in one unified solution. From marketing planning and content intelligence to optimizing every customer and account touchpoint, Adobe delivers a single, actionable intelligence engine for customer experience — all in one unified analytics platform, purpose-built for the full customer life cycle.\n\nBook a demo"
+    },
+    {
+      "index": 2,
+      "tag": "div",
+      "className": "section",
+      "height": 88,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "Analytics everywhere.\nGive every team access to trusted insights in the canvas of their choice. \nLearn more"
+    },
+    {
+      "index": 3,
+      "tag": "div",
+      "className": "section",
+      "height": 88,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "Analytics everywhere.\nGive every team access to trusted insights in the canvas of their choice. \nLearn more"
+    },
+    {
+      "index": 4,
+      "tag": "div",
+      "className": "section",
+      "height": 0,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": ""
+    },
+    {
+      "index": 5,
+      "tag": "div",
+      "className": "section",
+      "height": 27,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "Content as a Service v3 - Adobe Analytics - Wednesday, April 8, 2026 at 13:17"
+    },
+    {
+      "index": 6,
+      "tag": "div",
+      "className": "section",
+      "height": 166,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "Companies are reimagining CX analytics with Adobe.\nbackground\n#FFFCEA\nstyle\nxl spacing"
+    },
+    {
+      "index": 7,
+      "tag": "div",
+      "className": "section",
+      "height": 85,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "Learn more about Adobe’s analytics products.\n\nContent as a Service v3 - Adobe Analytics. - Wednesday, April 8, 2026 at 11:47"
+    },
+    {
+      "index": 8,
+      "tag": "div",
+      "className": "section",
+      "height": 27,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "See all Adobe Analytics resources"
+    },
+    {
+      "index": 9,
+      "tag": "div",
+      "className": "section",
+      "height": 247,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "Let us show you how Adobe Analytics powers your CX analytics.\nstyle\nGrid width 6\nanchor\nbook-demo\nMarketo Configurator Monday, September 15, 2025 at 17:01\nSuccess content\nThank you for your interest in Adobe Analytics. Your request has been submitted to an Adobe representative who will contact you shortly."
+    },
+    {
+      "index": 10,
+      "tag": "div",
+      "className": "section",
+      "height": 54,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "style\nM spacing"
+    },
+    {
+      "index": 11,
+      "tag": "div",
+      "className": "section",
+      "height": 35,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "Questions? We have answers."
+    },
+    {
+      "index": 12,
+      "tag": "div",
+      "className": "section",
+      "height": 6001,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(44, 44, 44)",
+      "fontFamily": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "textPreview": "How does Adobe Analytics help unify website analytics data across channels?\n\nAdobe Analytics brings website analytics from web, mobile, and product interactions, giving marketing and business leaders a single source of truth for data-driven decision making. It connects customer journeys, breaks down data silos, and enables fast analysis across all platforms.\n\nIntegrates behavioral data in real time for holistic visibility\nAutomates insights and delivers actionable results instantly\nHow does Adobe Analytics help solve data governance and privacy challenges for C-suite tech leaders?\n\nAdobe Analy"
+    }
+  ],
+  "ctas": [
+    {
+      "text": "Get started",
+      "href": "/request-consultation.html?mktfrm_poi=analyticssolnpremium",
+      "role": "a"
+    },
+    {
+      "text": "Analytics",
+      "href": null,
+      "role": "button"
+    },
+    {
+      "text": "overview",
+      "href": null,
+      "role": "link"
+    },
+    {
+      "text": "Products",
+      "href": null,
+      "role": "button"
+    },
+    {
+      "text": "Use Cases",
+      "href": null,
+      "role": "button"
+    },
+    {
+      "text": "Pricing",
+      "href": null,
+      "role": "button"
+    },
+    {
+      "text": "Resources",
+      "href": null,
+      "role": "button"
+    },
+    {
+      "text": "Get started",
+      "href": "/request-consultation.html?mktfrm_poi=analyticssolnpremium",
+      "role": "a"
+    },
+    {
+      "text": "Book a demo",
+      "href": "/products/adobe-analytics.html#book-demo",
+      "role": "a"
+    },
+    {
+      "text": "Learn more",
+      "href": "/blog/introducing-adobe-cx-analytics",
+      "role": "a"
+    }
+  ],
+  "links": {
+    "internal": [
+      "/de/products/adobe-analytics.html",
+      "/",
+      "/request-consultation.html",
+      "/products/workfront/login.html",
+      "/products.html",
+      "/solutions/cx-analytics.html",
+      "/products/adobe-analytics.html",
+      "/blog/introducing-adobe-cx-analytics",
+      "/fragments/products/adobe-analytics/explore-cx-analytics-offerings",
+      "/fragments/products/adobe-analytics/customer-stories",
+      "/resources/analytics.html",
+      "/products/adobe-analytics/customer-journey-analytics.html",
+      "/products/adobe-analytics/customer-journey-analytics/data-governance.html",
+      "/products/adobe-analytics/customer-journey-analytics/ai-driven-insights.html",
+      "/products/adobe-analytics/content-analytics.html"
+    ],
+    "external": [
+      "https://experiencecloud.adobe.com/exc-content/login.html",
+      "https://account.magento.com/customer/account/login",
+      "https://login.marketo.com/",
+      "https://www.adobe.com/",
+      "https://milo.adobe.com/tools/caas",
+      "https://milo.adobe.com/tools/marketo"
+    ]
+  },
+  "colors": [
+    [
+      "color::rgb(44, 44, 44)",
+      385
+    ],
+    [
+      "color::rgb(0, 0, 0)",
+      79
+    ],
+    [
+      "color::rgb(41, 41, 41)",
+      42
+    ],
+    [
+      "color::rgb(39, 77, 234)",
+      19
+    ],
+    [
+      "bg::rgb(243, 243, 243)",
+      8
+    ],
+    [
+      "color::rgb(255, 255, 255)",
+      5
+    ],
+    [
+      "bg::rgb(248, 248, 248)",
+      5
+    ],
+    [
+      "bg::rgb(59, 99, 251)",
+      4
+    ],
+    [
+      "border::rgb(59, 99, 251)",
+      3
+    ],
+    [
+      "color::rgb(112, 112, 112)",
+      2
+    ],
+    [
+      "bg::rgb(255, 255, 255)",
+      1
+    ],
+    [
+      "bg::rgba(0, 0, 0, 0.5)",
+      1
+    ],
+    [
+      "color::rgb(45, 45, 45)",
+      1
+    ],
+    [
+      "border::rgb(218, 218, 218)",
+      1
+    ],
+    [
+      "border::rgb(238, 238, 238) rgb(44, 44, 44)",
+      1
+    ],
+    [
+      "bg::rgb(0, 0, 0)",
+      1
+    ],
+    [
+      "border::rgb(44, 44, 44)",
+      1
+    ]
+  ],
+  "fonts": [
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|400|18px",
+      291
+    ],
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|700|24px",
+      84
+    ],
+    [
+      "serif|400|16px",
+      74
+    ],
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|400|14px",
+      48
+    ],
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|400|12px",
+      10
+    ],
+    [
+      "-apple-system|400|13.3333px",
+      5
+    ],
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|700|28px",
+      4
+    ],
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|400|22px",
+      3
+    ],
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|700|14px",
+      2
+    ],
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|700|15px",
+      2
+    ],
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|700|16px",
+      2
+    ],
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|700|12px",
+      1
+    ],
+    [
+      "-apple-system|300|20px",
+      1
+    ],
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|700|20px",
+      1
+    ],
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|600|14px",
+      1
+    ],
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|700|44px",
+      1
+    ],
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|700|19px",
+      1
+    ],
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|700|18px",
+      1
+    ],
+    [
+      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif|700|17px",
+      1
+    ]
+  ],
+  "radii": [
+    [
+      "16px",
+      3
+    ],
+    [
+      "4px",
+      1
+    ],
+    [
+      "25px",
+      1
+    ],
+    [
+      "20px",
+      1
+    ]
+  ],
+  "shadows": [
+    [
+      "rgba(0, 0, 0, 0.2) 0px 3px 3px 0px",
+      2
+    ],
+    [
+      "rgba(0, 0, 0, 0.2) 0px 2px 4px 0px",
+      1
+    ],
+    [
+      "rgba(0, 0, 0, 0.25) 0px 4px 4px 0px",
+      1
+    ]
+  ],
+  "media": {
+    "images": [
+      {
+        "src": "https://business.adobe.com/assets/icons/gnav/adobe-for-business-web-lockup-rev2.svg",
+        "alt": "Adobe for business",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://business.adobe.com/products/media_1bd76cf1a44567141df1b70fb3e9d1f7986b8ad86.png?width=2000&format=webply&optimize=medium",
+        "alt": "",
+        "width": 756,
+        "height": 426
+      }
+    ],
+    "svg": 3,
+    "video": 0,
+    "iframe": 0
+  },
+  "forms": [],
+  "systemComponents": {
+    "header": {
+      "tag": "header",
+      "links": [
+        {
+          "text": "",
+          "href": "https://business.adobe.com/"
+        },
+        {
+          "text": "Analytics",
+          "href": null
+        },
+        {
+          "text": "Get started",
+          "href": "/request-consultation.html?mktfrm_poi=analyticssolnpremium"
+        },
+        {
+          "text": "Experience Cloud",
+          "href": "https://experiencecloud.adobe.com/exc-content/login.html"
+        },
+        {
+          "text": "Commerce (Magento)",
+          "href": "https://account.magento.com/customer/account/login"
+        },
+        {
+          "text": "Marketo Engage",
+          "href": "https://login.marketo.com/"
+        },
+        {
+          "text": "Workfront",
+          "href": "/products/workfront/login.html"
+        },
+        {
+          "text": "",
+          "href": "https://www.adobe.com/"
+        },
+        {
+          "text": "Home",
+          "href": "/"
+        },
+        {
+          "text": "Products",
+          "href": "/products.html"
+        }
+      ]
+    },
+    "footer": {
+      "tag": "footer",
+      "links": []
+    }
+  }
+}

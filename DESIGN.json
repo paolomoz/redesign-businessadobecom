@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 2,
+  "_provenance": {
+    "writtenBy": "stardust:direct",
+    "writtenAt": "2026-05-07",
+    "mode": "brand-faithful (Mode A) with reference-driven token override",
+    "derivedFrom": [
+      "references/hub/styles/global/typography.css",
+      "references/hub/styles/global/grid.css",
+      "references/hub/styles/hero.css",
+      "references/hub/styles/editorial.css",
+      "references/hub/HANDOFF.md",
+      "references/bizpro-hub/bizpro-hub.html"
+    ]
+  },
+  "colors": {
+    "background-default": "#ffffff",
+    "background-subtle": "#f8f8f8",
+    "background-strong": "#f3f3f3",
+    "content-default": "#131313",
+    "content-subtle": "rgba(0,0,0,0.64)",
+    "content-soft": "#4a4a4a",
+    "primary": "#3b63fb",
+    "primary-strong": "#274dea",
+    "border": "#e1e1e1",
+    "divider": "#e9e9e9",
+    "adobe-red-reserved": "#eb1000"
+  },
+  "typography": {
+    "display": "\"Adobe Clean Display\", \"Adobe Clean\", system-ui, sans-serif",
+    "body": "\"Adobe Clean\", \"Adobe Clean Display\", system-ui, sans-serif",
+    "weights": { "light": 300, "regular": 400, "medium": 500, "bold": 700, "black": 900 },
+    "scale": {
+      "super":     { "desktop": 96, "tablet": 72, "mobile": 56, "weight": 900, "lh": 0.94, "ls": "-0.04em" },
+      "title-1":   { "desktop": 80, "tablet": 56, "mobile": 40, "weight": 900, "lh": 0.96, "ls": "-0.04em" },
+      "title-2":   { "desktop": 56, "tablet": 40, "mobile": 32, "weight": 900, "lh": 1.0,  "ls": "-0.03em" },
+      "title-3":   { "desktop": 48, "tablet": 32, "mobile": 24, "weight": 900, "lh": 1.0,  "ls": "-0.03em" },
+      "title-4":   { "desktop": 24, "tablet": 20, "mobile": 20, "weight": 900, "lh": 1.0,  "ls": "-0.02em" },
+      "body-l":    { "desktop": 20, "tablet": 18, "mobile": 16, "weight": 400, "lh": 1.2,  "ls": "0em" },
+      "body-m":    { "desktop": 16, "weight": 400, "lh": 1.3, "ls": "0.01em" },
+      "body-s":    { "desktop": 14, "weight": 400, "lh": 1.3, "ls": "0.01em" },
+      "eyebrow":   { "desktop": 16, "weight": 700, "lh": 1.3, "ls": "-0.01em" },
+      "label":     { "desktop": 14, "weight": 700, "lh": 1.3, "ls": "0em" },
+      "caption":   { "desktop": 12, "weight": 700, "lh": 1.3, "ls": "0.02em" }
+    }
+  },
+  "rounded": {
+    "hero": "32px",
+    "card": "16px",
+    "pill": "999px",
+    "chip": "4px"
+  },
+  "spacing": {
+    "base": 8,
+    "section-y": { "desktop": 96, "tablet": 64, "mobile": 48 },
+    "container-margin": { "desktop": "8.333%", "mobile": "24px" },
+    "container-max": "1920px"
+  },
+  "breakpoints": {
+    "xs": "≤767",
+    "s": "768–1023",
+    "m": "1024–1279",
+    "l": "1280–1440",
+    "xl": "≥1441"
+  },
+  "grid": {
+    "columns-desktop": 12,
+    "columns-mobile": 6,
+    "gutter": "8px"
+  },
+  "shadows": {
+    "card-hover": "0 4px 100px rgba(0,0,0,0.25)",
+    "floating":   "0 16px 48px rgba(0,0,0,0.16)"
+  },
+  "motion": {
+    "engine": "lenis@1.1.14 + gsap + ScrollTrigger",
+    "primitives": ["mosaic-converge", "ring-reveal", "text-animate", "editorial-parallax"],
+    "respectReducedMotion": true
+  },
+  "extensions": {
+    "componentStyle": {
+      "buttons": {
+        "primary":   { "bg": "#3b63fb", "fg": "#ffffff", "radius": "999px", "height": 40, "padding": "0 20px" },
+        "secondary": { "bg": "transparent", "fg": "#131313", "border": "1px solid rgba(0,0,0,0.7)", "radius": "999px", "height": 40, "padding": "0 20px" }
+      },
+      "cards": { "radius": "16px", "shadow": "none-default", "ground": "#ffffff" },
+      "dualCTAPattern": { "primary-then-secondary": true, "gap": "12px" }
+    },
+    "systemComponentRoles": {
+      "header": { "purpose": "global nav with mega-nav dropdown + sign-in", "scrollState": "transparent → white pill at >40px scroll" },
+      "footer": { "purpose": "site map + region picker + legal" },
+      "hero": { "purpose": "scroll-pinned editorial hero with mosaic image grid + headline", "signature": "32px rounded bottom corners that reveal section behind" },
+      "section-header": { "purpose": "eyebrow + title + dek + optional CTA", "rhythm": "section-y spacing above and below" },
+      "sticky-cta": { "purpose": "page-bottom contact-sales / try-now anchor on product pages" }
+    },
+    "voice": {
+      "dos": [
+        "Unleash creativity at scale.",
+        "There's more to Acrobat than Acrobat.",
+        "Data and insights for a competitive edge.",
+        "Accelerated document workflows that deliver more impact."
+      ],
+      "donts": [
+        "Get started for free!",
+        "AI-powered everything for your team",
+        "Try Adobe risk-free",
+        "The complete solution for the modern enterprise"
+      ]
+    },
+    "colorReservations": [
+      { "color": "#eb1000", "reservedFor": ["asset:adobe-logo"], "reason": "Adobe Red is the brand mark, not a UI color" }
+    ],
+    "iaPriorities": [
+      {
+        "signal": "portfolio-index",
+        "evidence": "current home outline alternates 'Explore products' across 6+ category sections (pages/home.json#outline)",
+        "preserveAs": "primary IA spine",
+        "scope": "site-wide"
+      },
+      {
+        "signal": "announcement-marquee",
+        "evidence": "current home leads with H1 'Adobe completes the acquisition of Semrush.' (pages/home.json#outline[0])",
+        "preserveAs": "above-the-fold marquee slot",
+        "scope": "home"
+      },
+      {
+        "signal": "ai-narrative",
+        "evidence": "'AI at Adobe' surfaces as its own section + most product cards reference AI (pages/home.json#outline)",
+        "preserveAs": "second-viewport",
+        "scope": "home"
+      }
+    ],
+    "antiToolbox": [
+      "no glassmorphism",
+      "no purple-blue gradient CTAs",
+      "no isometric hero illustration",
+      "no centered hero + double-CTA-pair silhouette",
+      "no gradient text",
+      "Adobe Red restricted to logo asset"
+    ],
+    "divergence": {
+      "mode": "brand-faithful + reference-override",
+      "seed": {
+        "decade":        { "value": "2025-now", "picked_by": "anchor-reference: references/hub" },
+        "craft":         { "value": "editorial-screen", "picked_by": "anchor-reference: references/hub" },
+        "register":      { "value": "brand", "picked_by": "inherited from current/PRODUCT.md" },
+        "ground_family": { "value": "stark-white", "picked_by": "anchor-reference: references/hub", "override": "brand-faithful" },
+        "font_deck":     { "value": "Adobe Clean Display + Adobe Clean", "picked_by": "user-constraint (references)" },
+        "palette":       { "source": "references/bizpro-hub/bizpro-hub.html#s2a-tokens", "picked_by": "user-constraint (references)" }
+      },
+      "brand_faithful_inversions": [
+        { "kind": "hex-format-retention", "reason": "Spectrum 2 ships hex; OKLCH conversion would diverge from Adobe's source of truth" },
+        { "kind": "pure-color-retention", "reason": "#ffffff and #131313 are explicitly chosen by the design team as ground and content-default" }
+      ]
+    }
+  },
+  "narrative": {
+    "northStar": "Editorial, cinematic, type-led. The home page reads like a printed editorial spread set in motion — display type at 80–96px, white ground, scroll-driven mosaic hero, one saturated blue. The portfolio reads as one system across 30 products.",
+    "rules": [
+      "Type leads. Color and ornament come second.",
+      "Whitespace is the grid.",
+      "Motion is structural, not decorative.",
+      "Image is editorial — full-bleed cards, no stock-photo afterthoughts.",
+      "Adobe Red is the logo, not a UI color."
+    ]
+  }
+}
